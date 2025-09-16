@@ -71,23 +71,7 @@ const sectionMaterials = {
       filename: "postsearchreference.pdf"
     }
   ],
-  images: [
-    {
-      title: "Step Deck vs Flatbed Height Comparison",
-      description: "Visual comparison showing height advantages of step deck trailers",
-      url: "/loadistics-section1-webapp/section4/images/step-deck-comparison.jpg"
-    },
-    {
-      title: "Conestoga Tarp System",
-      description: "Roll-up tarp system showing side-loading capability",
-      url: "/loadistics-section1-webapp/section4/images/conestoga-system.jpg"
-    },
-    {
-      title: "RGN Loading Process",
-      description: "Removable gooseneck showing drive-on ramp configuration",
-      url: "/loadistics-section1-webapp/section4/images/rgn-loading.jpg"
-    }
-  ],
+  images: [],
   links: [
     {
       title: "FMCSA Oversize/Overweight Permit Requirements",
