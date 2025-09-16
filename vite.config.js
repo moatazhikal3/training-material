@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/loadistics-section1-webapp/',
+  base: '/training-material/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),

@@ -67,7 +67,7 @@ const sectionMaterials = {
     {
       title: "Post Search Reference Guide",
       description: "Comprehensive reference guide for specialized equipment including step deck, conestoga, RGN, car hauler, and box truck specifications and dispatch considerations.",
-      url: "/loadistics-section1-webapp/section4/pdfs/postsearchreference.pdf",
+      url: "/training-material/section4/pdfs/postsearchreference.pdf",
       filename: "postsearchreference.pdf"
     }
   ],
