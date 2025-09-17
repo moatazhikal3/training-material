@@ -250,7 +250,8 @@ function EmphasisText({ text }) {
     // Handle bold text with **text** - remove asterisks and make bold
     if (text.includes('**')) {
       const parts = [];
-      const segments = text.split(/(\*\*.*?\*\*)/g);
+      // Use a more comprehensive regex to match **text** patterns
+      const segments = text.split(/(\*\*[^*]*\*\*)/g);
       
       segments.forEach(segment => {
         if (segment.startsWith('**') && segment.endsWith('**')) {
@@ -285,7 +286,7 @@ function EmphasisText({ text }) {
     <span>
       {formattedText.map((part, index) => (
         part.type === 'bold' ? (
-          <strong key={index} className="font-semibold text-gray-900">{part.content}</strong>
+          <strong key={index} className="font-bold text-gray-900">{part.content}</strong>
         ) : (
           <span key={index}>{part.content}</span>
         )
@@ -454,14 +455,16 @@ export default function LoadisticsSection7({ onNavigateToSection, sectionDropdow
                     <table className="w-full border border-gray-200 rounded-xl overflow-hidden text-base md:text-lg">
                       <thead style={{ backgroundColor: brand.red, color: "white" }}>
                         <tr>
-                          {slide.table.headers.map((h, i) => (<th key={i} className="text-left font-semibold px-4 md:px-5 py-3 md:py-4">{h}</th>))}
+                          {slide.table.headers.map((h, i) => (<th key={i} className="text-left font-semibold px-4 md:px-5 py-3 md:py-4"><EmphasisText text={h} /></th>))}
                         </tr>
                       </thead>
                       <tbody>
                         {slide.table.rows.map((row, rIdx) => (
                           <tr key={rIdx} className={rIdx % 2 === 1 ? "bg-gray-50" : "bg-white"}>
                             {row.map((cell, cIdx) => (
-                              <td key={cIdx} className={`align-top px-4 md:px-5 py-3 md:py-4 ${cIdx === 0 ? "font-semibold text-gray-900" : "text-gray-800"}`} style={{ wordBreak: "break-word" }}>{cell}</td>
+                              <td key={cIdx} className={`align-top px-4 md:px-5 py-3 md:py-4 ${cIdx === 0 ? "font-semibold text-gray-900" : "text-gray-800"}`} style={{ wordBreak: "break-word" }}>
+                                <EmphasisText text={cell} />
+                              </td>
                             ))}
                           </tr>
                         ))}
