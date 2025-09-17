@@ -73,6 +73,7 @@ function getSectionTitle(sectionNumber) {
     5: "Carrier Documentation & Vetting",
     6: "Responsibilities & Tools of a Dispatcher",
     7: "Step 1 — Planning: Know Your Carrier & Shape the Day",
+    8: "Step 2 — Posting Your Trucks on the Load Board",
     // Add more titles as sections are developed
   };
   return titles[sectionNumber] || `Section ${sectionNumber} Content`;

@@ -65,83 +65,217 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 8",
-    title: "Section 8 Title Placeholder",
+    title: "Step 2 — Posting Your Trucks on the Load Board",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 8. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Step 2 is posting our trucks so brokers can find us. Once a driver's unload time and next-ready location are clear, we post.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "When To Post",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Trigger: After you know the unload time and next-ready location for the driver.",
+      "Goal: Make brokers find you and call with matching offers.",
+      "Platform: Use a major U.S. load board (we'll use D8 for demonstrations)."
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Post right after you confirm unload and next-ready time/place. Our goal is inbound offers from brokers who match our lane and equipment."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "National Load Count Panel",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Item", "Meaning"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["In/Out Ratio", "Loads coming into a state vs loads going out; higher out than in signals strong demand."],
+        ["State Codes", "Two-letter state abbreviations; click a state to inspect its lane pressure."],
+        ["Equipment Filter", "Pick Dry Van, Reefer, Flatbed, or specialized types to see demand by equipment."]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Read the In/Out Ratio: more loads going out than in means outbound demand and usually stronger rates. Use the equipment filter to see this by trailer type."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Why Post Trucks",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Visibility: Your truck appears in \"Available Trucks\" for brokers to search.",
+      "Speed: Posting takes seconds; inbound calls can start quickly in hot markets.",
+      "Market Signal: Call volume and tone reveal how desperate brokers are to move freight."
+    ],
+    trainerNotes: [
+      "Posting puts us in front of brokers instantly. The number and quality of calls tells us how hot the market is."
+    ]
+  },
+  {
+    title: "Start The Post",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Account: Log in to your board.",
+      "Navigate: My Trucks: Open the page where you add or manage posted trucks."
+    ],
+    trainerNotes: [
+      "Log in and open 'My Trucks'. This is where we add a truck profile for today."
+    ]
+  },
+  {
+    title: "Load Size & Equipment",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Field", "Guidance"],
+      rows: [
+        ["Load Size", "Full Truckload: Standard choice; Partial: Use when truly partial lanes make sense."],
+        ["Equipment", "Select the correct trailer type; Example: Reefer (R) for Quinton."],
+        ["Length", "53 ft: Standard long trailer length (enter your actual trailer length)."],
+        ["Max Load Weight", "Typical Reefer Max: ~44,000 lb (confirm carrier-specific maximums)."]
+      ]
+    },
+    trainerNotes: [
+      "Pick Full Truckload unless we truly have a partial play. Select the correct equipment; for our example with Quinton, choose Reefer, length 53 ft, and set max load weight around 44,000 lb unless the carrier specifies lower."
+    ]
+  },
+  {
+    title: "Origin & Destination",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Field", "Guidance"],
+      rows: [
+        ["Origin", "City, State where the truck will be empty next; Example: Jacksonville, FL."],
+        ["Destination", "Leave Blank: Brokers will offer \"anywhere\" options; Multiple States: Enter a list like Florida, Texas to constrain lanes."]
+      ]
+    },
+    trainerNotes: [
+      "Origin is the city/state where we empty. For broader reach, leave destination blank. To focus, list a small set like Florida, Texas."
+    ]
+  },
+  {
+    title: "Dates & Availability Window",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Field", "Guidance"],
+      rows: [
+        ["Available From", "Today's date or the exact date the truck empties."],
+        ["Available To", "Today or Tomorrow: Use a one-day window to increase options without committing too far."],
+        ["Time Note", "If pickup is later in the day, reflect that in comments."]
+      ]
+    },
+    trainerNotes: [
+      "Use Today for available-from. If you can also start tomorrow, set the two-day window. If pickup is later, we'll reflect that in comments."
+    ]
+  },
+  {
+    title: "Minimum Rate Per Mile",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Optional Floor: Enter a per-mile floor only if the carrier insists on a hard limit.",
+      "Flexibility: Leaving it blank invites more calls and lets you negotiate case-by-case."
+    ],
+    trainerNotes: [
+      "Only set a floor if the carrier demands it. Otherwise keep it empty to encourage more offers and negotiate per opportunity."
+    ]
+  },
+  {
+    title: "Comments & Reference ID",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Comments Examples: Empty at midday; Evening pickup only; Drop trailer available.",
+      "Character Limit: Short, informative notes (about one tweet's length).",
+      "Reference ID: Used by large fleets; small teams can leave it blank."
+    ],
+    trainerNotes: [
+      "Add helpful notes: 'Empty at midday', 'Evening pickup only', 'Light loads preferred'. Keep it short. Reference ID is for large fleets; we can skip it for small teams."
+    ]
+  },
+  {
+    title: "Contact Preference",
+    layout: "table",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Method", "Tradeoff"],
+      rows: [
+        ["Phone", "Fast response; can attract many calls in hot markets."],
+        ["Email", "Controlled volume; easier to triage when managing multiple trucks."]
+      ]
+    },
+    trainerNotes: [
+      "Phone means faster conversations and more calls; email is calmer when managing many trucks. Pick what fits today's workload."
+    ]
+  },
+  {
+    title: "Confirm & Post",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Review: Load Size, Equipment, Length, Max Weight, Origin, Destination, Dates, Contact.",
+      "Submit: Post Truck: Confirm success and verify it shows as \"Posted\"."
+    ],
+    trainerNotes: [
+      "Review fields carefully and post. Confirm the status shows as 'Posted' so we know brokers can see it."
+    ]
+  },
+  {
+    title: "After Posting: What To Expect",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Call Patterns: Many calls arrive mid-day and toward market close.",
+      "Destinations: Leaving destination blank increases call volume; specifying a few states narrows calls.",
+      "Signal Reading: If phones are quiet, reassess equipment, weight, or destination flexibility."
+    ],
+    trainerNotes: [
+      "Expect more calls later in the day and near market close. If calls are thin, adjust destination flexibility or double-check equipment/weight."
+    ]
+  },
+  {
+    title: "Negotiation Stance",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Position Of Power: High call volume means more leverage—name your price first and hold firm.",
+      "Test & Adjust: Start above target and work down only as needed; expect callbacks when brokers get urgent.",
+      "Notes Discipline: Track offers, callbacks, and best counter-offers for quick decisions."
+    ],
+    trainerNotes: [
+      "If calls are constant, we're in a strong position. Start above target, hold your number, and let the market come to you. Track offers and callbacks so we can make quick, confident decisions."
+    ]
+  },
+  {
+    title: "Pop Quiz",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "In/Out Ratio: What does more loads going out than coming in tell you?",
+        "Destination Field: What happens if you leave it blank vs list two states?",
+        "Minimum RPM: When would you use it and why might you leave it empty?",
+        "Comments: Give two short examples that help brokers match your truck.",
+        "Negotiation: What does high inbound call volume signal for your pricing?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Strong outbound demand; likely higher rates from that state.",
+        "Blank: More calls, wider options; Two states: More targeted offers, fewer calls.",
+        "Use only for a hard carrier floor; leave empty to maximize offers and flexibility.",
+        "Empty at midday; Evening pickup only; Ready after 16:00; Light loads preferred.",
+        "You have leverage; start higher and hold your price longer."
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Answer first, then I'll show model answers in Trainer Mode. If answers are thin, we'll revisit how the In/Out panel and destination choice affect call volume and pricing."
     ]
-  },
-  {
-    title: "Section Material",
-    layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 8 notes when provided."
-    ],
-    trainerNotes: [
-      "State of materials: There's no uploaded material for Section 8 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
-    ],
-    isMaterialsSlide: true
   }
 ];
 
@@ -372,7 +506,7 @@ export default function LoadisticsSection8({ onNavigateToSection, sectionDropdow
                 )}
 
                 {/* Section Navigation - show on first and last slides */}
-                {(slideIndex === 0 || slide.isMaterialsSlide) && onNavigateToSection && (
+                {(slideIndex === 0 || slideIndex === slides.length - 1) && onNavigateToSection && (
                   <div className="mt-6 p-4 bg-gray-50 rounded-xl border">
                     <div className="text-sm font-semibold mb-3">Section Navigation</div>
                     <div className="flex gap-3">
