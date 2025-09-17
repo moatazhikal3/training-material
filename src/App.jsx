@@ -72,6 +72,7 @@ function getSectionTitle(sectionNumber) {
     4: "Specialized Equipment: Beyond Dry Van, Reefer, and Flatbed",
     5: "Carrier Documentation & Vetting",
     6: "Responsibilities & Tools of a Dispatcher",
+    7: "Step 1 — Planning: Know Your Carrier & Shape the Day",
     // Add more titles as sections are developed
   };
   return titles[sectionNumber] || `Section ${sectionNumber} Content`;

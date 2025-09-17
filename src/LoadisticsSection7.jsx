@@ -65,65 +65,166 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 7",
-    title: "Section 7 Title Placeholder",
+    title: "Step 1 — Planning: Know Your Carrier & Shape the Day",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 7. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Step 1 is **planning**. We'll turn preferences and market realities into a practical plan for the day.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Today's Scenario",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "**Quinton** — Owner-operator, based in **Jacksonville, FL**; older truck + older **reefer**; prefers **Florida only**, will go to **Texas occasionally** if pay is strong.",
+      "**Derek** — Company driver delivering **9:00 a.m. in Chicago, IL**; runs **nationwide**; paid **by miles**; wants to maximize weekly miles."
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Two trucks, two drivers, different priorities: **Quinton** (owner-operator, older reefer, **FL-only**, TX sometimes) and **Derek** (company driver, **Chicago 9:00 a.m.** delivery, wants miles)."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Principle: Plan to the Carrier's Wishes",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Your job isn't to find the **highest rate**, it's to find the **most appropriate load** for the carrier's goals.",
+      "Gather preferences: **states/regions**, **equipment & age**, **weight/temperature comfort**, **home time**, **risk tolerance**, **weather/terrain**."
+    ],
+    trainerNotes: [
+      "Highest price isn't always the right load. Align to **states**, **equipment limits**, **weight/temp comfort**, **home time**, **risk tolerance**, and **weather/terrain**."
+    ]
+  },
+  {
+    title: "Financial Factors",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Term", "Definition / How to use"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["**Rate (Gross)**", "Total the broker pays the carrier for the load."],
+        ["**Total Mileage**", "**Loaded miles** (PU→DEL) + **Deadhead** (to pickup). Example: **33** mi deadhead (Fort Worth→Dallas) + **1026** loaded (Dallas→Charlotte) = **1059** total."],
+        ["**Rate per Mile (RPM)**", "**Rate ÷ Total miles**. Example: **$2,500 ÷ 1059 ≈ $2.36/mi**."],
+        ["**Tolls**", "Can materially change real RPM (e.g., **NYC**). Use toll calculators (TollGuru, Tollsmart, TruckRouter) or board tools."]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Define **rate**, **total miles** (loaded + **deadhead**), and **RPM**. Example: **33** DH + **1026** loaded = **1059** miles; **$2,500 / 1059 ≈ $2.36/mi**.",
+      "Consider **tolls**—they change real profitability. Use calculators or board tools."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Costs & Weekly Lens",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Fixed costs**: lease, insurance, licenses/permits—owed even when parked.",
+      "**Variable costs**: fuel, tolls, driver pay (per-mile), etc.",
+      "Know **cost per mile** → loads below it lose money; above it profit—**but** weekly average RPM can justify a single tactical loss."
+    ],
+    trainerNotes: [
+      "Know **fixed vs variable** costs to estimate **cost per mile**. Sometimes we accept a tactical loss to position for a stronger **weekly average RPM**."
+    ]
+  },
+  {
+    title: "Load Parameters that Change Choices",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Factor", "Why it matters"],
+      rows: [
+        ["**Weight**", "Heavy loads raise fuel use & wear—older equipment may **avoid heavy** even at higher pay."],
+        ["**Reefer temperature**", "Very low temps (e.g., **ice cream**) are riskier; **older reefers** less reliable at low setpoints."],
+        ["**Commodity risk**", "Temperature-sensitive or high-claim freight may not fit every carrier's comfort."]
+      ]
+    },
+    trainerNotes: [
+      "**Weight** drives fuel and wear; older equipment may avoid heavy loads even with higher pay.",
+      "**Reefer temps**: ultra-low setpoints (e.g., ice cream) raise risk; older units may be unreliable."
+    ]
+  },
+  {
+    title: "Route, Terrain & Congestion",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Mountains vs flats**: e.g., **Virginia** winding roads vs **Texas** flat highways. Driver stress & skill differ.",
+      "**Urban congestion**: e.g., **NYC** vs open **Arizona** roads.",
+      "Owner-operators often optimize for **comfort/safety** as well as money."
+    ],
+    trainerNotes: [
+      "**Mountains** (e.g., Virginia) vs **flat** Texas highways; **NYC** congestion vs open **Arizona**—stress & time differ.",
+      "Owner-operators often prioritize **comfort/safety** alongside revenue."
+    ]
+  },
+  {
+    title: "Weather Intelligence",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "U.S. weather risks: **hurricanes**, **snow/ice** in the North; risk often → **higher pay**.",
+      "Monitor continuously: **NOAA**, **Weather.gov**, **Weather.com**, **TripCheck.com**; save these in your notes."
+    ],
+    trainerNotes: [
+      "Watch for **hurricanes** and **winter storms**; risky areas pay more but carry exposure.",
+      "Keep **NOAA / Weather.gov / Weather.com / TripCheck** open and refresh through the day."
+    ]
+  },
+  {
+    title: "Apply It: Plan for **Quinton**",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Focus **Florida intrastate** lanes; consider **light** or moderate weights; **avoid ultra-low reefer temps**.",
+      "If **TX** pays strongly, confirm return path & weekly average; minimize tolls.",
+      "Prioritize **familiar routes** to match comfort preference."
+    ],
+    trainerNotes: [
+      "Search **Florida intrastate** first; bias to **lighter** loads and **moderate** reefer temps.",
+      "If a **Texas** offer pays well, check the **return** and weekly math; avoid heavy toll corridors if possible.",
+      "Favor **familiar routes** to fit his comfort/risk profile."
+    ]
+  },
+  {
+    title: "Apply It: Plan for **Derek**",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "After **9:00 a.m. Chicago** delivery, target **high-mile interstate** outbound; maximize weekly miles.",
+      "Price in **tolls & weather** on longer lanes; he's flexible on states/areas.",
+      "Use weekly RPM target; accept slightly lower RPM if it positions next **high-mile** load."
+    ],
+    trainerNotes: [
+      "After the **Chicago 9:00 a.m.** drop, target long **interstate** lanes to maximize miles.",
+      "Price in **tolls/weather**. Use weekly RPM goals; accept a slightly lower RPM if it sets up a **high-mile** follow-on load."
+    ]
+  },
+  {
+    title: "Pop Quiz",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "Define **deadhead** and compute total miles for **33** DH + **1026** loaded.",
+        "If the rate is **$2,500**, what's the **RPM** on **1059** miles?",
+        "Name two reasons a carrier might refuse a **heavy** load.",
+        "Why might an older **reefer** avoid very low temperatures?",
+        "Give two **route** factors besides distance that affect planning.",
+        "Name two **weather** resources a dispatcher should monitor."
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Empty miles to pickup; **1059 mi** total.",
+        "**≈ $2.36/mi**.",
+        "Fuel cost + wear/tear (and equipment age).",
+        "Reliability risk of older units at low setpoints.",
+        "Terrain (mountains vs flats), urban congestion.",
+        "NOAA, Weather.gov, Weather.com, TripCheck.com."
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Answer first; then I'll reveal model answers. If answers are thin, we'll revisit the financials and route factors."
     ]
   },
   {
@@ -131,14 +232,12 @@ const slides = [
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 7 notes when provided."
+      "No external files for this section yet; this lesson is from **Step 1 — Planning** text.",
+      "When materials arrive (PDFs/images/links), embed here (PDFs inline; images gallery; links with short descriptions).",
+      "Use the navigation panel here to go to the **Next** or **Previous** section."
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 7 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
+      "No files yet for Section 7. When we get documents or links, we'll embed them here and walk step-by-step.",
       "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
     ],
     isMaterialsSlide: true
