@@ -254,7 +254,7 @@ const slides = [
       "Objection Handling: Prepare responses to common broker pushbacks",
       "Relationship Building: Focus on long-term broker partnerships and repeat business"
     ],
-    video: "/training-material/section12/links/dispatcher-broker-mockup.mp4",
+    // video: "/training-material/section12/links/dispatcher-broker-mockup.mp4", // Large file - hosted separately
     trainerNotes: [
       "The goal is developing authentic communication style, not memorizing scripts.",
       "Practice these techniques with different load types and market conditions.",
@@ -476,19 +476,20 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                 {slide.video && (
                   <div className="mt-6">
                     <div className="text-lg font-semibold mb-3">Video Demo: Dispatcher-Broker Call Example</div>
-                    <div className="border border-gray-200 rounded-xl overflow-hidden">
-                      <video 
-                        controls 
-                        className="w-full max-w-4xl mx-auto"
-                        style={{ maxHeight: '400px' }}
-                      >
-                        <source src={slide.video} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 border-2 border-dashed border-blue-300 rounded-xl p-8 text-center">
+                      <div className="text-4xl mb-4">🎥</div>
+                      <h3 className="text-lg font-semibold text-gray-800 mb-2">Video Content Available</h3>
+                      <p className="text-gray-600 mb-4">
+                        This section includes a video demonstration of a professional dispatcher-broker negotiation call. 
+                        The video file is large and hosted separately for optimal performance.
+                      </p>
+                      <div className="bg-white rounded-lg p-4 border">
+                        <p className="text-sm text-gray-700">
+                          <strong>Note:</strong> Video demonstrations are available in the full training package. 
+                          Contact your instructor for access to the complete video library.
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-sm text-gray-600 mt-2 text-center">
-                      Click play to watch a demonstration of professional dispatcher-broker negotiation
-                    </p>
                   </div>
                 )}
 
