@@ -254,7 +254,9 @@ const slides = [
       "Objection Handling: Prepare responses to common broker pushbacks",
       "Relationship Building: Focus on long-term broker partnerships and repeat business"
     ],
-    video: "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section12/links/dispatcher-broker-mockup.mp4",
+    video: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+      ? "/section12/links/dispatcher-broker-mockup.mp4"
+      : "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section12/links/dispatcher-broker-mockup.mp4",
     trainerNotes: [
       "The goal is developing authentic communication style, not memorizing scripts.",
       "Practice these techniques with different load types and market conditions.",
@@ -481,8 +483,13 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                         controls 
                         className="w-full max-w-4xl mx-auto"
                         style={{ maxHeight: '400px' }}
+                        preload="metadata"
+                        onError={(e) => console.error('Video error:', e.target.error)}
+                        onLoadStart={() => console.log('Video loading started:', slide.video)}
+                        onCanPlay={() => console.log('Video can play:', slide.video)}
                       >
                         <source src={slide.video} type="video/mp4" />
+                        <source src={slide.video} type="video/mpeg" />
                         Your browser does not support the video tag.
                       </video>
                     </div>
