@@ -601,20 +601,14 @@ export default function LoadisticsSection27({ onNavigateToSection, sectionDropdo
                   <div className="mt-6">
                     <div className="text-sm font-semibold mb-3 text-gray-700">Video Demonstration</div>
                     <div className="relative w-full max-w-4xl mx-auto">
-                      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 border-2 border-dashed border-blue-300 rounded-xl p-8 text-center">
-                        <div className="text-4xl mb-4">🎥</div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2">Video Content Available</h3>
-                        <p className="text-gray-600 mb-4">
-                          This section includes a video demonstration of the negotiation conversation. 
-                          The video files are large and hosted separately for optimal performance.
-                        </p>
-                        <div className="bg-white rounded-lg p-4 border">
-                          <p className="text-sm text-gray-700">
-                            <strong>Note:</strong> Video demonstrations are available in the full training package. 
-                            Contact your instructor for access to the complete video library.
-                          </p>
-                        </div>
-                      </div>
+                      <video
+                        controls
+                        className="w-full rounded-xl shadow-lg"
+                        style={{ maxHeight: "500px" }}
+                      >
+                        <source src={slide.video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                   </div>
                 )}
