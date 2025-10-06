@@ -1,0 +1,30 @@
+Instructor example
+Dmitry Demishev
+
+How many hours of driving are allowed within the 14-hour work window
+
+
+Answer
+
+11 hours.
+
+A work limit can be based on a 7-day or 8-day work week. How many hours of work are given to the driver in each option
+
+
+Answer
+
+60 hours in 7 days or 70 hours in 8 days.
+
+
+Your driver's work hours started at 900 am. He spent 4 hours loading and started driving at 100 pm. He drove continuously for 5.5 hours, then took a 30-minute break for dinner and started driving again at 700 pm. How many hours of continuous driving time does the driver have left before he has to take a 10-hour break
+
+Answer
+
+4 hours
+
+
+Answer explanation
+
+During the working hours, the driver drove only 5.5 hours, respectively, he has another 5.5 hours allowed for driving. However, the driver started work at 9 am, so his 14-hour work window ends at 11 pm.
+
+After leaving at 7pm, the driver has 5.5 hours of driving time left, but only 4 working hours, so he can only drive 4 hours before taking a 10-hour break.

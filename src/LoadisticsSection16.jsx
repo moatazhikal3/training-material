@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,328 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 16",
-    title: "Section 16 Title Placeholder",
+    title: "Step 8 — Invoicing: The 3 Most Common Payment Methods",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 16. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to Step 8 - one of the most important business skills for dispatchers.",
+      "This section covers payment methods and invoicing - a critical skill that sets professional dispatchers apart.",
+      "Students will learn the three main payment options and their trade-offs in detail.",
+      "Emphasize that understanding payment methods helps dispatchers make better load decisions.",
+      "Focus on helping carriers choose the right payment method for their specific situation.",
+      "Payment method choice directly affects cash flow, profitability, and business sustainability.",
+      "This knowledge makes you more valuable as a dispatcher and can justify higher service rates."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Additional Service Opportunity",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Value-Added Service: Invoicing and payment management as additional dispatcher service",
+      "Career Advancement: Prove yourself to employers with comprehensive skills",
+      "Client Retention: Offer complete dispatch package including financial management",
+      "Revenue Stream: Additional income source for independent dispatchers",
+      "Professional Growth: Understanding all aspects of carrier operations"
+    ],
+    trainerNotes: [
+      "Start by asking: 'How many of you have experience with invoicing and payment management?'",
+      "Explain that many dispatchers only handle load booking - this skill sets you apart from the competition.",
+      "Tell students: 'Carriers often struggle with invoicing and payment tracking - this is where you can add real value.'",
+      "Emphasize: 'This skill makes you more valuable to employers and can justify higher rates for independent dispatchers.'",
+      "Point out: 'Understanding payment flows helps you make better load decisions - you'll know which brokers pay fast vs slow.'",
+      "Stress the business impact: 'A complete service offering builds stronger, longer-lasting client relationships.'",
+      "Ask the class: 'Who wants to be just another dispatcher, versus the dispatcher who handles everything?'"
+    ]
+  },
+  {
+    title: "Payment Method #1: Standard Pay",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Direct Invoicing: Send invoice directly to broker for deferred payment",
+      "Payment Timeline: Brokers typically pay within 30 days of invoice submission",
+      "Contract Terms: Grace period outlined in broker-carrier agreement",
+      "Capital Requirements: Only works for carriers with sufficient cash reserves",
+      "Cash Flow Challenge: Many small trucking companies cannot wait 30 days"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Introduce standard pay: 'This is the traditional method - you invoice the broker and wait for payment.'",
+      "Explain the timeline: 'Brokers typically pay within 30 days, but this can vary - some pay in 15 days, others take 45.'",
+      "Use an example: 'Let's say you deliver a $2000 load today. With standard pay, you won't see that money for 30 days.'",
+      "Ask the class: 'How many of you could personally wait 30 days for your paycheck?' Wait for responses.",
+      "Explain the cash flow challenge: 'New carriers have spent money on truck payments, insurance, fuel - they can't wait 30 days.'",
+      "Point out: 'Variable costs like fuel, repairs, and driver wages need to be paid immediately, not in 30 days.'",
+      "Emphasize: 'Only established carriers with good cash reserves can use standard pay effectively.'",
+      "Ask: 'What type of carrier would benefit most from standard pay?' Answer: Established carriers with cash reserves."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Payment Method #2: Quickpay Programs",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Accelerated Payment: Broker pays faster for additional commission fee",
+      "Fee Structure: Typically 1-5% of load value depending on payment speed",
+      "Timeline: Money deposited within 1-7 business days depending on broker",
+      "Cash Flow Solution: Creates enough liquidity to cover immediate expenses",
+      "Selective Use: Can choose quickpay per load, not required for all loads"
+    ],
+    trainerNotes: [
+      "Introduce quickpay: 'Quickpay is the middle ground between standard pay and factoring.'",
+      "Explain the concept: 'The broker pays you faster, but charges an additional fee for this service.'",
+      "Give specific examples: 'Fee varies by broker and speed - maybe 1% for 7-day payment, 5% for next-day payment.'",
+      "Use a calculation: 'On a $2000 load, 3% quickpay fee costs $60, but you get paid in 2 days instead of 30.'",
+      "Emphasize flexibility: 'Great feature - you can choose quickpay per load, not required for all loads.'",
+      "Explain the benefit: 'Perfect for carriers who need occasional fast payment but don't want factoring contracts.'",
+      "Ask the class: 'When might a carrier choose quickpay over standard pay?'",
+      "Answer guide: 'When they have a cash flow gap, emergency repair, or seasonal cash crunch.'"
+    ]
+  },
+  {
+    title: "Quickpay Advantages and Disadvantages",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Advantages", "Disadvantages"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        [
+          "Fast payment directly from broker (1-7 days)",
+          "Not all brokers offer quickpay programs"
+        ],
+        [
+          "Low fees compared to factoring (1-5%)",
+          "May have additional surcharges ($20-30 for online payments)"
+        ],
+        [
+          "Selective use - choose per load basis",
+          "Extra administrative time tracking different broker terms"
+        ],
+        [
+          "No exclusive contracts required",
+          "Each broker has different quickpay processes and requirements"
+        ],
+        [
+          "Immediate cash flow for variable costs",
+          "Different billing processes for each broker relationship"
+        ]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Walk through the table systematically: 'Let's look at the pros and cons of quickpay programs.'",
+      "Start with advantages: 'First major advantage - fast payment directly from the broker, usually 1-7 days.'",
+      "Explain fees: 'Low fees compared to factoring - typically 1-5% versus factoring's ongoing monthly fees.'",
+      "Emphasize flexibility: 'Key advantage - you choose per load. Need fast payment this week? Use quickpay. Cash flow good next week? Use standard pay.'",
+      "Point out no contracts: 'No exclusive contracts required - you're not locked into anything long-term.'",
+      "Now cover disadvantages: 'Not all brokers offer quickpay - limits your options sometimes.'",
+      "Mention hidden costs: 'Watch for additional surcharges - some brokers charge $20-30 extra for online payments.'",
+      "Explain administrative burden: 'Each broker has different quickpay processes - more work to track.'",
+      "Ask checkpoint question: 'When would quickpay be the best choice for a carrier?'",
+      "Guide to answer: 'When they need occasional fast payment but want to avoid factoring contracts and fees on every load.'"
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Payment Method #3: Factoring Companies",
     layout: "bullets",
-    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Account Receivable Purchase: Factoring company buys invoices and pays upfront",
+      "Commission Structure: Additional fee for immediate payment service",
+      "Payment Speed: Next day or same day payments via direct deposit",
+      "Comprehensive Service: Handle all invoicing and collection activities",
+      "Additional Benefits: Often provide fuel cards, tire discounts, other services"
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Introduce factoring: 'Factoring companies essentially buy your invoices at a discount for immediate payment.'",
+      "Explain the process: 'You deliver the load, submit paperwork to factoring company, they pay you next day.'",
+      "Clarify the service: 'They handle all broker relationships, invoicing, and collection activities for you.'",
+      "Point out comprehensiveness: 'This is the most comprehensive solution - they do everything payment-related.'",
+      "Mention popularity: 'Very popular with new carriers who need consistent, predictable cash flow.'",
+      "Highlight additional benefits: 'Most factoring companies provide extra services - fuel cards, tire discounts, road assistance.'",
+      "Set up next slide: 'But like everything in business, there are trade-offs. Let's look at the pros and cons.'"
     ]
   },
   {
-    title: "Section Material",
+    title: "Factoring Advantages and Disadvantages",
+    layout: "table",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Advantages", "Disadvantages"],
+      rows: [
+        [
+          "Quick next day or same day payments by direct deposit",
+          "Usually require exclusive contracts - all loads must be factored"
+        ],
+        [
+          "Low commissions for instant payments (2-3% typically)",
+          "Carrier often bears risk if broker doesn't pay"
+        ],
+        [
+          "Convenient invoicing through online platforms and apps",
+          "Factoring company can deduct unpaid amounts from future payments"
+        ],
+        [
+          "No need to track individual broker payment terms",
+          "Non-recourse factoring (no risk) costs significantly more"
+        ],
+        [
+          "Additional benefits: fuel cards, tire discounts, road services",
+          "Credit limits per broker may restrict load opportunities"
+        ],
+        [
+          "One company handles all paperwork for all shipments",
+          "May refuse to factor invoices with certain brokers"
+        ]
+      ]
+    },
+    trainerNotes: [
+      "Go through each row systematically: 'Let's examine the factoring trade-offs carefully.'",
+      "Start with speed: 'Major advantage - quick next day or same day payments by direct deposit.'",
+      "Explain the contract issue: 'Big disadvantage - usually require exclusive contracts. ALL your loads must go through them.'",
+      "Cover commission rates: 'Low commissions for instant payments, typically 2-3%. Sounds good, right?'",
+      "Introduce risk factor: 'Here's the catch - carrier often bears the risk if broker doesn't pay.'",
+      "Explain recourse vs non-recourse: 'Recourse means if broker doesn't pay, you still owe the factoring company.'",
+      "Detail the convenience: 'Convenient invoicing through online platforms and mobile apps.'",
+      "Warn about deductions: 'If a broker doesn't pay, they can deduct that amount from your future payments.'",
+      "Explain credit limits: 'Credit limits per broker may restrict your load opportunities.'",
+      "Mention broker restrictions: 'Some factoring companies refuse to work with certain brokers entirely.'",
+      "Ask checkpoint question: 'What's the difference between recourse and non-recourse factoring?'",
+      "Guide answer: 'Recourse means carrier is responsible if broker doesn't pay. Non-recourse means factoring company absorbs the loss but charges much higher fees.'"
+    ]
+  },
+  {
+    title: "Factoring Contract Considerations",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 16 notes when provided."
+      "Exclusive Requirements: Most factoring companies require all invoices go through them",
+      "Risk Distribution: Recourse vs non-recourse factoring affects who bears payment risk",
+      "Credit Limits: Factoring companies set limits per broker based on their risk assessment",
+      "Broker Restrictions: Some brokers may be excluded from factoring programs",
+      "Contract Terms: Carefully read all terms regarding fees, minimums, and penalties"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 16 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Emphasize contract importance: 'Before signing with any factoring company, understand these key contract terms.'",
+      "Explain exclusivity: 'Most factoring contracts are exclusive - you can't pick and choose which loads to factor.'",
+      "Break down risk types: 'Recourse factoring is cheaper but you pay if broker defaults. Non-recourse costs more but they absorb bad debt.'",
+      "Use credit limit example: 'If they set a $10,000 limit with Broker A, you can't take more loads from that broker until they pay.'",
+      "Warn about broker blacklists: 'Some factoring companies won't work with certain brokers due to poor payment history.'",
+      "Stress due diligence: 'Read ALL contract terms carefully - look for fees, minimums, early termination penalties.'",
+      "Ask the class: 'What questions should you ask before recommending a factoring company to a carrier?'"
+    ]
+  },
+  {
+    title: "Choosing the Right Payment Method",
+    layout: "table",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Carrier Situation", "Recommended Method", "Reasoning"],
+      rows: [
+        [
+          "Established carrier with good cash reserves",
+          "Standard Pay",
+          "No fees, can wait 30 days for payment"
+        ],
+        [
+          "New carrier needing consistent fast payment",
+          "Factoring",
+          "Predictable cash flow, handles all administration"
+        ],
+        [
+          "Seasonal carrier with occasional cash needs",
+          "Quickpay",
+          "Flexibility to use only when needed"
+        ],
+        [
+          "High-volume carrier wanting lowest costs",
+          "Mix of Standard + Quickpay",
+          "Use standard when possible, quickpay when needed"
+        ],
+        [
+          "Owner-operator with irregular income",
+          "Non-recourse Factoring",
+          "Eliminates payment risk, predictable costs"
+        ]
+      ]
+    },
+    trainerNotes: [
+      "Introduce the decision matrix: 'There's no one-size-fits-all solution. Let's match payment methods to carrier situations.'",
+      "Go through each scenario: 'Established carrier with good cash reserves should use standard pay - no fees, can wait 30 days.'",
+      "Explain new carrier needs: 'New carrier needing consistent fast payment should use factoring - predictable cash flow, handles administration.'",
+      "Describe seasonal situations: 'Seasonal carriers benefit from quickpay flexibility - use it only when cash flow is tight.'",
+      "Detail high-volume strategy: 'High-volume carriers can mix methods - standard pay when possible, quickpay when needed.'",
+      "Address risk concerns: 'Owner-operators with irregular income should consider non-recourse factoring - eliminates payment risk.'",
+      "Emphasize assessment: 'As a dispatcher, your job is to understand your carrier's cash position and risk tolerance.'",
+      "Point out evolution: 'Many carriers start with factoring, then graduate to standard pay as they grow and build cash reserves.'",
+      "Ask the class: 'How would you advise a brand new carrier with their first truck?'"
+    ]
+  },
+  {
+    title: "Administrative Considerations",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Tracking Complexity: Multiple brokers mean different payment terms and processes",
+      "Documentation Requirements: Each payment method has specific paperwork needs",
+      "Dispatcher Responsibility: Payment tracking often falls to dispatcher",
+      "System Integration: Factoring companies provide better tracking tools",
+      "Time Investment: Quickpay requires more administrative time per load"
+    ],
+    trainerNotes: [
+      "Address the hidden cost: 'Administrative burden is often overlooked but it's significant - let me explain.'",
+      "Explain tracking complexity: 'With quickpay, you're tracking different fees, different processes, different timelines for each broker.'",
+      "Compare to factoring: 'Factoring simplifies this - one system, one process, one company for everything.'",
+      "Point out dispatcher role: 'As dispatchers, you often become the de facto accounts receivable manager for your carriers.'",
+      "Quantify time cost: 'Consider the time cost when calculating the true cost of each payment method.'",
+      "Give example: 'Spending 2 hours per week tracking quickpay from 5 different brokers - that's 100+ hours per year.'",
+      "Ask the class: 'How much is your time worth per hour? Factor that into payment method decisions.'"
+    ]
+  },
+  {
+    title: "Broker Credit Assessment",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Credit Worthiness: Factoring companies provide broker credit check systems",
+      "Risk Management: Online platforms show broker payment history and limits",
+      "Due Diligence: Research broker reliability before booking loads",
+      "Payment History: Track which brokers pay on time vs those who are slow",
+      "Credit Limits: Understand factoring company limits per broker relationship"
+    ],
+    trainerNotes: [
+      "Introduce the intelligence advantage: 'Here's a valuable benefit of factoring companies - they maintain broker databases.'",
+      "Explain credit checks: 'Factoring companies provide broker credit check systems - you can research broker reliability before booking.'",
+      "Detail the information: 'Online platforms show broker payment history, credit limits, and risk ratings.'",
+      "Emphasize due diligence: 'Use this to avoid brokers with poor payment history - protect your carrier's cash flow.'",
+      "Explain exclusions: 'Some brokers are excluded entirely from factoring programs due to non-payment issues.'",
+      "Point out limits: 'Credit limits prevent over-exposure to any single broker - risk management.'",
+      "Highlight broader value: 'This intelligence is valuable even if you're not using factoring - helps with load selection decisions.'",
+      "Ask the class: 'How could broker credit information help you make better dispatch decisions?'"
+    ]
+  },
+  {
+    title: "Best Practices and Recommendations",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Assess Carrier Needs: Understand cash flow requirements and risk tolerance",
+      "Start Conservative: New carriers should prioritize cash flow over cost savings",
+      "Plan for Growth: Payment method may change as carrier becomes established",
+      "Monitor Performance: Track actual costs and benefits of chosen method",
+      "Stay Flexible: Be ready to adapt payment strategy as business evolves"
+    ],
+    trainerNotes: [
+      "Wrap up with key takeaways: 'Let me give you the most important best practices for payment method advice.'",
+      "Emphasize assessment: 'First, always assess your carrier's specific needs - cash flow requirements and risk tolerance.'",
+      "Advise conservatively: 'For new carriers, prioritize cash flow over cost savings - a failed business saves no money.'",
+      "Plan for growth: 'Remember, payment methods can change as the carrier becomes more established.'",
+      "Track performance: 'Monitor the actual costs and benefits of whatever method you choose.'",
+      "Stay flexible: 'Be ready to adapt payment strategy as the business evolves and grows.'",
+      "Emphasize survival: 'Cash flow problems can kill a trucking business faster than low-profit loads.'",
+      "Describe typical progression: 'Many carriers start with factoring for predictability, then transition to standard pay as they build reserves.'",
+      "Remind about total cost: 'Always track total cost including time and administrative burden - not just the obvious fees.'",
+      "Preview next content: 'In our next section, we'll cover the actual invoicing process and documentation requirements.'",
+      "Final question: 'What's the most important factor when choosing a payment method?' Answer: 'The carrier's cash flow situation and ability to wait for payment.'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +578,13 @@ export default function LoadisticsSection16({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={16}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -379,7 +633,7 @@ export default function LoadisticsSection16({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(15)} 
-                        disabled={16 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 15)

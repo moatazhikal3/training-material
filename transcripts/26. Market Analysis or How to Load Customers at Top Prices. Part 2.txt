@@ -1,0 +1,793 @@
+Okay.
+
+After looking at the trend lines, I logged back into the load board.
+
+Actually, you will notice that this one looks a little bit different.
+
+For previous demonstrations, I was using data trackers edge and now I'm using data power and this subscription
+
+is slightly more expensive, but I'm just going to use it because it has more tools.
+
+And I want to show you all the set of tools that data has to offer.
+
+Some of these tools will be available for you, some not, depending on what subscription you buy and
+
+how much money you'll be paying monthly for the load boards.
+
+So first thing actually I want to go to search loads and.
+
+Let's just do a quick search here.
+
+I don't know.
+
+Driving.
+
+Doesn't matter.
+
+Atlanta, Georgia, for example.
+
+Great.
+
+Quick search.
+
+So.
+
+First thing that's available to us.
+
+Let's say, for example, we're looking at this load over here.
+
+We don't know the rate.
+
+The broker hasn't posted his rate.
+
+We can click on the load and we get the broker to carry a spot.
+
+So this is a spot rate or an average rate based on historical statistics for the past 30 days, I believe.
+
+I'm not sure it could be 90 days actually.
+
+But historically this lane has been paying $2.21 per mile.
+
+And even here we can see that it should be paying a minimum of $2.09 and a maximum of $2.39 per mile.
+
+So already inside of the load board, while you're looking for loads, you can use this broker to carry
+
+a spot to get a general idea of how much this load should be paying, or at least how much this load
+
+has been paying in the past.
+
+Of course, this statistics is taken from historical value, so if in the past months they've been paying
+
+$2.21, it doesn't mean that today they're going to be paying $2.21.
+
+So the reality might be quite different, but this could be a foundation, a starting point for you
+
+to understand how much this load could be paying.
+
+Actually, it's very good to pair this with the trend lines.
+
+If you go see here and see, the average rate has been $2.21, you can go back to trend lines, see
+
+that percentage change over the week or over the month and understand, okay, so they've been paying
+
+$2.21, but the market has actually decreased and it means I might be looking at a lower rate or on
+
+the contrary, they've been paying $2.21, but the market has increased.
+
+So actually I should be asking for more than $2.21 I should probably be asking somewhere in the higher
+
+range of $2.39 per mile or more.
+
+This is very good to use this broker to carry your spot while looking at the trend lines, to see some
+
+trends and to understand how close to this value you should be aiming for.
+
+Okay, this is available in any load search, any load that I look for.
+
+I can always check out the broker to carry a spot for any line, but I'm just leaving the search loads
+
+going back to my load board.
+
+So I have this little briefcase here and this is called Tools.
+
+And this is these are the tools available with paid subscriptions of it.
+
+So I'll go through each one of these.
+
+First one is line makers.
+
+Let's click on it.
+
+This is a very interesting tool, although you see they're actually offering me lane makers premium.
+
+I'm not even 100% sure what's included in the premium, but you can go and check it out for yourself,
+
+see how much it costs, see if it's worth it.
+
+But this is a great tool, especially when you're just starting to work with a carrier.
+
+And actually it allows you to see what brokers have the most amounts of loads for your carrier.
+
+So here report type.
+
+I have carrier activity.
+
+It's only available to me because I'm we're actually also brokers, so we buy broker accounts.
+
+But for normal carriers it will usually just show broker activity and then it includes full or partial.
+
+Doesn't matter for me.
+
+I'm just going to use both.
+
+So let's say I got a new carrier.
+
+He is a flatbed, for example, and he's based in, let's say, Richmond, Virginia.
+
+So I got this carrier, his relatively new he wants some loads from Richmond, Virginia.
+
+I can go and click search here.
+
+And this will actually show me the brokers that have the most load postings out of Richmond, Virginia,
+
+in the past months.
+
+So as you can see, the biggest one is transfer 22,000 load postings for flatbed out of Richmond, Virginia,
+
+in the past month.
+
+So that already gives me a clear understanding.
+
+Okay.
+
+The first broker I have to set up is DML transport, and I'm probably going to book a lot of loads with
+
+them, so I better make good relationship with them for that carrier and then they can see some other
+
+brokers.
+
+Total quality logistics.
+
+As you can see already only 2700 compared to 22,000.
+
+So DML is definitely the leader in Richmond, Virginia.
+
+But some other brokers I should be setting up my career with is total quality logistics.
+
+King of Freight LLC.
+
+Glen Berry Trucking, Tennessee Steel Haulers, R&R.
+
+ET cetera.
+
+ET cetera.
+
+ET cetera.
+
+So it gives us, I don't know how many about a dozen brokers that have the most loads coming out of
+
+this specific city of Richmond, Virginia.
+
+Now, let's say this same carrier out of Richmond, Virginia, tells me, hey, you know what?
+
+I only want to travel down to North Carolina or up to New Jersey, for example.
+
+Okay.
+
+Origin, Richmond, Virginia, destination, North Carolina.
+
+Okay.
+
+Search.
+
+Now this will show me the brokers that had the most load from Richmond going specifically to North Carolina.
+
+You see, not even interesting that the one that had the most load postings is not even here.
+
+So actually, this lets us understand that DNA has a lot of loads coming out of Richmond, Virginia
+
+for flatbed, but not going to North Carolina.
+
+If we want to go to North Carolina, we have to set up with Tennessee steel haulers.
+
+So I guess a lot of steel is coming out from Virginia down to North Carolina and then GM, RL Total
+
+quality logistics.
+
+ET cetera.
+
+ET cetera.
+
+So the brokers actually have changed depending on the destination.
+
+And then if he says he wants to go to North Carolina or New Jersey, we'll go ahead do the same for
+
+New Jersey.
+
+You see, Tennessee still holds the one that was the top one.
+
+Going to North Carolina is actually not here anymore now.
+
+Total quality logistics is the biggest broker that ships loads from Richmond, Virginia, to New Jersey.
+
+And then you have the other brokers as well.
+
+So this is a fantastic tool to understand what brokers to set up with, what brokers to set up your
+
+career with, especially if you have a new career.
+
+Go to rainmakers, check out the brokers, do some setups and immediately start building relationships
+
+with those brokers.
+
+Your careers will really appreciate it, especially if there are new careers.
+
+They're not set up with many brokers yet.
+
+They haven't done much business in the past.
+
+You as a dispatcher can help them out, help them make their first money and, you know, keep this
+
+customer for a really long time.
+
+They'll stay with you.
+
+They'll stick with you.
+
+They'll not want to go to any other dispatcher.
+
+All right.
+
+Rainmakers Fantastic tool.
+
+Oops.
+
+My will.
+
+Dyson So the next one is market conditions.
+
+Let's click on this.
+
+And Market condition index is pretty much let me just click somewhere.
+
+Market condition index is pretty much just an index for a load to track ratio.
+
+So once again, tight capacity hot, it will be shown in red.
+
+Those are the areas with the highest low to track ratio.
+
+And then on the contrary, the blue ones are the areas with the least load to try with the smallest
+
+load to track ratio so we can choose buy equipment, van flat or reefer.
+
+And here it's given us by the key market area.
+
+But we can actually just choose, let's say by state and we can even use the timeframe prior business
+
+days current even has a seven day forecast or prior seven days prior 30 days.
+
+Let's choose current and let's just apply this filter here.
+
+Let's see if it loads.
+
+There you go.
+
+So we can see in red hot states with the highest load to truck ratio for driving in blue color, those
+
+have the lowest load to truck ratio.
+
+So this gives us a pretty good indication.
+
+You know, if my truck is in Georgia and I want to go to a cold state like Nebraska, they're going
+
+to be paying me a very high rate.
+
+And on the contrary, if I'm going from a cold state to a hot state from Nebraska to Georgia, I can
+
+expect a rate that's below general market average.
+
+So you can play around with this.
+
+You can you can see by area by market.
+
+Area market area is actually very interesting.
+
+Because either rather than looking at states as a whole, we can look specific market areas and see
+
+because in a certain state there could be hot zones and there could be cold zones.
+
+Look at Texas.
+
+So Texas has cold zones.
+
+East of Texas is always hot.
+
+This is Dallas area.
+
+This is Houston area, the always hot.
+
+And then other areas like this big one is a desert.
+
+So there's usually no loads here.
+
+And this this is shown to us by the market index.
+
+Okay, let's move away from the market condition index and look what else is available to us in these
+
+tools.
+
+So we looked at lane makers, we looked at market conditions.
+
+Here's a quick rate search.
+
+This is actually a very, very simple tool.
+
+We just choose an equipment, let's say, for example, reefer, and then we choose a lane.
+
+Miami, Florida to, I don't know, Atlanta, Georgia, for example.
+
+And then we click search and we get our average rate.
+
+So average rate for reefer on this lane is $1.84 and it ranges from $1.49 to $2.12 and that's $1,222
+
+per trip.
+
+And we can actually this is broker to carrier spot.
+
+We can actually see shipper to carrier contract.
+
+So we see that the contract rate is actually relatively higher.
+
+It's $1,667 when a carrier gets the load directly from the shipper and it's only $1,222 when you get
+
+the same load from the broker.
+
+So very simple tool.
+
+This is the same thing as what's available to you when you search for loads.
+
+But if you don't want to go and do a full search, you can just very quickly check the lane.
+
+That's why it's called a quick rate search.
+
+Okay.
+
+So then we have the trend lines.
+
+We've already seen that that's available to us.
+
+Data directory.
+
+That's just a directory where you can search companies.
+
+I'm not going to click on it now, but you can search by number or by company name by phone number,
+
+and you can search any carrier or any broker.
+
+Okay.
+
+So all of the tools are not really important to us and my subscription allows me to search for trucks
+
+so I can actually go and search for loads and then go and search for trucks and kind of compare that
+
+statistics.
+
+That's going to be the same statistics as the load to truck ratio that we've already seen.
+
+Okay.
+
+So data is not the only load board that collects data and provides analysis tools.
+
+Actually, the next module, module six is going to be all about load boards and how to get subscribed
+
+to them.
+
+The two main competitors of data are truck stop and one, two, three load boards.
+
+Truck Stop provides a very similar set of tools to data.
+
+You can check average rates load to track ratio and rate trends.
+
+I'm not going to stop and show it to you.
+
+It's very, very similar to data.
+
+You'll have no problem using it, although it's a bit tricky to get for a beginner dispatcher unless
+
+your employer provides an account for you.
+
+But what I do want to show you today is 1 to 3 load boards and the tools it provides because it's the
+
+easiest load board to get for a beginner dispatcher, it's most likely you will have a one, two, three
+
+load board account even before you have a data account.
+
+So you'll most likely have access to it.
+
+And let's see what tools are available here.
+
+So I'm logged in to my account.
+
+This is how my dashboard looks here on the left.
+
+I have the menu, I have find loads.
+
+It's essentially the exact same thing as load search on data.
+
+You'll be able to use it.
+
+No problem.
+
+I have load availability here, so it's called a density list.
+
+This is actually the exact same thing we saw on the data trackers edge, if you remember the in and
+
+out ratio.
+
+So this is the same here.
+
+Inbound will be the in and outbound will be the out.
+
+But one, two, three load board also provides us information on the state loads the loads inside the
+
+states so I can scroll and it provides me all the states and then I can also sort it by trailer type
+
+and by specific region as well.
+
+It's not something it allows me to do.
+
+And then we also have the density map.
+
+This is very, very similar to the one we saw on the gig.
+
+Again, this one shows the load to truck ratio, except the color coding is different.
+
+So here green means high loads are available, medium is orange, means loads are slightly limited and
+
+then red low loads are limited.
+
+And then once again I can just go to each state and it will show me the in and out ratio very, very
+
+similar to get.
+
+So if you don't have a data account yet, you'll be able to get one, two, three load board account
+
+very easily after you watch module six and you'll have all these tools available to you.
+
+Another thing I want to show you is the load planner over here.
+
+This is something unique to the one, two, three load board.
+
+So actually here I can add a truck and I can choose my equipment.
+
+Van, reefer, flatbed.
+
+Let's just go with Van and I can enter miles per gallon so I can enter the fuel consumption of the truck.
+
+And it will show me not just the total rates, but also the profits after the fuel.
+
+So if if you talk to your driver, you can get the the mileage, the fuel consumption that his truck
+
+gets and you'll be able to provide that statistics for them if they want.
+
+So I'm just going to save this truck here quickly.
+
+And this is actually going to build a route plan for me.
+
+So this is a great tool for beginners and let's see how it works.
+
+Where is your truck located?
+
+So I can put in a date.
+
+Okay.
+
+Let's just say like today Origin Point and let's say Indianapolis, for example.
+
+We'll go for Indiana this time.
+
+Here we go.
+
+Indianapolis, Indiana.
+
+Okay.
+
+And then where would you like to be in a few days?
+
+I can input a date.
+
+Let's well, if we start it on Wednesday, let's say we have Wednesday to Wednesday, a full week and
+
+then destination.
+
+I can choose.
+
+Let's say we we're loading this truck for a week and then we need to bring it back to Indianapolis.
+
+There you go.
+
+Okay, so this is supposed to give us a route plan for a week worth of work for a truck coming out of
+
+Indianapolis.
+
+And that needs to come back to Indianapolis here.
+
+States served.
+
+I can choose specific states where this carrier operates.
+
+If I have limits.
+
+For now, I'm just going to leave it.
+
+I'm going to leave it, you know, all the states.
+
+So let's see how this works.
+
+Oh, yeah, I can choose certain regions.
+
+I'm not going to do that now.
+
+Let's give it full freedom and let's see what kind of route plan it creates for us.
+
+So load size here.
+
+I can only choose full loads.
+
+This will not help me with the partial load consolidation.
+
+Maximum length, of course, 53ft, maximum weight.
+
+Let's just go wherever £45,000 maximum posting age.
+
+Okay.
+
+So if I want to see only recent loads, then I can choose 30 minutes or 1 hour.
+
+Or if I don't really care, I can choose eight hours.
+
+So it will be choosing amongst loads that have been posted no later than eight hours ago and then maximum
+
+loads per trip.
+
+This also depends on on my carrier.
+
+Maybe he wants to.
+
+He's okay to do one load every day.
+
+Or maybe he wants to only go out and come back.
+
+So this way I will choose maximum loads per trip too.
+
+So I can only do one load out, one load in.
+
+I'm just going to keep it.
+
+Whatever I'm in.
+
+Five loads is doable in one week, so I'm just going to put five radius limits.
+
+This is going to be my dad had maximum deadhead is going to be 100 miles.
+
+Okay.
+
+I'm okay with that.
+
+And load mile range.
+
+I can also play around with that.
+
+I don't know if my carrier, for example, only wants to do one day load.
+
+Well, let's choose it.
+
+Let's say my carrier only wants to do one day loads.
+
+And this way I know that he can do maximum 750 miles.
+
+Or let's even say maybe he can do maximum.
+
+Oops.
+
+It's not very convenient to use.
+
+Let's say he only does maximum 750.
+
+Wow.
+
+This doesn't let me choose.
+
+He only does maximum 700, 650 miles.
+
+There you go.
+
+I hope it works.
+
+Yeah.
+
+Maximum 650 miles.
+
+So in the load mile range, I'm putting a maximum of 650 miles.
+
+Let's just do it here.
+
+Maximum loss per trip.
+
+Ten because anyway, the, the largest or the longest load it will show me is actually 650 miles.
+
+And then I can either do the leg view and choose each load individually or I can do a trip view.
+
+So this will actually build a whole trip for me.
+
+Okay, let's check what we put one week.
+
+Let's find trips.
+
+So now this is analyzing hundreds of thousands of possible routes or actually more than a million possible
+
+routes and supposedly right now is going to present me an optimal route plan for my truck, for my drive.
+
+And that's starting on Wednesday and needs to come back to the same place, Indianapolis, Indiana on
+
+Wednesday.
+
+Wow.
+
+This is taking very long to analyze.
+
+Okay.
+
+There you go.
+
+So what did it provide?
+
+This trip has seven loads.
+
+Wow.
+
+Mileage 2541 miles.
+
+The total deadhead is 411 418 revenue per day, $1,192 Costs fuel costs per day, $455.
+
+So that's taken from my mile per gallon fuel consumption and total cost of tolls per day is $11.
+
+So the profit per day is $725.
+
+It's actually not so bad.
+
+Let's see, what are the loads?
+
+There you go.
+
+So it starts with the first one, Point A to point B, it took me from Indiana to Kentucky and then
+
+from.
+
+Indiana to Alabama.
+
+Well, I guess I had to death.
+
+I guess I went down to.
+
+Kentucky, but then had to dead head back to Indiana, then in the end a little bit.
+
+And then it took me to Alabama from Alabama to Kentucky, Ohio to Virginia, Virginia to Georgia, Georgia
+
+to Georgia, Georgia, back to Indianapolis.
+
+So this actually did pretty well.
+
+I don't know in reality how this would work out.
+
+Obviously, it hasn't booked these loads for me, but it provided me the company.
+
+So the brokers that have these loads and now I can call these brokers you see here, call the company
+
+directly to confirm availability and rate.
+
+So based on this route plan, I can start calling brokers and then negotiating.
+
+Maybe I will even be able to negotiate more than the load board provided me because for each load I
+
+can confirm my rate so I can actually tell them like, Hey, you told me that I can book this load for
+
+$1,000, but actually I got 1000 hundred dollars.
+
+So then it will recalculate my daily profits.
+
+There you go.
+
+It's it will look for loads for you.
+
+It will make a route plan for you.
+
+I think this is a fantastic tool.
+
+If I were you, I would play around with it a little bit, see how to use it to the full potential and
+
+utilize it in my day to day operations.
+
+So that's the load planner.
+
+What else do we have here on the one, two, three load boards?
+
+My loads post tracks, rate check rate check is going to be the same as the quick rate lookup we just
+
+saw on that.
+
+So I can just input the pickup location, delivery location.
+
+It will give me average rates.
+
+Profit calculator.
+
+Once again, I can input the mileage how much I get per gallon, total cost.
+
+Even dispatch fee is available here.
+
+So you can really use this 1 to 3 load board to provide some additional value for your carrier.
+
+You can when you start working with a new customer, you can tell them, hey, not only do dispatching,
+
+but I'll also calculate your profitability so you can input your dispatch fee here.
+
+Let's say you take 4% if you check with him, how many miles per gallon his truck makes?
+
+You can not only book loads for him, but actually calculate his profits.
+
+So that's extremely convenient.
+
+And then we have a mileage calculator.
+
+So that's also a very good tool.
+
+If you're not satisfied with Google Maps or you can double check your your maps, you can go here and
+
+actually input an exact address, Not necessarily.
+
+You can just put a city.
+
+Let's just try it in Atlanta, Georgia, for example, going to Miami, Florida.
+
+Mhm.
+
+Miami, Florida.
+
+There you go.
+
+Calculate.
+
+So.
+
+You can double check your mileage here and actually total total cost.
+
+So there are many questions about how to calculate tolls.
+
+There you go.
+
+You can use one, two, three load board to calculate tolls.
+
+And the reason you can double check this because it uses Google map for interactive maps, but it also
+
+uses PC Mailer, which is a GPS, a map that's made specifically for truckers.
+
+So the routes in this map will be specific for trucks.
+
+And if there is, there are some roads that that 18 Wheeler truck cannot go to.
+
+Google Maps will not show that to you.
+
+But PC Miller will.
+
+So this is actually a great tool to double check your your routes, your mileage and your total cost.
+
+And then once again, they included the profit calculator in here as well.
+
+So you can also do the profit calculations.
+
+Here's what you get with one, two, three load board subscription.
+
+The tools are fantastic, and in the next module, I'll show you how to get subscriptions to all these
+
+load boards.

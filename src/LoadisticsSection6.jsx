@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -196,7 +197,7 @@ const slides = [
         "(2) Eastern, Central, Mountain, Pacific.",
         "(3) **Load boards** (they list broker contacts).",
         "(4) East-coast brokers post early; you can grab good loads before others.",
-        "(5) **D8**."
+        "(5) **DAT board**."
       ]
     },
     trainerNotes: [
@@ -407,7 +408,13 @@ export default function LoadisticsSection6({ onNavigateToSection, sectionDropdow
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={6}
+                  /> </div>
               </div>
 
               <div className="space-y-6">

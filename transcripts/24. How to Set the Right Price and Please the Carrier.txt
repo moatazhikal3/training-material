@@ -1,0 +1,385 @@
+Hi, it's me again.
+
+Dimitri Demichev, your coach in the world of dispatching.
+
+We've reached an advanced module of our training.
+
+You can already proudly call yourself a dispatcher.
+
+Your level of knowledge is quite developed at this point.
+
+Now it's time to grow to the title of a professional dispatcher.
+
+A key stage of growth is in-depth knowledge of the freight market and its analysis tools, as well as
+
+professional negotiating and networking skills.
+
+In this module, I will provide practical tools and useful information to support them.
+
+Now, it's especially important to take notes of every insight, every tool and its explanation, so
+
+that you can simply open a notebook and repeat what I'm going to teach you today.
+
+So let's get going.
+
+Transportation Company Objectives.
+
+In the third module.
+
+When we talk about planning, we determine that the most important first step to planning is to identify
+
+the goals of the transportation company and each individual truck driver.
+
+If you remember, we distinguish between two basic types of goals.
+
+The first one was financial goals.
+
+They are calculated in miles and dollars, and there are three main indicators total mileage, which
+
+is the total number of miles traveled by the truck.
+
+Gross rate, the total income the truck generated and rate per mile.
+
+How much money the truck earned for each mile traveled.
+
+This one determines the margin of the trucking company because each mile costs money drivers, salary,
+
+fuel and so on.
+
+The second type of goal is operational.
+
+These can include the areas and states in which the trucking company operates the length of the load
+
+that the driver prefers.
+
+For example, maybe he prefers short one day trips of up to 700 miles or two day trips of 1000 miles
+
+or more or coast to coast loads that travel through the whole country, such as Los Angeles to New York,
+
+which is about 2800 miles.
+
+That's a load for the whole week from Monday through Friday, by the way, working as a dispatcher for
+
+a carrier that runs coast to coast loads is quite awesome.
+
+You put in one day of hard work, find the best load and then you don't need to search for any more
+
+loads for this truck for the whole week.
+
+Pretty sweet, right?
+
+What else can be included in operational goals?
+
+Such factors as drivers home time.
+
+So how often you need to bring a driver back home?
+
+Load weight restrictions.
+
+Commodity restrictions, for example.
+
+Some drivers will not transport pork or alcohol for religious or cultural reasons and so on.
+
+Based on these parameters provided to you by the carrier, at the beginning of the week, a dispatcher
+
+sets himself a weekly task for each truck.
+
+This task should be quite simple and clear, so you can look at it quickly and refresh your memory.
+
+When you switch from one truck to another, it can be written out on a sheet of paper, printed out,
+
+hung up in your workspace, or stored in an electronic document.
+
+An example of such a plan could be as follows A weekly plan, let's say driver Jason Truck number 550
+
+to drive on location on Monday.
+
+Chicago, Illinois.
+
+Ready to go anytime, anywhere.
+
+Weekly miles should be above 2500 weekly minimum gross $6,500.
+
+Average rate per mile should be above 2.5.
+
+Maximum weight, £44,000 and has to come back to Chicago next Monday.
+
+Based on this task, a dispatcher will typically build an approximate route plan.
+
+Of course, as you sit down and start calling on loads, that plan may change because I mean a really
+
+nice load might pop up in another unplanned area or the driver could get held up at a delivery and lose
+
+a day and the plan goes to waste.
+
+It's normal in logistics when all the plans fall apart.
+
+That's why we learn how to make them so you can assess the situation at any time without any panic and
+
+adjust your plan to account for any unforeseen occurrences.
+
+A view at the freight market.
+
+So in order to start creating a plan, let's start by looking at a map of the United States.
+
+America is made up of 50 states, and when a carrier wants to say that he drives all over the country,
+
+he often says, I run all 48 states.
+
+That's because Hawaii and Alaska are not part of the tracking area.
+
+Hawaii is an island.
+
+And to get to Alaska, you first have to drive through all of Canada.
+
+Apart from states in trucking, we also divide the entire country into zones.
+
+There are five key zones that we identify Northeast, Southeast, Midwest, Southwest and West.
+
+Americans are a bit strange with their geography.
+
+For instance, Ohio State.
+
+Which is right here in the east, is actually located in a zone called Midwest.
+
+Makes no sense to me, but you'll get used to it pretty quickly.
+
+The United States can also be divided into smaller zip zones.
+
+A zip code is a five digit postal code.
+
+Each city and town has its own zip code, and the first digit of that zip code is responsible for a
+
+wide area that may include several states or parts of states at once.
+
+When searching for a load or posting a truck on a load board, you can designate a movement zone using
+
+one of the ten zip zones instead of having to write out each individual state.
+
+The division of these zones can be found by downloading the appendix to this lesson.
+
+The state and zip zones are good for a general understanding of how the truck moves.
+
+We can use them to plot a route.
+
+When we plan the number of miles.
+
+For example, we can say that we will send our driver from Chicago first down to Georgia, then to New
+
+Jersey.
+
+From there, we'll take him back to Midwest on the way home to Zone Z four.
+
+And from there, we will book him a short load back to Chicago.
+
+That's already a pretty good plan.
+
+That plan would get the driver anywhere between 2500 to 3000 miles, which is great for one week.
+
+However, our planning doesn't end there.
+
+It's not enough to just decide on states.
+
+The shipment of goods doesn't happen all over the state.
+
+At the same time, there are places in a certain state where it's easy to find loads from, and then
+
+there are places where freight is scarce and you have to deadhead drive empty for a long time to get
+
+to the right load.
+
+Take Texas, for example, which is the largest state by area.
+
+East of Texas is one of the key transportation areas in the United States.
+
+There's the city of Dallas.
+
+And just south of that is a major international port in Houston.
+
+Sending a truck to one of the cities is usually a good idea.
+
+Freight is shipped from these points throughout the country year round.
+
+However, central and western Texas is a desert area.
+
+Sending a truck to San Angelo, which is geographically in the heart of Texas, will make it difficult
+
+to find loads, and you'll very likely have to move the truck empty for hundreds of miles.
+
+So how do you identify the right areas within the state?
+
+Consider the following map, which is also available for download in the appendix of this lesson.
+
+Each US state has key market areas.
+
+These areas represent a major city, an economic or manufacturing center and its area a number of small
+
+towns that are close to it and that benefit from their geographic location.
+
+The bigger the city, the more it trades with other cities, the more demand it has for trucking.
+
+It all makes sense.
+
+Every state has a certain number of such areas.
+
+For example, Texas has a lot of them.
+
+Fort Worth.
+
+Dallas.
+
+Houston.
+
+Austin.
+
+San Antonio.
+
+McAllen.
+
+Laredo.
+
+El Paso.
+
+In New Mexico, there's only one Albuquerque, home of the great chemist, Walter White, from Breaking
+
+Bad.
+
+And in Nevada, for example, there are two Reno and Las Vegas.
+
+Of all the areas on the map, we can distinguish the main ones, transportation hubs.
+
+These are the junctions of several modes of transportation, such as air, rail and so on, working
+
+together to serve, transit, local and urban traffic.
+
+So major transportation hubs are.
+
+Boston, Massachusetts.
+
+Cleveland, Ohio.
+
+Chicago, Illinois.
+
+Minneapolis, Minnesota.
+
+Kansas City.
+
+Kansas.
+
+Saint Louis, Missouri.
+
+Dallas, Texas.
+
+Houston, Texas.
+
+And San Francisco, California.
+
+Next, major logistic centers, which include the highest number of distribution facilities, are.
+
+Phoenix, Arizona.
+
+Denver, Colorado.
+
+Oklahoma City.
+
+Oklahoma.
+
+Little Rock, Arkansas.
+
+Nashville, Tennessee.
+
+Columbus, Ohio.
+
+And Detroit, Michigan.
+
+Then cities with key international ports for import and export.
+
+These are New York City State of New York.
+
+New Jersey.
+
+State of New Jersey.
+
+Baltimore, Maryland.
+
+Norfolk, Virginia.
+
+Charleston, South Carolina.
+
+Savannah, Georgia.
+
+Jacksonville, Florida.
+
+Miami, Florida.
+
+Mobile, Alabama.
+
+New Orleans, Louisiana.
+
+Once again, Houston, Texas.
+
+Los Angeles, California.
+
+As well as Oakland, California.
+
+And Seattle, Washington.
+
+And finally, the so called inland ports.
+
+These are Stockton, California, Inland Empire, California.
+
+Once again, Fort Worth, Texas.
+
+Memphis, Tennessee.
+
+Saint Louis, Missouri.
+
+Kansas City, Kansas.
+
+Chicago, Illinois.
+
+Columbus, Ohio.
+
+Charlotte.
+
+North Carolina and Atlanta, Georgia.
+
+Key market areas are usually connected between one another by the key transportation corridors of the
+
+country, the highway system.
+
+This highway system is called interstate.
+
+Each highway has its own number.
+
+For example, I-95 runs all along the East Coast and I-5 runs all along the West Coast.
+
+Memorizing all the key cities in each state is a long and painful task, especially since trucking activity
+
+will vary from zone to zone at different times of the year.
+
+To get started, you can use one simple rule of thumb Looking at each available load, you will need
+
+to go into the map and input the city to which it's headed.
+
+The first thing to look is whether the unloading point is near a major city.
+
+If the unloading point is close to the water, see how far away the nearest major port is.
+
+This will give you an initial idea of how difficult or easy it will be to get out of that city.
+
+When looking for your next load, your next step will, of course, be to log back in to the load board
+
+and check for loads coming out of that city.
+
+The destination point of your previous load.
+
+A quick check of the demand for your next move.
+
+At this point that head settings will come in very handy.
+
+Perhaps there is nothing within a 30 mile radius, but you see that the major city is only 60 miles
+
+away.
+
+Well, in that case, increase your deadhead and you'll most likely see many more options.

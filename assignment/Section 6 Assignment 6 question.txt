@@ -1,0 +1,52 @@
+Main Question:
+
+Get access to one or more of the Loadboards featured in the lesson.
+
+
+Create a load search from Atlanta, GA. Set a deadhead radius of 100 miles (small towns around this metropolis have many manufacturing and warehouse centers). Try to find routes that bring your truck close to another major city (Key Market Area). To complete assignments 1-6, write out all available route information.
+
+
+Answer Example:
+
+Marietta, GA - Charlotte, NC.
+
+Pick up date: today's date.
+
+Equipment: Flatbed 53ft.
+
+Weight: 48,000 lbs.
+
+Loaded miles: 252. 
+
+Broker: Arcbest Transportation.
+
+Broker phone: 479-785-6000.
+
+
+
+Assignment 1: find 1 option of a 1-day load from Atlanta, GA (100 mile radius) for Dry Van equipment.
+
+
+Assignment 2: find 1 option of a 2-day load from Atlanta, GA (100 mile radius) for Dry Van equipment.
+
+
+Assignment 3: find 1 option of a 1-day load from Atlanta, GA (100 mile radius) for Reefer equipment.
+
+
+Assignment 4: find 1 option of a 2-day load from Atlanta, GA (100 mile radius) for Reefer equipment.
+
+
+Assignment 5: find 1 option of a 1-day load from Atlanta, GA (100 mile radius) for Flatbed equipment.
+
+
+Assignment 6: find 1 option of a 2-day load from Atlanta, GA (100 mile radius) for Flatbed equipment.
+
+
+Assignment 7: write a template of an email that you can send to brokers after the load is successfully delivered. Be sure to thank the broker for the load; ask him how often he needs this load shipped; and ask him to add you to his mailing list. You can use this script in your future work.
+
+
+Assignment 8: Create a list of 15 brokers who have loads in Atlanta, GA and within 100 miles of it (use the brokers from previous assignments). Write the broker's company name and phone number in a separate document. This document will be the start of your own broker database.
+
+
+There are no right or wrong answers to this question. It is a practice assignment.
+

@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,178 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 29",
-    title: "Section 29 Title Placeholder",
+    title: "Loadboards Overview and How to Use Them - Part 2",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 29. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Welcome to Part 2 of Loadboards Overview. This section covers premium load boards and advanced strategies.",
+      "We'll explore DAT Load Board (market leader), Truck Stop, and broker-specific load boards.",
+      "This is critical information for dispatchers who need comprehensive load board access.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "DAT Load Board: Market Leader",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "DAT is the premier and biggest load board in the US market",
+      "Used for most demonstrations and industry standard",
+      "Essential addition to DOT and 123 Load Board accounts",
+      "Five different package options available",
+      "Required for professional dispatchers and freelancers"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "DAT is the gold standard in the industry - every professional dispatcher needs access.",
+      "Emphasize that this is the load board used in most demonstrations throughout the course.",
+      "Explain that it's essential for both employed dispatchers and independent contractors.",
+      "Mention that employers typically provide this, but freelancers need to purchase it themselves."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "DAT Load Board Packages",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Package", "Price", "Key Features"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Truckers Edge Standard", "$45/month", "Basic search, posting, mobile app, load match alarm"],
+        ["Truckers Edge Enhanced", "$95/month", "30-day historical data, average lane rates"],
+        ["Truckers Edge Professional", "$145/month", "15-day data, call-to-post, Tri-Haul routing"],
+        ["Power Office Carrier", "$195/month", "Live load board, MCI, exact match alarms"],
+        ["Power Office Carrier Pro", "$295/month", "Multiple searches, lane makers, contract rates"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Walk through each package and explain the key differences.",
+      "Emphasize that the cheapest package lacks average lane rates - crucial for beginners.",
+      "Explain that Tri-Haul helps break long loads into shorter, higher-paying segments.",
+      "Mention that Power packages offer live updates and multiple simultaneous searches.",
+      "Recommend the middle three packages for independent dispatchers."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "DAT Account Registration Challenges",
     layout: "bullets",
-    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
-    trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
-    ]
-  },
-  {
-    title: "Section Material",
-    layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 29 notes when provided."
+      "Requires US-based company name and address",
+      "Must choose 'Carrier Dispatcher' as authority type",
+      "No MC/DOT number required anymore",
+      "Two main solutions for independent dispatchers",
+      "Most dispatchers use customer accounts initially"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 29 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "This is a major hurdle for new dispatchers - explain the challenge clearly.",
+      "Emphasize that you can now register as a 'Carrier Dispatcher' without being a licensed carrier.",
+      "Explain the two main approaches: using customer accounts or opening your own US company.",
+      "Reassure trainees that using customer accounts is completely normal and acceptable practice."
+    ]
+  },
+  {
+    title: "Solution 1: Customer Account Strategy",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Request account from one of your customers",
+      "Perfectly normal and acceptable practice",
+      "Two options: pay yourself or have customer deduct from dispatching fee",
+      "Most new dispatchers start this way",
+      "Customer provides company name and address"
+    ],
+    trainerNotes: [
+      "This is the most common approach for new dispatchers - emphasize it's completely normal.",
+      "Explain both payment options: self-pay or customer deduction from dispatching fees.",
+      "Mention that you'll need to find carriers first (covered in Modules 8-9).",
+      "Reassure trainees that this is not shameful or unprofessional - it's standard practice."
+    ]
+  },
+  {
+    title: "Solution 2: Open US Company",
+    layout: "bullets",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Open company in the US remotely",
+      "No US residency or citizenship required",
+      "No visa needed - completely remote process",
+      "Use lawyer or specialized company services",
+      "Still need carrier reference for verification"
+    ],
+    trainerNotes: [
+      "This is covered in detail in Module 9 - just give overview here.",
+      "Emphasize that it's completely doable remotely without visiting the US.",
+      "Mention that even with your own company, you still need carrier references.",
+      "Explain that DAT will call the carrier to verify the dispatcher relationship."
+    ]
+  },
+  {
+    title: "Truck Stop: DAT's Main Competitor",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Website: truckstop.com",
+      "Sometimes has more loads than 123 Load Board",
+      "Three packages: Basic ($39), Advanced ($99), Pro ($149)",
+      "Excellent for flatbed, step deck, and platform trailers",
+      "Same US company requirement as DAT"
+    ],
+    trainerNotes: [
+      "Truck Stop is DAT's main competitor but not always necessary.",
+      "Emphasize it's particularly valuable for specialized equipment carriers.",
+      "Explain the package structure and pricing.",
+      "Mention that it faces the same registration challenges as DAT.",
+      "Recommend it for dispatchers working with specialized equipment carriers."
+    ]
+  },
+  {
+    title: "Broker Load Boards: Hidden Opportunities",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Large brokers post loads on their own boards first",
+      "Carriers get first pick before public posting",
+      "Examples: Amazon, Uber Freight, TCL.com",
+      "All broker load boards are completely free",
+      "Need to set up carrier with broker first"
+    ],
+    trainerNotes: [
+      "This is a hidden gem - many dispatchers don't know about broker load boards.",
+      "Emphasize that loads appear here BEFORE they hit public load boards.",
+      "Mention Uber Freight as a surprising but major player in freight brokerage.",
+      "Explain that you need to establish carrier relationships with brokers first.",
+      "Highlight that these are completely free once you have the relationship."
+    ]
+  },
+  {
+    title: "Load Board Strategy Summary",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Start with free options: DOT and 123 Load Board",
+      "Add DAT Load Board for professional work",
+      "Consider Truck Stop for specialized equipment",
+      "Set up broker load boards for first-pick access",
+      "More load boards = more opportunities for carriers"
+    ],
+    trainerNotes: [
+      "Summarize the complete load board strategy for dispatchers.",
+      "Emphasize the progression from free to paid options.",
+      "Explain that more load boards mean more opportunities to offer carriers.",
+      "Mention that this gives dispatchers a competitive advantage.",
+      "Reassure that finding carriers (needed for paid accounts) is covered in later modules."
+    ]
+  },
+  {
+    title: "Complete Load Board Reference List",
+    layout: "materials",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    pdf: "/training-material/section29/pdfs/Loadboardlist.pdf",
+    trainerNotes: [
+      "This PDF contains a comprehensive list of all load boards discussed in this module.",
+      "Includes free load boards, paid load boards, and major broker load boards.",
+      "Use this as a reference when setting up carriers with different brokers.",
+      "The list is organized by type and includes key features and pricing information.",
+      "This is your complete toolkit for load board access as a professional dispatcher."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +428,13 @@ export default function LoadisticsSection29({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={29}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -368,6 +472,31 @@ export default function LoadisticsSection29({ onNavigateToSection, sectionDropdo
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {slide.layout === "materials" && slide.pdf && (
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <h3 className="text-lg font-semibold mb-4">Complete Load Board Reference List</h3>
+                      <p className="text-gray-600 mb-4">Comprehensive list of free, paid, and broker load boards with features and pricing</p>
+                    </div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <iframe
+                        src={slide.pdf}
+                        className="w-full h-96 md:h-[600px]"
+                        title="Load Board List PDF"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <Button
+                        onClick={() => window.open(slide.pdf, '_blank')}
+                        variant="outline"
+                        className="rounded-xl"
+                      >
+                        Open PDF in New Tab
+                      </Button>
+                    </div>
                   </div>
                 )}
 

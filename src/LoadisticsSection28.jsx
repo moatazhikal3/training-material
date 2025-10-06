@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,143 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 28",
-    title: "Section 28 Title Placeholder",
+    title: "Loadboards Overview and How to Use Them - Part 1",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 28. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Welcome to Module 6 - Loadboards Overview. This is a critical module for dispatchers.",
+      "The biggest problem for aspiring dispatchers is not knowing where to find loads and broker contacts.",
+      "After this module, trainees will have a full set of tools to find loads and build relationships.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "The Load Board Challenge",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Load board accounts can be challenging to obtain",
+      "Providers check everything down to the smallest detail",
+      "Some require individual employee registration with official company listing",
+      "IP address verification against registered company office location",
+      "Business requirements: over 1 year in business or 5+ references",
+      "US market is more lenient but still requires creativity"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Emphasize that this is a real challenge that many dispatchers face.",
+      "Explain that load board providers are very strict about verification to prevent fraud.",
+      "Mention that European and Asian markets are even more restrictive than the US.",
+      "Reassure trainees that we'll show them how to navigate these requirements."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Common Questions from New Dispatchers",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "How do you find brokers?",
+      "How do you get a load board account?",
+      "What load board to choose and where to start?",
+      "These questions come up daily from aspiring dispatchers",
+      "Most training courses don't address this critical topic"
+    ],
+    trainerNotes: [
+      "These are the exact questions I receive daily on social media.",
+      "Most dispatcher training courses completely skip this topic.",
+      "This is why we're dedicating an entire module to load boards.",
+      "By the end of this module, trainees will have answers to all these questions."
+    ]
+  },
+  {
+    title: "Load Board Strategy: Start with Free Options",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "First step: Sign up for free load boards",
+      "Start with DOT (doft.com) - completely free",
+      "150,000+ loads posted daily",
+      "Zero cost per month for unlimited searches",
+      "Freemium model: free basic features, paid advanced tools",
+      "No MC number or DOT number required for registration"
+    ],
+    trainerNotes: [
+      "DOT is the easiest load board to start with - completely free and no requirements.",
+      "Emphasize the 150,000+ daily loads - this is a massive marketplace.",
+      "Explain the freemium model: free for basic load searching and truck posting.",
+      "Highlight that you can even sign up as an individual without a company name."
+    ]
+  },
+  {
+    title: "DOT Load Board Features",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Feature", "Description"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Registration", "Individual or company - no MC/DOT required"],
+        ["Search", "Unlimited load searches at no cost"],
+        ["Posting", "Post trucks for free"],
+        ["Broker Contacts", "Access to phone numbers and contact information"],
+        ["Mobile App", "Available for both computer and phone"],
+        ["Paid Features", "Rate analysis and market data tools"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Walk through each feature in the table.",
+      "Emphasize how easy the registration process is compared to other load boards.",
+      "Show them how to access broker contact information - this is crucial for dispatchers.",
+      "Mention the mobile app for on-the-go load searching."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "123 Load Board: Premium Features",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    bullets: [
+      "Standard package: $35 per month",
+      "Premium Plus package: $55 per month",
+      "Features: Mileage maps, credit scores, load planner",
+      "Up to 3 users can share one account",
+      "10-day free trial available",
+      "Company name optional for registration"
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "123 Load Board offers more advanced features than DOT.",
+      "The $55 premium package includes all analysis tools - great value.",
+      "Emphasize the 10-day free trial - this is key for testing the platform.",
+      "Explain that up to 3 people can use one account, making it cost-effective for teams."
     ]
   },
   {
-    title: "Section Material",
+    title: "123 Load Board Trial Strategy",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 28 notes when provided."
+      "Sign up for 10-day free trial",
+      "Choose the most expensive package to access all tools",
+      "Set a reminder to cancel before trial ends",
+      "When canceling, they often offer additional free days",
+      "Current strategy: Can use for up to 1 month free",
+      "Use all features to maximum during trial period"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 28 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "This is a pro tip that can save trainees significant money.",
+      "Emphasize setting a reminder - automatic billing starts after trial.",
+      "Explain the cancellation trick - they often offer more free time to keep you.",
+      "Encourage trainees to use every feature during the trial to learn the platform."
+    ]
+  },
+  {
+    title: "Load Board List Reference",
+    layout: "materials",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    pdf: "/training-material/section29/pdfs/Loadboardlist.pdf",
+    trainerNotes: [
+      "This PDF contains a comprehensive list of load boards available in the market.",
+      "Each load board is categorized by type, cost, and features.",
+      "Use this as a reference guide when trainees ask about specific load boards.",
+      "The list includes both free and paid options with detailed descriptions.",
+      "This is your go-to resource for load board recommendations and comparisons."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +393,13 @@ export default function LoadisticsSection28({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={28}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -368,6 +437,31 @@ export default function LoadisticsSection28({ onNavigateToSection, sectionDropdo
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {slide.layout === "materials" && slide.pdf && (
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <h3 className="text-lg font-semibold mb-4">Load Board List Reference</h3>
+                      <p className="text-gray-600 mb-4">Comprehensive list of load boards with features and pricing</p>
+                    </div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <iframe
+                        src={slide.pdf}
+                        className="w-full h-96 md:h-[600px]"
+                        title="Load Board List PDF"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <Button
+                        onClick={() => window.open(slide.pdf, '_blank')}
+                        variant="outline"
+                        className="rounded-xl"
+                      >
+                        Open PDF in New Tab
+                      </Button>
+                    </div>
                   </div>
                 )}
 

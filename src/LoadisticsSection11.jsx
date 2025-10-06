@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,254 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 11",
-    title: "Section 11 Title Placeholder",
+    title: "Step 3 — Finding Loads on the Loadboard: Active Search, Parameters, and Rate Analysis",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 11. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "We're moving from passive to active dispatching. No more waiting by the phone.",
+      "This is where real dispatchers separate themselves from beginners.",
+      "We'll use Derek in Chicago as our example - he's unloading today and needs his next load.",
+      "By the end of this section, you'll search loadboards like a professional.",
+      "QUESTIONS: Quick poll: How many of you have actually used a loadboard search function? What's the difference between posting a truck and searching for loads?",
+      "ANSWERS: Answer: Posting = passive (waiting for calls), Searching = active (you make the calls). Answer: Most successful dispatchers do both simultaneously"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "From Posting to Searching",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Previous Step: We posted our truck on the loadboard for brokers to see",
+      "Real World Reality: We can't just sit around waiting for calls",
+      "Active Approach: Pick up the phone and start making calls ourselves",
+      "Today's Focus: Using our second driver Derek in Chicago as an example",
+      "Goal: Learn systematic load searching and evaluation techniques"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Remember our 10-step process? We posted Derek's truck, got some calls, found a decent load.",
+      "But we can't just sit around drinking coffee waiting for the phone to ring.",
+      "Professional dispatchers are proactive - they hunt for the best opportunities.",
+      "Derek's in Chicago, which gives us a perfect example of market analysis.",
+      "QUESTIONS: Why can't we just wait for brokers to call us? What happens if we only rely on incoming calls?",
+      "ANSWERS: Answer: You miss better opportunities and limit your options. Answer: Other dispatchers are actively calling on the same loads"
     ]
   },
   {
-    title: "Placeholder Slide 2",
-    layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    table: {
-      headers: ["Topic", "Description"],
-      rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
-      ]
-    },
-    trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
-    ]
-  },
-  {
-    title: "Knowledge Check",
-    layout: "bullets",
-    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
-    trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
-    ]
-  },
-  {
-    title: "Section Material",
+    title: "Check the Market Before You Search",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 11 notes when provided."
+      "National Load Counts: Always check in/out ratios for your state",
+      "Illinois Example: 984 loads coming in, 620 loads going out",
+      "Market Assessment: Not a hot state - more trucks than loads available",
+      "Rate Expectations: Shouldn't expect crazy high rates from Illinois",
+      "Strategic Thinking: Still 600+ loads available - plenty of opportunities"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 11 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Before we start searching, we need to understand our market position.",
+      "Illinois: 984 loads in, 620 loads out - that's not a hot market.",
+      "More trucks than loads usually means lower rates, but 600+ loads is still plenty.",
+      "Smart dispatchers check these numbers before setting rate expectations.",
+      "QUESTIONS: What does 984 in, 620 out tell us about Illinois? Should we avoid markets with poor in/out ratios?",
+      "ANSWERS: Answer: More freight coming in than going out - not ideal for outbound rates. Answer: No, just adjust expectations and negotiate accordingly"
+    ]
+  },
+  {
+    title: "Setting Up Your Load Search",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Menu Selection: Choose 'Search Loads' instead of 'My Trucks'",
+      "Origin Point: Enter where your truck is currently located",
+      "Deadhead to Origin: Radius truck will travel empty to pickup",
+      "Standard Practice: 75 miles = about 1 hour drive in any direction",
+      "Destination: Can specify city/state or leave blank for all options"
+    ],
+    trainerNotes: [
+      "Now we switch from 'My Trucks' to 'Search Loads' - completely different mindset.",
+      "Origin is Derek's current location - Chicago, Illinois.",
+      "Deadhead to Origin: How far will Derek drive empty to pickup? 75 miles = 1 hour.",
+      "Destination can be specific or blank - blank gives us all options.",
+      "QUESTIONS: Why do we limit deadhead distance? What's the cost of deadhead miles?",
+      "ANSWERS: Answer: Empty miles cost money (fuel, driver time, wear) without revenue. Answer: Reduces overall rate per mile and profit margin"
+    ]
+  },
+  {
+    title: "Key Search Parameters",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Equipment Type: Match your trailer (Van Standard, Reefer, Flatbed)",
+      "Date Range: Today only for immediate loads, or expand for planning",
+      "Load Requirements: Full loads, partial loads, or both",
+      "Length and Weight: 53ft standard, maximum legal weight 45,000 lbs",
+      "Filter Strategy: Start broad, then narrow down based on results"
+    ],
+    trainerNotes: [
+      "Equipment type must match exactly - Derek has a standard dry van.",
+      "Date range: today only if he needs to move now, or expand for planning.",
+      "Load requirements: full, partial, or both - affects how you pack the trailer.",
+      "Weight limits: know your driver's preferences and legal maximums.",
+      "QUESTIONS: Why would a driver refuse certain weights? What's the difference between full and partial loads?",
+      "ANSWERS: Answer: Driver comfort, truck capability, or company policy. Answer: Full = entire trailer space, Partial = can add more freight"
+    ]
+  },
+  {
+    title: "Refining Your Search",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Search Back: Filter by posting age (1 hour = fresh loads only)",
+      "Company Preferences: Block specific brokers (premium feature)",
+      "Private Loads: Special loads for selected carriers",
+      "Book and Bid: Loads you can book instantly without calling",
+      "Reality Check: Only 3 out of 400+ loads typically bookable instantly"
+    ],
+    trainerNotes: [
+      "Search back by age: fresh loads (1 hour) vs older postings.",
+      "Older loads might still be available if broker forgot to remove them.",
+      "Book and bid loads: instant booking, but very rare - only 3 out of 400+.",
+      "Most loads require phone calls and negotiation.",
+      "QUESTIONS: Should we only look at fresh loads? Why are so few loads instantly bookable?",
+      "ANSWERS: Answer: No, older loads might have less competition. Answer: Brokers want to negotiate rates and vet carriers personally"
+    ]
+  },
+  {
+    title: "Reading Load Board Results",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Age: How long ago the load was posted (auto-updating)",
+      "Rate: Posted rate (not always shown, always negotiable)",
+      "Trip Miles: Distance from pickup to delivery only",
+      "Deadhead Indicator: Shows empty miles from your location",
+      "Total Calculation: Trip miles + deadhead = total mileage for rate calculation"
+    ],
+    trainerNotes: [
+      "Age shows when posted - board updates automatically with new loads.",
+      "Rate isn't always shown, but when it is, it's still negotiable.",
+      "Trip miles is pickup to delivery only - doesn't include your deadhead.",
+      "Deadhead indicator shows empty miles from your current location.",
+      "QUESTIONS: How do you calculate total mileage for rate analysis? Why don't all brokers post rates?",
+      "ANSWERS: Answer: Trip miles + deadhead miles = total mileage. Answer: They want carriers to call so they can negotiate lower rates"
+    ]
+  },
+  {
+    title: "Analyzing Individual Loads",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Click for Details: Full description popup with complete information",
+      "Weight and Commodity: Understand what you're hauling",
+      "Full vs Partial: Affects loading/unloading and additional freight",
+      "Company Information: Broker name, location, contact method",
+      "Credit Information: Reviews, credit score, days to pay average"
+    ],
+    trainerNotes: [
+      "Always click for full details - short descriptions miss important information.",
+      "Weight and commodity tell you what you're really hauling.",
+      "Company information shows broker reputation and payment history.",
+      "Credit scores and days to pay help you assess risk.",
+      "QUESTIONS: What's the most important detail to check first? Why does broker credit score matter?",
+      "ANSWERS: Answer: Weight, pickup/delivery times, and any special requirements. Answer: Indicates reliability for getting paid on time"
+    ]
+  },
+  {
+    title: "Organizing Your Search Results",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Sort by Age: See freshest loads first (default)",
+      "Sort by Rate: Highest paying loads first (when rates posted)",
+      "Sort by Trip: Longest or shortest loads based on your needs",
+      "Sort by Deadhead: Closest pickups first",
+      "Strategic Note: New loads constantly appear and may not sort automatically"
+    ],
+    trainerNotes: [
+      "Default sort by age shows freshest loads first.",
+      "Sort by rate when you want highest paying loads (but many don't show rates).",
+      "Sort by trip for long hauls vs short runs based on driver preference.",
+      "New loads pop up constantly and may not follow your sort order.",
+      "QUESTIONS: When would you sort by trip distance? What's the advantage of sorting by deadhead?",
+      "ANSWERS: Answer: When driver wants long hauls or prefers shorter runs. Answer: Find closest pickups to minimize empty miles"
+    ]
+  },
+  {
+    title: "Using Spot Rate Information",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Broker-to-Carrier Spot: Historical average for specific lane",
+      "Rate Ranges: Minimum and maximum recent rates",
+      "Market Context: Compare with trend line data for current conditions",
+      "Negotiation Foundation: Use as starting point, not final answer",
+      "Remember: Posted rates are always negotiable"
+    ],
+    trainerNotes: [
+      "Spot rates show historical averages for specific lanes.",
+      "Use as negotiation foundation, not final answer.",
+      "Compare with market trend data to understand current conditions.",
+      "Remember: every load is negotiable regardless of posted information.",
+      "QUESTIONS: How reliable are spot rate averages? Should you always ask for rates above the average?",
+      "ANSWERS: Answer: Good baseline, but market conditions change daily. Answer: Depends on market conditions, urgency, and your negotiation skills"
+    ]
+  },
+  {
+    title: "Understanding Equipment Requirements",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Team Drivers: VM (Van with Team) for urgent deliveries",
+      "Multi-Equipment: Van OR Flatbed options",
+      "Dedicated Lanes: Regular recurring shipments",
+      "Contract Freight: Long-term arrangements vs spot market",
+      "Hot Loads: Last-minute, higher-paying urgent freight"
+    ],
+    trainerNotes: [
+      "Team loads (VM) require two drivers for faster delivery.",
+      "Multi-equipment loads can use different trailer types.",
+      "Dedicated lanes are recurring shipments - great for relationship building.",
+      "Hot loads are urgent and typically pay premium rates.",
+      "QUESTIONS: Why do team loads pay more? What's the benefit of dedicated lanes?",
+      "ANSWERS: Answer: Faster delivery, continuous driving, higher operational costs. Answer: Predictable income, stronger broker relationships, less searching"
+    ]
+  },
+  {
+    title: "Professional Load Search Approach",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Start Broad: Use wide parameters to see full market",
+      "Analyze Patterns: Identify common lanes and rates",
+      "Narrow Focus: Refine search based on carrier preferences",
+      "Call Strategy: Contact brokers on most promising loads first",
+      "Documentation: Keep notes on loads called and broker responses"
+    ],
+    trainerNotes: [
+      "Start with broad parameters to see the full market landscape.",
+      "Look for patterns in rates, lanes, and broker activity.",
+      "Narrow your focus based on what your carrier actually wants.",
+      "Call the most promising loads first - they won't wait.",
+      "QUESTIONS: Why start broad instead of narrow? How do you prioritize which loads to call first?",
+      "ANSWERS: Answer: Get full market picture before making decisions. Answer: Best rates, shortest deadhead, preferred lanes, broker reputation"
+    ]
+  },
+  {
+    title: "Section 11 Resources",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Practice Exercise: Search loads for different equipment types",
+      "Rate Comparison: Compare spot rates across multiple lanes",
+      "Search Templates: Parameter checklists for different scenarios",
+      "Broker Contact: Log template for tracking calls and responses",
+      "Next Step: Sample dispatcher call and negotiation techniques"
+    ],
+    trainerNotes: [
+      "Practice with different equipment types to understand market variations.",
+      "Compare rates across multiple lanes to identify hot and cold markets.",
+      "Use our templates to stay organized and track your progress.",
+      "Next up: we'll listen to an actual dispatcher call and negotiation."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +504,13 @@ export default function LoadisticsSection11({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={11}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -379,7 +559,7 @@ export default function LoadisticsSection11({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(10)} 
-                        disabled={11 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 10)

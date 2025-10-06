@@ -1,0 +1,265 @@
+Hi.
+
+In this lesson, we continue learning the hours of service regulations in detail, referring to the
+
+rules set forth by the Federal Motor Carrier Safety Administration.
+
+Let's start reviewing this topic from the very beginning.
+
+Like we didn't even go over it in the previous lesson.
+
+The hours of service provisions focus on when and how long a driver is allowed to be on the job.
+
+By setting specific limits on the amount of time a driver can operate a truck and the total number of
+
+hours a driver can be on the job before he or she is prohibited from using the commercial vehicle.
+
+You must always follow the four limits.
+
+These are the 14 hour work window, the 11 hour driving limit, the 30 minute break requirement, as
+
+well as the 60 hour per seven day or 70 hour per eight day work limits.
+
+Let's break down each limit separately.
+
+The 14 hour work window.
+
+This window is generally considered a daily restriction for 18 consecutive hours.
+
+A driver is allowed to operate the vehicle and do any other job related activities after 14 consecutive
+
+hours.
+
+A driver may not work or use the vehicle for work again until he or she has rested for another ten consecutive
+
+hours.
+
+Driving is limited to the 14 hour period, even if the driver has time off from work such as lunch,
+
+break or nap during those 14 hours.
+
+This means that nothing can prolong this period if the driver has started his working hours, worked
+
+for one hour and had nothing else to do all day.
+
+His 14 hours are still ticking and he will not be able to resume work later.
+
+For example, the driver had ten continuous hours of rest and started work at 6 a.m. He can no longer
+
+drive his truck after 8 p.m. that evening, which is 14 hours after he started work.
+
+He can do other things that don't involve using his truck after 8 p.m..
+
+No one can really stop him from that.
+
+But he can no longer drive the truck until he has rested for another ten consecutive hours.
+
+I hope that's clear.
+
+Let's go to the next one.
+
+The 11 hour driving limit during the 14 consecutive hours mentioned above, a driver is allowed to drive
+
+his truck for no more than 11 hours.
+
+The driver may spend a total of 11 hours driving during the 14 hour period.
+
+However, he's not allowed to drive for more than eight hours without a break.
+
+After eight hours of continuous driving, the driver is required to take a break for at least 30 minutes.
+
+Example.
+
+The driver has been wrestling for ten consecutive hours.
+
+He then arrived at work at 6 a.m. and drove from 7 a.m. to 3 p.m. That's eight hours behind the wheel.
+
+He then took a 30 minute break as required and then can drive another three hours until 6:30 p.m..
+
+That's a total of 11 hours driving, plus 30 minutes of break time.
+
+After that, he cannot drive again until he has rested again for at least ten consecutive hours.
+
+He can do other work after 6:30 p.m. because he still hasn't used all of the 14 working hours.
+
+But he can no longer drive a commercial vehicle on public roads with the purpose of approaching a pickup
+
+or delivery location, meaning he cannot use the truck for work.
+
+From this point, it's very easy to define the 30 minute rest break requirement.
+
+Hours of service regulations require that once eight hours have elapsed since the start of continuous
+
+driving, the driver must take at least 30 minutes break before starting to drive again.
+
+It doesn't mean that the driver must wait eight hours before taking a break.
+
+The rule simply suggests that eight hours is a maximum driving time without a single break.
+
+The driver may take as many breaks as he wants.
+
+For example, if he drives for one hour and then takes a 30 minute break, he then has another eight
+
+hours of driving before he's required to take another break of another 30 minutes.
+
+It's not all that complicated.
+
+Right?
+
+And finally, the 60 or 70 hour workweek limit.
+
+Pay attention.
+
+This one is a little bit tricky.
+
+In addition to the limits described above, there is a 60 or 70 hour limit.
+
+This limit is based on a 7 or 8 day period, starting at the time specified by a motor carrier to begin
+
+at 24 hour work period.
+
+This limit is called a weekly limit.
+
+However, it's not based on a set week such as Monday through Sunday.
+
+The limit is based on a rolling or floating 7 or 8 day period.
+
+The hours of the oldest day in the floating period are deducted at the end of each new day.
+
+For example, if a driver works on a schedule of 70 hours per eight days, when a new day begins, the
+
+current day would be the newest day in your eight day period and the hours the driver worked nine days
+
+ago are excluded from the calculation.
+
+Let's look at an example of a driver schedule.
+
+As an example, in the table you see on the screen, the driver has accumulated a total of 70 work hours
+
+over an eight day period.
+
+Considering that this driver works under the 70 hours per eight day schedule, he is currently in full
+
+compliance of the hours of service rules when the driver goes into the next day of the cycle.
+
+Thursday, September the 9th.
+
+The hours from day one of the cycle are deleted from the calculation and the driver will calculate his
+
+or her hours already from day two to day nine.
+
+So Thursday to Thursday.
+
+This is exactly what I mean when I say that it's a rolling cycle.
+
+It's based on the past eight days from today.
+
+So in our example, 14 hours from September 1st were excluded and he was able to work again.
+
+He worked 14 hours on September 9th.
+
+And now he again has a total of 70 hours worked, which is still in compliance with hours of service
+
+regulations.
+
+Question for you Can the driver work another 14 hours the next day, September the 10th?
+
+Pause the video for a moment and give it a little thought.
+
+If you said he can't, you were correct.
+
+As you can see, he only worked six hours on September 2nd.
+
+So that's the amount of hours that will be deducted when the new day starts.
+
+If he drives another 14 hours on September 10th, he will go over the allowed 70 hour limit and will
+
+be in violation of the hours of service regulations.
+
+All the exact same rules apply to the 60 hour seven day driver schedule.
+
+This schedule is used by companies where drivers generally do not operate their commercial vehicles
+
+every single day of the week.
+
+Most of the companies you will work with operate on a 70 hour per eight day working schedule.
+
+So in our example, the driver is already at the limit of his weekly working hours.
+
+It would be nice to reset those hours and start from a clean slate.
+
+Luckily, such an option exists.
+
+It's called a 34 hour reset.
+
+The hours of service regulations allow a carrier to restart the 60 hour or the 70 hour cycle by having
+
+the driver spend 34 or more consecutive hours free from work.
+
+After the driver has done a 34 hour reset, his or her hours are restarted from zero and they have the
+
+full 60 or 70 hours available to them again.
+
+The 34 hour restart is an optional, not a mandatory regulatory provision.
+
+Example, if your carrier operates on the seven hour, eight day limit and the driver works 14 hours
+
+a day for five consecutive days, he has worked 70 hours.
+
+He won't be able to drive again until his total work hours fall below the 70 hour mark.
+
+However, if he decides to take advantage of the 34 hour reset, he will be able to get behind the wheel
+
+immediately after his 34 hours break from work.
+
+Typically, drivers take a 34 hour reset on the weekends.
+
+For example, a driver delivers a load on Friday.
+
+The dispatcher can find him another short load with a pickup on Friday and a delivery on Monday.
+
+The driver will pick up that load and go start his 34 hour reset.
+
+When the rest period is over, he will start moving the load.
+
+Deliver the load on Monday morning and be ready to pick up the next load.
+
+Easy.
+
+Oof!
+
+We're done.
+
+This seems like a lot of information.
+
+If you're still uncertain about how all of this works, I suggest watching this whole module again on
+
+the second try.
+
+When you already know what we're talking about.
+
+You will absorb and arrange the information in your brain more effectively.
+
+Remember, all of this is provided just for your understanding at this Patcher must know all these rules
+
+and use them for load booking and scheduling.
+
+But he's not the one following them.
+
+The driver bears the responsibility for following hours of service.
+
+Never in your work will you have to sit down and calculate working hours on a piece of paper like we
+
+did in the example.
+
+In most cases, you will simply call the driver and ask him like, Hey, how many hours do you have
+
+left today?
+
+Or something like, Hey, do we have enough time or enough hours to do another short load this week?
+
+See, it's very simple, but you're here to become a true professional and get prepared for any work
+
+scenario.
+
+So make sure you learn all these rules before you proceed.

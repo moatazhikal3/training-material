@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,44 +66,221 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 24",
-    title: "Section 24 Title Placeholder",
+    title: "Advanced Load Board Tools and Analysis",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 24. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to Section 24: 'Advanced Load Board Tools and Analysis' - this is Part 2 of our market analysis series.",
+      "Key focus: 'After looking at the trend lines, I logged back into the load board. Actually, you will notice that this one looks a little bit different.'",
+      "Tool progression: 'For previous demonstrations, I was using data trackers edge and now I'm using data power and this subscription is slightly more expensive, but I'm just going to use it because it has more tools.'",
+      "Professional development: 'I want to show you all the set of tools that data has to offer.'"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "DAT Power vs. DAT Edge - Subscription Levels",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "DAT Power: More expensive subscription with advanced tools",
+      "DAT Edge: Basic subscription with essential load board features",
+      "Tool availability depends on subscription level and monthly cost",
+      "Some tools available to all, others require premium subscriptions",
+      "Choose subscription based on your dispatching needs and budget"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Subscription explanation: 'Actually, you will notice that this one looks a little bit different. For previous demonstrations, I was using data trackers edge and now I'm using data power and this subscription is slightly more expensive, but I'm just going to use it because it has more tools.'",
+      "Tool availability: 'Some of these tools will be available for you, some not, depending on what subscription you buy and how much money you'll be paying monthly for the load boards.'",
+      "Professional choice: 'I want to show you all the set of tools that data has to offer.'",
+      "Budget consideration: 'Choose your subscription level based on your needs and what you can afford as a dispatcher.'",
+      "Tool progression: 'We'll start with basic search features and move to advanced analysis tools.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Broker-to-Carrier Spot Rate Analysis",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Click on any load to see historical rate data",
+      "Shows average rate based on past 30-90 days of data",
+      "Displays minimum and maximum rates for the lane",
+      "Example: Lane paying $2.21/mile (min $2.09, max $2.39)",
+      "Use with trend lines to adjust for current market conditions"
+    ],
+    trainerNotes: [
+      "Rate discovery: 'We can click on the load and we get the broker to carry a spot. So this is a spot rate or an average rate based on historical statistics for the past 30 days, I believe.'",
+      "Historical data: 'I'm not sure it could be 90 days actually. But historically this lane has been paying $2.21 per mile.'",
+      "Rate range: 'And even here we can see that it should be paying a minimum of $2.09 and a maximum of $2.39 per mile.'",
+      "Practical application: 'So already inside of the load board, while you're looking for loads, you can use this broker to carry a spot to get a general idea of how much this load should be paying.'",
+      "Market adjustment: 'Of course, this statistics is taken from historical value, so if in the past months they've been paying $2.21, it doesn't mean that today they're going to be paying $2.21.'"
+    ]
+  },
+  {
+    title: "Combining Historical Data with Market Trends",
     layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Historical Rate", "Market Trend", "Adjusted Rate Strategy", "Negotiation Approach"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["$2.21/mile", "Market decreased", "Aim for lower rate", "Accept below historical average"],
+        ["$2.21/mile", "Market increased", "Aim for $2.39+", "Negotiate above historical average"],
+        ["$2.21/mile", "Market stable", "Aim for $2.21", "Use historical as baseline"],
+        ["Key Insight", "Check trend lines weekly", "Adjust expectations", "Data-driven negotiations"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Integration strategy: 'Actually, it's very good to pair this with the trend lines. If you go see here and see, the average rate has been $2.21, you can go back to trend lines, see that percentage change over the week or over the month.'",
+      "Market decrease scenario: 'And understand, okay, so they've been paying $2.21, but the market has actually decreased and it means I might be looking at a lower rate.'",
+      "Market increase scenario: 'Or on the contrary, they've been paying $2.21, but the market has increased. So actually I should be asking for more than $2.21 I should probably be asking somewhere in the higher range of $2.39 per mile or more.'",
+      "Strategic approach: 'This is very good to use this broker to carry your spot while looking at the trend lines, to see some trends and to understand how close to this value you should be aiming for.'",
+      "Universal application: 'This is available in any load search, any load that I look for. I can always check out the broker to carry a spot for any line.'"
+    ]
+  },
+  {
+    title: "DAT Power Tools Overview",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Lane Makers: Identify top brokers by location and equipment type",
+      "Market Conditions: Load-to-truck ratio maps by state and equipment",
+      "Quick Rate Search: Fast lane rate lookup without full search",
+      "Trend Lines: Weekly market analysis and rate trends",
+      "DAT Directory: Search companies by name, number, or phone",
+      "Truck Search: Compare load vs. truck availability statistics"
+    ],
+    trainerNotes: [
+      "Tools introduction: 'So I have this little briefcase here and this is called Tools. And this is these are the tools available with paid subscriptions of it. So I'll go through each one of these.'",
+      "Lane Makers: 'First one is line makers. Let's click on it. This is a very interesting tool, especially when you're just starting to work with a carrier.'",
+      "Market Conditions: 'Next one is market conditions. Let's click on this. And Market condition index is pretty much just an index for a load to track ratio.'",
+      "Quick Rate Search: 'Here's a quick rate search. This is actually a very, very simple tool.'",
+      "Tool variety: 'So all of the tools are not really important to us and my subscription allows me to search for trucks so I can actually go and search for loads and then go and search for trucks.'"
+    ]
+  },
+  {
+    title: "Lane Makers - Broker Identification Tool",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Broker", "Load Postings", "Market Share", "Strategic Priority"],
+      rows: [
+        ["DML Transport", "22,000", "Market Leader", "Primary relationship focus"],
+        ["Total Quality Logistics", "2,700", "Secondary", "Important secondary broker"],
+        ["King of Freight LLC", "Variable", "Tertiary", "Additional option"],
+        ["Tennessee Steel Haulers", "Variable", "Specialized", "Steel-specific loads"],
+        ["Key Insight", "Location matters", "Volume = opportunity", "Build relationships strategically"]
+      ]
+    },
+    trainerNotes: [
+      "Tool purpose: 'This is a great tool, especially when you're just starting to work with a carrier. And actually it allows you to see what brokers have the most amounts of loads for your carrier.'",
+      "Richmond example: 'So let's say I got a new carrier. He is a flatbed, for example, and he's based in, let's say, Richmond, Virginia. So I got this carrier, his relatively new he wants some loads from Richmond, Virginia.'",
+      "Broker identification: 'I can go and click search here. And this will actually show me the brokers that have the most load postings out of Richmond, Virginia, in the past months.'",
+      "DML dominance: 'So as you can see, the biggest one is transfer 22,000 load postings for flatbed out of Richmond, Virginia, in the past month. So that already gives me a clear understanding.'",
+      "Strategic relationships: 'The first broker I have to set up is DML transport, and I'm probably going to book a lot of loads with them, so I better make good relationship with them for that carrier.'"
+    ]
+  },
+  {
+    title: "Market Conditions Index - Load-to-Truck Ratios",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Red areas: High load-to-truck ratio (tight capacity, hot markets)",
+      "Blue areas: Low load-to-truck ratio (excess capacity, cold markets)",
+      "Filter by equipment type: Van, Flatbed, or Reefer",
+      "Filter by timeframe: Current, 7-day forecast, or 30-day history",
+      "Use for strategic positioning and rate negotiation"
+    ],
+    trainerNotes: [
+      "Index explanation: 'Market condition index is pretty much let me just click somewhere. Market condition index is pretty much just an index for a load to track ratio.'",
+      "Color coding: 'So once again, tight capacity hot, it will be shown in red. Those are the areas with the highest low to track ratio. And then on the contrary, the blue ones are the areas with the least load to try with the smallest load to track ratio.'",
+      "Equipment filtering: 'So we can choose buy equipment, van flat or reefer. And here it's given us by the key market area.'",
+      "Timeframe options: 'But we can actually just choose, let's say by state and we can even use the timeframe prior business days current even has a seven day forecast or prior seven days prior 30 days.'",
+      "Strategic application: 'You know, if my truck is in Georgia and I want to go to a cold state like Nebraska, they're going to be paying me a very high rate.'"
+    ]
+  },
+  {
+    title: "Regional Market Analysis Examples",
+    layout: "table",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Region", "Market Condition", "Rate Expectation", "Strategic Note"],
+      rows: [
+        ["Georgia (Hot)", "High load-to-truck ratio", "Below market average", "Outbound loads pay less"],
+        ["Nebraska (Cold)", "Low load-to-truck ratio", "Above market average", "Inbound loads pay more"],
+        ["Texas East (Dallas/Houston)", "Hot zones", "Competitive rates", "Major economic centers"],
+        ["Texas West (Desert)", "Cold zones", "Limited loads", "Avoid if possible"],
+        ["Key Insight", "Hot to Cold = High rates", "Cold to Hot = Low rates", "Position strategically"]
+      ]
+    },
+    trainerNotes: [
+      "Rate implications: 'You know, if my truck is in Georgia and I want to go to a cold state like Nebraska, they're going to be paying me a very high rate.'",
+      "Reverse scenario: 'And on the contrary, if I'm going from a cold state to a hot state from Nebraska to Georgia, I can expect a rate that's below general market average.'",
+      "Texas example: 'Look at Texas. So Texas has cold zones. East of Texas is always hot. This is Dallas area. This is Houston area, the always hot.'",
+      "Desert areas: 'And then other areas like this big one is a desert. So there's usually no loads here. And this this is shown to us by the market index.'",
+      "Strategic positioning: 'So you can play around with this. You can you can see by area by market. Area market area is actually very interesting.'"
+    ]
+  },
+  {
+    title: "123 Load Board - Beginner-Friendly Alternative",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Easiest load board to get for beginner dispatchers",
+      "Similar tools to DAT but more accessible",
+      "Density List: Inbound/outbound load ratios by state",
+      "Density Map: Load-to-truck ratio visualization",
+      "Load Planner: Automated route planning tool",
+      "Rate Check: Quick lane rate lookup",
+      "Profit Calculator: Calculate carrier profitability"
+    ],
+    trainerNotes: [
+      "Accessibility: 'But what I do want to show you today is 1 to 3 load boards and the tools it provides because it's the easiest load board to get for a beginner dispatcher.'",
+      "Likely access: 'It's most likely you will have a one, two, three load board account even before you have a data account. So you'll most likely have access to it.'",
+      "Similar functionality: 'This is essentially the exact same thing as load search on data. You'll be able to use it. No problem.'",
+      "Density tools: 'I have load availability here, so it's called a density list. This is actually the exact same thing we saw on the data trackers edge, if you remember the in and out ratio.'",
+      "Unique features: 'Another thing I want to show you is the load planner over here. This is something unique to the one, two, three load board.'"
+    ]
+  },
+  {
+    title: "Load Planner - Automated Route Planning",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Add truck with equipment type and fuel consumption",
+      "Set origin, destination, and timeframe",
+      "Choose load preferences: size, weight, posting age",
+      "Set deadhead limits and load mile ranges",
+      "Generates optimal route with 7 loads, 2,541 miles",
+      "Shows daily revenue, fuel costs, tolls, and profit",
+      "Provides broker contact information for each load"
+    ],
+    trainerNotes: [
+      "Tool setup: 'So actually here I can add a truck and I can choose my equipment. Van, reefer, flatbed. Let's just go with Van and I can enter miles per gallon so I can enter the fuel consumption of the truck.'",
+      "Route planning: 'And this is actually going to build a route plan for me. So this is a great tool for beginners and let's see how it works.'",
+      "Indianapolis example: 'Where is your truck located? So I can put in a date. Let's just say like today Origin Point and let's say Indianapolis, for example.'",
+      "Results analysis: 'This trip has seven loads. Mileage 2541 miles. The total deadhead is 411 418 revenue per day, $1,192 Costs fuel costs per day, $455.'",
+      "Profit calculation: 'So the profit per day is $725. It's actually not so bad.'",
+      "Broker contacts: 'So this actually did pretty well. Obviously, it hasn't booked these loads for me, but it provided me the company. So the brokers that have these loads and now I can call these brokers.'"
+    ]
+  },
+  {
+    title: "Additional 123 Load Board Tools",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Tool", "Function", "Value to Dispatcher", "Carrier Benefit"],
+      rows: [
+        ["Rate Check", "Quick lane rate lookup", "Fast rate research", "Accurate pricing"],
+        ["Profit Calculator", "Calculate profitability", "Show carrier value", "Transparent costs"],
+        ["Mileage Calculator", "Truck-specific routing", "Accurate distances", "Toll calculations"],
+        ["Load Planner", "Automated routing", "Time-saving planning", "Optimized routes"],
+        ["Density Maps", "Market visualization", "Strategic positioning", "Better rates"]
+      ]
+    },
+    trainerNotes: [
+      "Rate Check: 'My loads post tracks, rate check rate check is going to be the same as the quick rate lookup we just saw on that. So I can just input the pickup location, delivery location. It will give me average rates.'",
+      "Profit Calculator: 'Profit calculator. Once again, I can input the mileage how much I get per gallon, total cost. Even dispatch fee is available here.'",
+      "Value proposition: 'So you can really use this 1 to 3 load board to provide some additional value for your carrier. You can when you start working with a new customer, you can tell them, hey, not only do dispatching, but I'll also calculate your profitability.'",
+      "Mileage Calculator: 'And then we have a mileage calculator. So that's also a very good tool. If you're not satisfied with Google Maps or you can double check your your maps, you can go here and actually input an exact address.'",
+      "Truck-specific routing: 'The reason you can double check this because it uses Google map for interactive maps, but it also uses PC Mailer, which is a GPS, a map that's made specifically for truckers.'"
     ]
   },
   {
@@ -111,35 +289,46 @@ const slides = [
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "What is the main difference between DAT Power and DAT Edge subscriptions?",
+        "How should you combine historical rate data with market trend analysis?",
+        "What does the Lane Makers tool help dispatchers identify?",
+        "What do red and blue areas represent on the Market Conditions Index?",
+        "What makes 123 Load Board particularly suitable for beginner dispatchers?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "DAT Power offers more advanced tools and analysis features, while DAT Edge provides basic load board functionality",
+        "Use historical rates as baseline, then adjust based on current market trends from trend lines to determine negotiation strategy",
+        "Lane Makers identifies which brokers have the most loads in specific locations and equipment types, helping build strategic relationships",
+        "Red areas indicate high load-to-truck ratios (tight capacity, hot markets), blue areas indicate low ratios (excess capacity, cold markets)",
+        "123 Load Board is the easiest to access for beginners, offers similar tools to DAT, and includes unique features like automated load planning"
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Question 1: Emphasize that tool availability depends on subscription level and budget considerations.",
+      "Question 2: This is the key integration skill - combining historical data with real-time market trends for better negotiations.",
+      "Question 3: Lane Makers is crucial for new carriers who need to identify which brokers to prioritize for relationship building.",
+      "Question 4: Understanding market conditions helps with strategic positioning and rate expectations.",
+      "Question 5: 123 Load Board provides an accessible entry point while still offering professional-grade tools."
     ]
   },
   {
-    title: "Section Material",
+    title: "Section Materials",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 24 notes when provided."
+      "DAT Power subscription with advanced analysis tools",
+      "123 Load Board for beginner-friendly access",
+      "Load Planner for automated route optimization",
+      "Market analysis tools for strategic positioning",
+      "Broker identification tools for relationship building",
+      "Next module: How to get subscriptions to all load boards"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 24 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Tool progression: 'After looking at the trend lines, I logged back into the load board. Actually, you will notice that this one looks a little bit different.'",
+      "Subscription levels: 'Some of these tools will be available for you, some not, depending on what subscription you buy and how much money you'll be paying monthly for the load boards.'",
+      "123 Load Board advantage: 'It's most likely you will have a one, two, three load board account even before you have a data account.'",
+      "Professional development: 'The tools are fantastic, and in the next module, I'll show you how to get subscriptions to all these load boards.'",
+      "Strategic application: 'If I were you, I would play around with it a little bit, see how to use it to the full potential and utilize it in my day to day operations.'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +519,13 @@ export default function LoadisticsSection24({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={24}
+                  /> </div>
               </div>
 
               <div className="space-y-6">

@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,44 +66,237 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 26",
-    title: "Section 26 Title Placeholder",
+    title: "Everything is Negotiable - Sample Conversations",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 26. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to Section 26: 'Everything is Negotiable - Sample Conversations' - this section provides real-world negotiation examples and strategies.",
+      "Key focus: 'This situation was very typical. A simple standard load. One pick up, one delivery, morning pickup time, morning delivery time.'",
+      "Learning objective: 'If there was a test book for dispatchers, this conversation would be in it.'",
+      "Professional development: 'Good negotiation goes a long way.'"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Negotiation Fundamentals - The Art of Rate Discussion",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Everything is negotiable in freight transportation",
+      "Brokers and dispatchers have opposing goals but need each other",
+      "Brokers want to sell loads as cheaply as possible",
+      "Dispatchers want to get the highest possible price",
+      "The load must be picked up at the appointment time regardless",
+      "Successful negotiation requires understanding both perspectives"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Negotiation reality: 'Brokers, just like dispatchers, work all day long to make sure that cargo is shipped and that they make money from it. Their goals are much the same as those of the dispatcher.'",
+      "Opposing positions: 'Although we're on the opposite teams of the game, the broker needs to sell the load as cheap as possible and the dispatcher needs to get the highest possible price.'",
+      "Common ground: 'This is the main difference between us. But no matter who wins the game and gets the desired rate, the load must be picked up at the appointment time.'",
+      "Professional approach: 'Understanding both perspectives is essential for successful negotiations.'",
+      "Strategic thinking: 'The key is finding the balance between what the broker can pay and what the dispatcher needs to earn.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Conversation 1: Standard Reefer Load - Atlanta to Louisville",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Load: Atlanta, GA to Louisville, KY - 420 miles",
+      "Equipment: Reefer, 15,000 lbs fresh salad greens, 45°F",
+      "Timing: Pickup 9am-2pm today, delivery 9am tomorrow",
+      "Broker starts: $1,200 (already covered 2 loads at this rate)",
+      "Dispatcher asks: $1,600",
+      "Broker counters: $1,300",
+      "Dispatcher counters: $1,500",
+      "Broker checks with boss: $1,350 maximum",
+      "Final agreement: $1,400 (dispatcher gets extra $50)"
+    ],
+    trainerNotes: [
+      "Load details: 'Pick up today in Atlanta anytime between 9 a.m. and 2 p.m. deliveries tomorrow in Louisville at 9 a.m., £15,000 of fresh salad greens, 45 degrees from the reefer. And I got $1,200 on this one.'",
+      "Dispatcher strategy: 'Sounds good, but I'm looking for 1600 for Louisville. Can you make it work?'",
+      "Broker reinforcement: 'Honestly, I already covered two of these for 1200 and I got this one left. I can do 1300 for you.'",
+      "Negotiation process: 'Can you meet me at least at 1500? Let me put you on a quick hold. I'll have to check with my boss.'",
+      "Final result: 'Hey, man, my boss said that 1350 will be the best we can do. Okay, let's do 1400 and I can get the truck there in an hour. All right, let's go for 1400.'"
+    ]
+  },
+  {
+    title: "Conversation 1 Analysis - Why This Negotiation Succeeded",
     layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Element", "Broker Action", "Dispatcher Response", "Strategic Value"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Load Quality", "Standard load, good timing", "Recognized opportunity", "Perfect for day's work"],
+        ["Market Knowledge", "Already sold 2 at $1,200", "Knew market rate $1,300-$1,500", "Used market data effectively"],
+        ["Negotiation Style", "Reinforced position with data", "Pushed beyond broker's comfort zone", "Got extra $50 through persistence"],
+        ["Timing", "Urgent pickup needed", "Offered immediate availability", "Created urgency advantage"],
+        ["Final Result", "Agreed to $1,400", "Secured 17% above broker's initial offer", "Professional negotiation success"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Load assessment: 'This situation was very typical. A simple standard load. One pick up, one delivery, morning pickup time, morning delivery time. Not heavy, not low temperature. Absolutely nothing bad about this load.'",
+      "Distance analysis: 'The route is about 420 miles. Perfect for a days load.'",
+      "Market knowledge: 'Broker started in 1200. The dispatcher started at 1600. Early in the conversation, the broker reinforced his position by saying that he had already sold several of the same loads for 1200.'",
+      "Strategic persistence: 'However, that didn't stop the dispatcher. He knew that the market price was somewhere around 1300 to $1500.'",
+      "Final success: 'At this point, the dispatcher could have just agreed, but he went a bit further and got that extra 50 bucks for a final rate of $1,400.'",
+      "Professional standard: 'Great simple negotiation. If there was a test book for dispatchers, this conversation would be in it.'"
+    ]
+  },
+  {
+    title: "Conversation 2: Complex Load - Los Angeles to Portland",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Load: Los Angeles, CA to Portland, OR - 1,000 miles",
+      "Equipment: Dry van, 42,500 lbs canned food on pallets",
+      "Timing: Pickup Wednesday 11am, delivery Friday 9pm",
+      "Broker rate: $4,000",
+      "Dispatcher asks: $6,000 (due to late Friday delivery)",
+      "Broker maximum: $4,500",
+      "Dispatcher minimum: $5,500",
+      "Result: No deal - dispatcher walked away professionally"
+    ],
+    trainerNotes: [
+      "Load identification: 'The first thing the broker asked was a load posting number at the big brokerage companies. All the loads posted are assigned a unique number that makes it easier for them to find the load in their system.'",
+      "Location clarification: 'The load was posted as Los Angeles to Portland, but when the broker started giving the information, he said that the pickup city was Riverside, California.'",
+      "Distance calculation: 'So Riverside to Portland, distance is about 1000 miles. As we already know, this is the ideal distance for a two day load.'",
+      "Timing concern: 'By picking it up on a Wednesday morning, the driver could deliver it on Friday morning and have time to pick up another load on Friday. But in this situation the shipment cannot be delivered until 9 p.m.'",
+      "Strategic decision: 'The dispatcher specifically asked if it was possible to deliver in the morning since there is no such possibility. It puts the dispatcher in a difficult position.'"
+    ]
+  },
+  {
+    title: "Conversation 2 Analysis - Strategic Walking Away",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Challenge", "Dispatcher Strategy", "Broker Response", "Outcome"],
+      rows: [
+        ["Late Friday Delivery", "Asked for $6,000 premium", "Offered $4,500 maximum", "Recognized weekend risk"],
+        ["Weekend Risk", "Explained stuck in Portland", "Understood but limited budget", "Professional explanation"],
+        ["Market Position", "Knew LA-Portland demand high", "Had limited options", "Leveraged market knowledge"],
+        ["Negotiation Power", "Set $5,500 minimum", "Couldn't meet minimum", "Maintained position"],
+        ["Professional Exit", "Left door open for callback", "May call back with higher offer", "Strategic patience"]
+      ]
+    },
+    trainerNotes: [
+      "Risk assessment: 'It's unlikely that he'll find another load on Friday night and he'll have to risk looking for a load that picks up on the weekend depending on the dispatchers goals and objectives.'",
+      "Strategic approach: 'In this case, the dispatcher thought it was worth it to try to get a great price and immediately asked for $6,000, stipulating that his truck would not just lose a whole day, but could get stuck for the whole weekend.'",
+      "Broker limitations: 'The broker was willing to pay extra, but not at the level that the dispatcher wanted. The dispatchers minimum offer was $5,500 and the broker's maximum offer was $4,500.'",
+      "Professional decision: 'Because there was too much difference, the dispatcher decided to stop negotiating. He said openly and honestly that he wanted to look at other options.'",
+      "Strategic patience: 'The dispatcher may well expect a call back from the broker with a new higher offer. After all, the broker already knows that he can get that truck for his not so comfortable load.'"
+    ]
+  },
+  {
+    title: "Conversation 3: New Carrier Setup - Saint Louis to Mobile",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Load: Saint Louis, MO to Mobile, AL - flatbed",
+      "Equipment: 35,000 lbs car parts, requires 4-foot tarp",
+      "Timing: Pickup today anytime before 5pm, delivery tomorrow 8am-8pm",
+      "Dispatcher rate: $2,500",
+      "Broker concern: New carrier, needs reliable service",
+      "Dispatcher strategy: Emphasize professionalism and experience",
+      "Result: Broker took risk, agreed to $2,500"
+    ],
+    trainerNotes: [
+      "Load details: 'Pick up today in Saint Louis at any time. First come, first serve before 5 p.m.. It needs to be delivered at any time tomorrow. The facility is open from 8 a.m. until 8 p.m. It's £35,000 of car parts requires at four feet tarp.'",
+      "Rate proposal: 'Great. We can do that for $2,500.'",
+      "Broker concern: 'That's fine. What number is 76504? Yeah. I don't think I can put you on this low. We're not set up, and I need a reliable carrier on this one. This is an important load for my customer, sir.'",
+      "Professional response: 'You're looking for a reliable carrier. You got one right here. Our company is over a year old, and I can provide references of our partner brokers with whom we've been working closely for months without a single issue.'",
+      "Driver credentials: 'My driver has been working with a flatbed for over ten years. He's unloaded now and ready to start moving at any time.'"
+    ]
+  },
+  {
+    title: "Conversation 3 Analysis - Building Trust with New Brokers",
+    layout: "table",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Broker Concern", "Dispatcher Response", "Trust Building Element", "Result"],
+      rows: [
+        ["New carrier risk", "Company over 1 year old", "Established business", "Credibility"],
+        ["Need reliability", "References from partner brokers", "Third-party validation", "Trust"],
+        ["Important customer", "10+ years driver experience", "Professional expertise", "Confidence"],
+        ["Setup required", "Ready to move immediately", "Operational readiness", "Efficiency"],
+        ["Risk management", "Give me a chance", "Partnership opportunity", "Agreement"]
+      ]
+    },
+    trainerNotes: [
+      "Broker pressure: 'Another typical situation. The broker has an important load on his hands, and he has no right to screw up. He's probably already had problems with this shipper, and if he makes another mistake, it could result in the loss of the customer.'",
+      "Rate strategy: 'When he finished giving information about the shipment, the broker didn't name his rate, so the dispatcher took the initiative and named his desired price $2,400.'",
+      "Broker priority: 'The broker for whom making money was not a priority at the moment immediately agreed it was more important for him to give the load to a responsible carrier than to make an extra couple of hundred bucks.'",
+      "Database check: 'He immediately checked the number of the carrier in his database so that he hadn't worked with the company before and was about to give up.'",
+      "Professional persuasion: 'The dispatcher on his part realized that this was the perfect load for him and began to emphasize the professionalism of his company, his driver and himself.'",
+      "Success factor: 'In this case, the broker was convinced it doesn't happen every time, but you should definitely try. Good negotiation goes a long way.'"
+    ]
+  },
+  {
+    title: "Key Negotiation Strategies - What Works",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Know your market rates before calling",
+      "Start higher than your target rate",
+      "Use broker's own data to reinforce your position",
+      "Explain the reasoning behind your rate requests",
+      "Be prepared to walk away if the gap is too large",
+      "Emphasize professionalism and reliability for new relationships",
+      "Leave the door open for future negotiations",
+      "Always maintain professional courtesy"
+    ],
+    trainerNotes: [
+      "Market knowledge: 'He knew that the market price was somewhere around 1300 to $1500.'",
+      "Strategic positioning: 'The dispatcher started at 1600.'",
+      "Data reinforcement: 'Early in the conversation, the broker reinforced his position by saying that he had already sold several of the same loads for 1200.'",
+      "Reasoning explanation: 'The rate you're offering for this load is absolutely fine. But the delivery is late at night on Friday. You know that I will not be able to find another load so late and might get stuck in Portland for the whole weekend.'",
+      "Professional walking away: 'All right. No problem. I think I will pass on this one and explore other options. I will give you another call later if it's meant to be.'",
+      "Trust building: 'Give me a chance on this one and you will have another reliable carrier in your contact list.'"
+    ]
+  },
+  {
+    title: "Common Negotiation Mistakes to Avoid",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Mistake", "Impact", "Better Approach", "Result"],
+      rows: [
+        ["Accepting first offer", "Leaves money on table", "Always counter-negotiate", "Higher rates"],
+        ["Not knowing market rates", "Weak negotiating position", "Research before calling", "Confident negotiations"],
+        ["Being too aggressive", "Damages relationships", "Professional persistence", "Long-term partnerships"],
+        ["Not explaining reasoning", "Broker doesn't understand", "Explain your position", "Better understanding"],
+        ["Burning bridges", "Lost future opportunities", "Leave door open", "Future callbacks"]
+      ]
+    },
+    trainerNotes: [
+      "Persistence vs. aggression: 'However, that didn't stop the dispatcher. He knew that the market price was somewhere around 1300 to $1500.'",
+      "Professional explanation: 'The rate you're offering for this load is absolutely fine. But the delivery is late at night on Friday.'",
+      "Strategic patience: 'The dispatcher may well expect a call back from the broker with a new higher offer.'",
+      "Relationship building: 'Give me a chance on this one and you will have another reliable carrier in your contact list.'",
+      "Professional courtesy: 'Sounds good, man. Have a good day.'",
+      "Long-term thinking: 'Good negotiation goes a long way.'"
+    ]
+  },
+  {
+    title: "Advanced Negotiation Techniques",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Use load posting numbers for credibility and efficiency",
+      "Ask for zip codes to verify actual pickup locations",
+      "Calculate real distances using Google Maps",
+      "Identify timing issues that affect driver productivity",
+      "Explain weekend risks and lost opportunity costs",
+      "Emphasize driver experience and equipment readiness",
+      "Provide references from other broker partnerships",
+      "Know when to stop and when to continue negotiating"
+    ],
+    trainerNotes: [
+      "Load identification: 'The first thing the broker asked was a load posting number at the big brokerage companies. All the loads posted are assigned a unique number that makes it easier for them to find the load in their system.'",
+      "Location verification: 'This number, if available, can be found in the post information on the load board. The load was posted as Los Angeles to Portland, but when the broker started giving the information, he said that the pickup city was Riverside, California.'",
+      "Distance calculation: 'All the dispatcher has to do is ask for the zip code of the city and type it into Google Maps, then quickly calculate the correct number of miles.'",
+      "Timing analysis: 'Going forward. So Riverside to Portland, distance is about 1000 miles. As we already know, this is the ideal distance for a two day load.'",
+      "Risk assessment: 'It's unlikely that he'll find another load on Friday night and he'll have to risk looking for a load that picks up on the weekend.'",
+      "Professional decision: 'A professional and informed decision on the part of the dispatcher.'"
     ]
   },
   {
@@ -111,35 +305,48 @@ const slides = [
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "What are the key elements of successful rate negotiation?",
+        "How should you handle a broker who offers a rate significantly below market?",
+        "What information should you gather before calling a broker about a load?",
+        "When is it appropriate to walk away from a negotiation?",
+        "How can you build trust with a new broker who is hesitant to work with you?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Know market rates, start higher than target, explain reasoning, use broker's data, be professional, know when to walk away",
+        "Explain your market knowledge, provide reasoning for higher rate, be prepared to walk away if gap is too large, leave door open for future negotiations",
+        "Load posting number, actual pickup location (zip code), real distance, timing constraints, market rates, driver availability and experience",
+        "When the gap between your minimum and broker's maximum is too large, when the load doesn't fit your operational needs, or when the broker is unreasonable",
+        "Emphasize company experience, provide references from other brokers, highlight driver qualifications, demonstrate operational readiness, offer to start with smaller loads"
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Question 1: Review the successful negotiation elements from all three conversations.",
+      "Question 2: Use the LA-Portland example where dispatcher walked away professionally.",
+      "Question 3: Reference the importance of load posting numbers and zip code verification.",
+      "Question 4: Emphasize the strategic value of walking away when conditions aren't right.",
+      "Question 5: Use the Saint Louis-Mobile example of building trust with new brokers."
     ]
   },
   {
-    title: "Section Material",
+    title: "Section Materials",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 26 notes when provided."
+      "Three real-world negotiation examples with analysis",
+      "Standard load negotiation: Atlanta to Louisville",
+      "Complex load negotiation: Los Angeles to Portland",
+      "New broker relationship: Saint Louis to Mobile",
+      "Key negotiation strategies and techniques",
+      "Common mistakes to avoid and better approaches",
+      "Advanced techniques for professional dispatchers"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 26 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Learning foundation: 'If there was a test book for dispatchers, this conversation would be in it.'",
+      "Professional standard: 'Great simple negotiation.'",
+      "Strategic thinking: 'A professional and informed decision on the part of the dispatcher.'",
+      "Market knowledge: 'Knowing the Los Angeles to Portland Lane, the dispatcher knows that demand exceeds supply, while the dispatcher still has plenty of load options for the broker.'",
+      "Negotiation power: 'If the broker calls back, the dispatcher is negotiating. Power will be very high.'",
+      "Long-term success: 'Good negotiation goes a long way.'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +537,13 @@ export default function LoadisticsSection26({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={26}
+                  /> </div>
               </div>
 
               <div className="space-y-6">

@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,202 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 12",
-    title: "Section 12 Title Placeholder",
+    title: "Sample Dispatcher Call on a Posted Load: Communication Strategy and Negotiation",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 12. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "This section analyzes a real dispatcher-broker phone call to understand communication strategy.",
+      "We focus on WHY certain questions are asked and HOW to improve negotiation techniques.",
+      "The goal is strategic thinking, not memorizing scripts.",
+      "Students will learn to analyze conversations for improvement opportunities.",
+      "",
+      "QUESTIONS:",
+      "What's the difference between reading a script and strategic communication?",
+      "Why do we analyze real calls instead of perfect examples?",
+      "",
+      "ANSWERS:",
+      "Answer: Strategic communication adapts to each situation vs. rigid scripting.",
+      "Answer: Real calls show common mistakes and improvement opportunities that perfect scripts don't reveal."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Call Transcript Analysis",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Availability Check: Dispatcher confirms load status and basic details first",
+      "Detail Verification: Shipper address, reference number, dock requirements confirmed",
+      "Risk Assessment: Temperature control, weight, lumper requirements identified",
+      "Terms Clarification: Detention policy and fuel requirements established",
+      "Strategic Ask: $3,000 request with specific justification provided",
+      "Counter Negotiation: Broker offers $2,600, dispatcher counters at $2,900",
+      "Final Agreement: $2,750 with detailed rate confirmation terms specified"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "This condensed transcript shows the complete flow from opening to closing.",
+      "Notice how each phase builds on the previous - no skipping steps.",
+      "The dispatcher asks operational questions before negotiating rates.",
+      "Specific justifications are provided for the higher rate request.",
+      "Final agreement includes detailed terms to prevent future disputes."
     ]
   },
   {
-    title: "Placeholder Slide 2",
-    layout: "table",
+    title: "Information Verification Techniques",
+    layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    table: {
-      headers: ["Topic", "Description"],
-      rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
-      ]
-    },
+    bullets: [
+      "Shipper Details: Address and reference number confirmed for driver instructions",
+      "Equipment Requirements: Dock type and door compatibility verified",
+      "Operational Concerns: Lumper payment method and fuel requirements clarified",
+      "Temperature Control: Continuous vs start/stop reefer operation specified",
+      "Detention Terms: Free time and hourly rates documented before negotiation"
+    ],
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Smart sequence: operational details first, then negotiate rates.",
+      "Each question serves a specific purpose for successful load execution.",
+      "Detention terms discussion prevents future payment disputes.",
+      "Temperature specifications are critical for reefer loads.",
+      "Professional approach builds broker confidence in your capability."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Negotiation Math and Value Analysis",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Base Rate Analysis: $2,500 for Dallas-Charlotte = approximately $2.08 per mile",
+      "Temperature Premium: 0°F continuous reefer adds operational complexity and fuel cost",
+      "Weight Factor: 41,500 lbs approaching legal limits requires experienced driver",
+      "Appointment Risk: Wednesday 10:00 AM set appointment creates schedule pressure",
+      "Lumper Costs: EFS payment system adds administrative handling",
+      "Market Justification: Combined factors support $3,000 ask ($2.50/mile target)"
+    ],
+    trainerNotes: [
+      "Always calculate RPM (revenue per mile) to evaluate rate fairness.",
+      "Each operational challenge justifies rate premiums above base freight.",
+      "Set appointments create delivery pressure that increases risk.",
+      "Temperature-controlled freight typically commands 10-20% premium.",
+      "Professional dispatchers can articulate value beyond just 'I need more money'."
+    ]
+  },
+  {
+    title: "Counter-Offer and Response Pattern",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Initial Counter: Broker moves from $2,500 to $2,600 (partial concession)",
+      "Continued Pressure: Dispatcher requests $2,900 (maintains upward momentum)",
+      "Broker Testing: 'Can you make pickup by 5:00 PM?' - confirms capability",
+      "External Constraint: 'My carrier won't take it at $2,700' - shifts responsibility",
+      "Final Negotiation: Meet at $2,800 request leads to $2,750 compromise"
+    ],
+    trainerNotes: [
+      "Good negotiation maintains momentum: $2,500 → $2,600 → $2,900 → $2,700 → $2,800 → $2,750.",
+      "Broker's timing question tests dispatcher's seriousness and capability.",
+      "Using carrier as constraint removes personal conflict from negotiation.",
+      "Each counter-offer should have logical justification behind it.",
+      "",
+      "QUESTIONS:",
+      "Why does the broker ask about pickup timing during negotiation?",
+      "What's the advantage of using external constraints in negotiation?",
+      "",
+      "ANSWERS:",
+      "Answer: Tests if dispatcher is serious or just fishing for rates.",
+      "Answer: Removes personal conflict and provides face-saving excuses for both parties."
+    ]
+  },
+  {
+    title: "Final Negotiation and Rate Confirmation Terms",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Broker Consultation: 'Hold on while I check' - escalation or negotiation tactic",
+      "Final Compromise: $2,750 represents 10% increase from original $2,500",
+      "Terms Documentation: Specific RC language requested for key operational details",
+      "Payment Options: Quickpay 2% in two business days offered and declined",
+      "Professional Closing: Contact exchange and immediate action confirmation"
+    ],
+    trainerNotes: [
+      "Final rate $2,750 achieved 10% increase - successful negotiation result.",
+      "Smart move: requesting specific language in rate confirmation prevents disputes.",
+      "Quickpay option awareness shows professional knowledge of payment terms.",
+      "Immediate action confirmation 'We're already set up' builds broker confidence.",
+      "Professional closing with driver details and ETA demonstrates capability."
+    ]
+  },
+  {
+    title: "Communication Strengths Analysis",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Professional Tone: Respectful and collaborative throughout entire call",
+      "Systematic Approach: Operational details confirmed before rate negotiation",
+      "Strategic Patience: Persistent without being aggressive or demanding",
+      "Value Articulation: Specific justifications provided for rate requests",
+      "Relationship Focus: Maintained positive broker relationship while negotiating"
+    ],
+    trainerNotes: [
+      "This call demonstrates excellent negotiation fundamentals and professional communication.",
+      "The dispatcher achieved significant rate increase while maintaining broker relationship.",
+      "Systematic approach prevents operational problems and builds broker confidence.",
+      "Strategic use of external constraints was effective without being confrontational.",
+      "",
+      "QUESTIONS:",
+      "What was the most effective negotiation technique demonstrated in this call?",
+      "How important is maintaining the broker relationship during negotiation?",
+      "",
+      "ANSWERS:",
+      "Answer: Systematic information gathering before negotiation combined with value-based justification.",
+      "Answer: Critical - you'll work with the same brokers repeatedly, relationship is long-term asset."
+    ]
+  },
+  {
+    title: "Pop Quiz: Key Negotiation Concepts",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "What three terms must be included in the rate confirmation for this reefer load?",
+        "What signals in this call justified the dispatcher's higher rate request?",
+        "Why should operational details be confirmed before negotiating rates?",
+        "What's the advantage of using external constraints during negotiation?",
+        "How did the dispatcher maintain professionalism while being persistent?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "0°F continuous temperature, EFS lumper code at receiver, detention $50/hr after 2 hours",
+        "Continuous reefer operation, heavy weight, set appointment, lumper requirements",
+        "Builds broker confidence, prevents operational problems, establishes capability before asking for money",
+        "Removes personal conflict, provides face-saving excuses, makes negotiation less confrontational",
+        "Respectful tone, collaborative language, logical justifications, relationship-focused approach"
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "This quiz reinforces the key learning objectives from the call analysis.",
+      "Focus on practical application rather than memorizing specific phrases.",
+      "Encourage students to develop their own authentic communication style.",
+      "Emphasize that every call is practice for developing these skills.",
+      "Next section will cover the booking process and documentation requirements."
     ]
   },
   {
-    title: "Section Material",
+    title: "Practice Applications and Video Demo",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 12 notes when provided."
+      "Role-Play Exercise: Practice similar calls with different load scenarios",
+      "Negotiation Development: Create your own professional language patterns",
+      "Value Articulation: Build logical arguments for rate justifications",
+      "Objection Handling: Prepare responses to common broker pushbacks",
+      "Relationship Building: Focus on long-term broker partnerships and repeat business"
     ],
+    video: "/training-material/section12/links/dispatcher-broker-mockup.mp4",
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 12 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "The goal is developing authentic communication style, not memorizing scripts.",
+      "Practice these techniques with different load types and market conditions.",
+      "Remember: every call is practice for the next one - continuous improvement mindset.",
+      "Focus on building genuine relationships rather than just winning individual negotiations.",
+      "Show the video demo to reinforce the concepts covered in this section.",
+      "Next section will cover the booking process and documentation requirements that follow successful negotiations."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +452,13 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={12}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -342,6 +470,26 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                   <ul className="list-disc pl-6 text-lg md:text-xl leading-8">
                     {slide.bullets.map((t, i) => (<li key={i} className="mb-3"><EmphasisText text={t} /></li>))}
                   </ul>
+                )}
+
+                {/* Video display for slides with video property */}
+                {slide.video && (
+                  <div className="mt-6">
+                    <div className="text-lg font-semibold mb-3">Video Demo: Dispatcher-Broker Call Example</div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <video 
+                        controls 
+                        className="w-full max-w-4xl mx-auto"
+                        style={{ maxHeight: '400px' }}
+                      >
+                        <source src={slide.video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      Click play to watch a demonstration of professional dispatcher-broker negotiation
+                    </p>
+                  </div>
                 )}
 
                 {slide.layout === "bullets" && slide.quiz && slide.quiz.questions && (
@@ -379,7 +527,7 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(11)} 
-                        disabled={12 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 11)

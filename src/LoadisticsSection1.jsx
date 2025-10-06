@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
+import { SlideNavigation } from "./components/ui/SlideNavigation";
 
 // ===== Minimal UI primitives (no external deps) =====
 function Button({ children, onClick, disabled, variant = "solid", className = "" }) {
@@ -355,6 +356,12 @@ export default function LoadisticsSection1({ onNavigateToSection, sectionDropdow
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={1}
+                  />
                 </div>
               </div>
 

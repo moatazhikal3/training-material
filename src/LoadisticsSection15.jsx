@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,330 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 15",
-    title: "Section 15 Title Placeholder",
+    title: "Step 5 — Rate Confirmation and Driver Instructions",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 15. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "This is the moment every dispatcher enjoys - receiving the rate confirmation email.",
+      "Students will learn to review, verify, and process rate confirmations properly.",
+      "Focus on accuracy and attention to detail - mistakes here affect the entire load.",
+      "Emphasize the legal binding nature of rate confirmations."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "The Rate Confirmation Moment",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "The Reward: Email arrives with subject line 'Rate Confirmation'",
+      "Serotonin Release: Every dispatcher's favorite moment - the load is secured",
+      "Legal Document: Rate confirmation is legally binding between broker and carrier",
+      "Work Continues: Receiving the confirmation is just the beginning",
+      "Next Steps: Review, verify, sign, and coordinate with driver"
+    ],
+    trainerNotes: [
+      "This is the payoff moment - all the negotiation work has paid off.",
+      "Rate confirmation = legally binding contract confirming agreed terms.",
+      "Never celebrate too early - careful review is critical before signing.",
+      "One mistake in the rate confirmation can cost thousands of dollars.",
+      "Professional dispatchers treat this as a critical checkpoint, not just paperwork."
+    ]
+  },
+  {
+    title: "Rate Confirmation Components",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Load Description: Complete details of cargo being transported",
+      "Timing Information: Loading and unloading dates and appointment times",
+      "Location Details: Exact pickup and delivery addresses with contact info",
+      "Special Instructions: Temperature, handling, or delivery requirements",
+      "Financial Terms: Agreed upon rate and payment instructions"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Each component must be verified against your negotiation notes.",
+      "Load description should match what was discussed during booking.",
+      "Timing is critical - any discrepancies must be resolved immediately.",
+      "Location details provide exact addresses not available during initial negotiation.",
+      "Financial terms must match exactly what was agreed verbally."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Sample Rate Confirmation Analysis - Header Information",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Broker Information: Steam Logistics International with full contact details",
+      "Load Number: 132061 for tracking and reference purposes",
+      "Date Format: US format (MM/DD/YYYY) - September 14, 2021",
+      "Equipment Type: Specified truck requirements and BOL number space",
+      "Motor Carrier: Space for carrier name and dispatcher contact information"
+    ],
+    pdf: "/training-material/section15/pdfs/Sample+Rate+Confirmation.pdf",
+    trainerNotes: [
+      "Show the PDF and point out the header section at the top.",
+      "Broker contact info is critical - save this for future communication.",
+      "Load number becomes your reference for all communications about this shipment.",
+      "US date format can be confusing - always double-check month/day order.",
+      "Motor carrier section should show your company name and contact details."
+    ]
+  },
+  {
+    title: "Pickup Location Details",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Field", "Sample Data", "Purpose"],
+      rows: [
+        [
+          "Facility Name",
+          "K1486K1486 NSD DC",
+          "Warehouse identifier - may have unusual naming"
+        ],
+        [
+          "Location",
+          "Rialto, California",
+          "City and state for navigation"
+        ],
+        [
+          "Full Address",
+          "1686 West Baseline Road, Rialto, CA 92376",
+          "Exact GPS coordinates for driver"
+        ],
+        [
+          "Expected Date",
+          "09/15/2021",
+          "Pickup date in US format"
+        ],
+        [
+          "Appointment Time",
+          "14:15 (2:15 PM)",
+          "Strict appointment time - must be on time"
+        ]
+      ]
+    },
+    trainerNotes: [
+      "Reference the PDF pickup section while explaining each field.",
+      "Facility names can be strange - K1486K1486 NSD DC is typical warehouse naming.",
+      "Full address is what driver needs for GPS navigation.",
+      "Expected date vs appointment time - both are critical for planning.",
+      "Military time format (14:15) is common - ensure driver understands.",
+      "",
+      "QUESTIONS:",
+      "Why don't brokers provide exact addresses during initial negotiation?",
+      "",
+      "ANSWERS:",
+      "Answer: Security and competitive reasons - prevents rate shopping with exact details."
+    ]
+  },
+  {
+    title: "Reference Numbers and Instructions",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Shipper Reference Numbers: Multiple tracking numbers for facility identification",
+      "Pickup/Delivery Numbers: Additional identifiers for load matching",
+      "Driver Usage: Driver shows these numbers to facility managers",
+      "Load Identification: Numbers tell facility exactly what product to load",
+      "Critical Information: Must be included in all driver instructions"
+    ],
+    trainerNotes: [
+      "Point to the reference numbers section in the PDF sample.",
+      "These numbers are the 'keys' that unlock the right product at facilities.",
+      "Driver arrives and shows these numbers - facility knows exactly what to do.",
+      "Without proper reference numbers, driver may be turned away or delayed.",
+      "Screenshot option: Some drivers prefer screenshots of this section for convenience."
+    ]
+  },
+  {
+    title: "Delivery Location and Special Instructions",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Consignee Information: Unified Western Rock Commerce Distribution",
+      "Delivery Date: Next day (09/16/2021) with 16:30 (4:30 PM) appointment",
+      "Special Instructions: 'Arrive 30 minutes early, keep doors sealed'",
+      "Confirmation Numbers: Long reference numbers for delivery verification",
+      "Multiple References: Shipper and delivery numbers for both locations"
+    ],
+    trainerNotes: [
+      "Show the delivery section in the PDF - notice the detailed instructions.",
+      "'Arrive 30 minutes early' - this is critical for appointment compliance.",
+      "'Keep doors sealed' - security requirement that driver must follow.",
+      "Confirmation numbers are different from pickup numbers - don't mix them up.",
+      "Special instructions can include temperature, security, or timing requirements."
+    ]
+  },
+  {
+    title: "Shipment and Financial Information",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Category", "Details", "Dispatcher Notes"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        [
+          "Total Weight",
+          "26,438 lbs",
+          "Exact weight for load planning and legal compliance"
+        ],
+        [
+          "Commodity",
+          "Snack Foods",
+          "General description - driver gets details on BOL"
+        ],
+        [
+          "Net Freight Charges",
+          "$750",
+          "Agreed rate - matches negotiation"
+        ],
+        [
+          "Distance",
+          "50 miles (Rialto to Commerce, CA)",
+          "Short haul = high rate per mile ($15/mile)"
+        ]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Reference the shipment information section in the PDF.",
+      "Weight is exact - important for legal compliance and route planning.",
+      "Commodity description is basic - full details come with Bill of Lading.",
+      "Rate verification: $750 for 50 miles = $15/mile (excellent short haul rate).",
+      "Short loads often pay higher per-mile rates because they take full days.",
+      "",
+      "QUESTIONS:",
+      "Why do short loads typically pay higher rates per mile?",
+      "",
+      "ANSWERS:",
+      "Answer: Driver's time is committed for full day regardless of distance - minimum daily rate applies."
     ]
   },
   {
-    title: "Knowledge Check",
-    layout: "bullets",
-    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
-    trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
-    ]
-  },
-  {
-    title: "Section Material",
+    title: "Additional Terms and Payment Instructions",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 15 notes when provided."
+      "Broker Agreement: All shipments subject to signed broker-carrier agreement",
+      "No Double Brokering: Cannot resell or re-broker this load to others",
+      "Invoice Address: AP@steamlogistics.com for standard payment processing",
+      "POD Requirement: Invoices not processed without Proof of Delivery",
+      "Quickpay Option: Different email address for expedited payment processing"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 15 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Show the bottom section of the PDF with additional terms.",
+      "No double brokering - you must transport with your own equipment/authority.",
+      "Invoice address is critical - wrong address delays payment by weeks.",
+      "POD = Proof of Delivery = signed Bill of Lading from consignee.",
+      "Quickpay typically costs 2-3% but provides faster payment (2-5 days vs 30 days)."
+    ]
+  },
+  {
+    title: "Rate Confirmation Review Process",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Verification Step: Compare all details against negotiation notes",
+      "Rate Accuracy: Confirm dollar amount matches verbal agreement",
+      "Date Verification: Check pickup and delivery dates for accuracy",
+      "Address Confirmation: Verify locations match discussed route",
+      "Special Requirements: Ensure all negotiated terms are documented"
+    ],
+    trainerNotes: [
+      "This is critical - never sign without thorough verification.",
+      "Rate discrepancies must be resolved before signing - call broker immediately.",
+      "Date errors can cause missed appointments and detention charges.",
+      "Address verification prevents driver from going to wrong locations.",
+      "Missing special requirements (temperature, detention terms) must be added."
+    ]
+  },
+  {
+    title: "Signing and Returning Process",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Signature Required: All rate confirmations must be signed before load execution",
+      "Signature Location: Use any available blank space if no designated signature line",
+      "Electronic Signature: Digital signatures acceptable for email return",
+      "Return Method: Email signed copy back to broker for official booking",
+      "Load Status: Load officially booked only after signed confirmation returned"
+    ],
+    trainerNotes: [
+      "Some rate confirmations don't have signature lines - use any blank space.",
+      "Electronic signatures are legally binding in transportation industry.",
+      "Return to same email address that sent the original confirmation.",
+      "Load is NOT officially booked until broker receives signed confirmation.",
+      "Keep copy of signed rate confirmation for your records and invoicing."
+    ]
+  },
+  {
+    title: "Driver Instruction Scenarios",
+    layout: "table",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Driver Type", "Information Shared", "Reason"],
+      rows: [
+        [
+          "Owner-Operator",
+          "Complete rate confirmation",
+          "They own the business and need full financial details"
+        ],
+        [
+          "Company Driver",
+          "Instructions only (no rate/broker info)",
+          "Owner doesn't want driver to see rate or broker name"
+        ]
+      ]
+    },
+    trainerNotes: [
+      "Two completely different approaches based on driver relationship.",
+      "Owner-operators get everything - they're business partners.",
+      "Company drivers get filtered information - protect company's competitive data.",
+      "Company owners often don't want drivers to know: 1) How much load pays, 2) Which broker it came from.",
+      "",
+      "QUESTIONS:",
+      "Why don't company owners want drivers to see the load rate?",
+      "",
+      "ANSWERS:",
+      "Answer: Prevents drivers from negotiating higher pay or contacting brokers directly."
+    ]
+  },
+  {
+    title: "Driver Instructions Template",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Essential Information: Time and place of loading and unloading",
+      "Cargo Details: Type and weight of cargo being transported",
+      "Reference Numbers: All shipper and delivery reference numbers",
+      "Special Instructions: Temperature, handling, arrival requirements",
+      "Contact Information: Dispatcher contact for questions or issues"
+    ],
+    trainerNotes: [
+      "Driver instructions contain everything EXCEPT rate and broker name.",
+      "Include all reference numbers - driver needs these for facility access.",
+      "Special instructions are critical - 'arrive 30 minutes early', temperature settings.",
+      "Always include your contact info for driver questions or problems.",
+      "Ask driver preferred format: email, text, screenshot - accommodate their preference.",
+      "Template flexibility: No single format required - adapt to driver needs."
+    ]
+  },
+  {
+    title: "Communication and Coordination",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Immediate Action: Send driver instructions as soon as rate confirmation is signed",
+      "Driver Preference: Ask driver preferred format for receiving instructions",
+      "Screenshot Option: Some drivers prefer screenshots of key sections",
+      "Confirmation Receipt: Ensure driver confirms receipt and understanding",
+      "Availability Check: Verify driver can make pickup and delivery appointments"
+    ],
+    trainerNotes: [
+      "Speed matters - driver needs time to plan route and schedule.",
+      "Different drivers prefer different formats - accommodate their needs.",
+      "Screenshots work well for reference numbers and special instructions.",
+      "Always get confirmation that driver received and understood instructions.",
+      "Verify driver availability for both pickup AND delivery appointments.",
+      "Next section: We'll cover tracking and managing loads in transit."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +580,13 @@ export default function LoadisticsSection15({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={15}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -342,6 +598,24 @@ export default function LoadisticsSection15({ onNavigateToSection, sectionDropdo
                   <ul className="list-disc pl-6 text-lg md:text-xl leading-8">
                     {slide.bullets.map((t, i) => (<li key={i} className="mb-3"><EmphasisText text={t} /></li>))}
                   </ul>
+                )}
+
+                {/* PDF display for slides with pdf property */}
+                {slide.pdf && (
+                  <div className="mt-6">
+                    <div className="text-lg font-semibold mb-3">Sample Rate Confirmation Document</div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <iframe 
+                        src={slide.pdf}
+                        className="w-full"
+                        style={{ height: '600px', minHeight: '400px' }}
+                        title="Sample Rate Confirmation"
+                      />
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      Reference this document while reviewing the header information and contact details
+                    </p>
+                  </div>
                 )}
 
                 {slide.layout === "bullets" && slide.quiz && slide.quiz.questions && (
@@ -379,7 +653,7 @@ export default function LoadisticsSection15({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(14)} 
-                        disabled={15 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 14)

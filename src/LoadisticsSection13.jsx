@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,182 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 13",
-    title: "Section 13 Title Placeholder",
+    title: "Mock Call — Posted Load Negotiation: Complete Transcript",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 13. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "This is a complete mock call transcript with all blanks filled in.",
+      "Trainee plays Dispatcher; Trainer plays Broker.",
+      "Goal: Demonstrate professional negotiation from opening to rate confirmation.",
+      "Use this as a training template for live practice sessions."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Call Setup and Scenario",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Lane: Dallas, TX to Charlotte, NC (1,200 miles)",
+      "Equipment: 53' Reefer",
+      "Weight: 41,500 lbs frozen poultry",
+      "Temperature: 0°F continuous",
+      "Pickup: Today 2:00-6:00 PM",
+      "Delivery: Wednesday 10:00 AM appointment"
+    ],
+    trainerNotes: [
+      "This scenario includes multiple complexity factors: heavy weight, temperature control, set appointment.",
+      "Base rate offer will be $2,500 ($2.08/mile).",
+      "Target negotiation range: $2,750-$3,000.",
+      "Timing: 6-8 minutes total for complete call."
+    ]
+  },
+  {
+    title: "Opening and Availability Check",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "DISPATCHER: Good afternoon, this is Mike with Pro Dispatch calling on your posted load Dallas to Charlotte picking up today. Is it still available?",
+      "BROKER: Yes, it's still open. Pickup window is 2:00 to 6:00 PM today in Dallas. Delivery Wednesday 10:00 AM appointment in Charlotte. 41,500 pounds frozen poultry, 53-foot reefer required. Current offer is $2,500.",
+      "DISPATCHER: Can you confirm the shipper address and pickup reference number?",
+      "BROKER: Shipper is at 8420 Rockline Road, Dallas, TX 75247. Pickup reference is SHP-44712. It's a live load, first come first served within the window. Swing doors are fine."
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Notice the dispatcher immediately identifies the specific load - no time wasted.",
+      "Broker provides systematic information: timing, weight, equipment, rate.",
+      "Dispatcher confirms critical details needed for driver instructions.",
+      "Professional tone established from the start."
     ]
   },
   {
-    title: "Placeholder Slide 2",
-    layout: "table",
+    title: "Risk Assessment and Terms Qualification",
+    layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    table: {
-      headers: ["Topic", "Description"],
-      rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
-      ]
-    },
+    bullets: [
+      "DISPATCHER: What are the detention terms and free time?",
+      "BROKER: Two hours free time at pickup and delivery, then $50 per hour with on-time arrival and documented timestamps.",
+      "DISPATCHER: How do lumpers get paid at delivery?",
+      "BROKER: Lumpers take Comcheck or EFS code, no cash payments.",
+      "DISPATCHER: For the reefer, is that 0°F continuous or start/stop?",
+      "BROKER: Continuous at 0°F, and driver needs to arrive with at least 3/4 tank fuel."
+    ],
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Smart sequence: operational details before rate negotiation.",
+      "Each question serves load execution and prevents future disputes.",
+      "Temperature specification is critical for reefer loads.",
+      "Fuel requirement adds to operational cost considerations.",
+      "",
+      "QUESTIONS:",
+      "What proof will you capture to support detention claims?",
+      "",
+      "ANSWERS:",
+      "Answer: Gate in/out times, dock timestamps, and time-stamped photos or messages."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Positioning and Capability Confirmation",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "DISPATCHER: My truck is currently empty about 45 minutes from the shipper. I can have him at the gate by 3:30 PM and easily make your window.",
+      "BROKER: Perfect, the window closes at 6:00 PM sharp, so 3:30 PM works well.",
+      "DISPATCHER: Understood. Just to confirm, this is single pickup, single delivery with no additional stops?",
+      "BROKER: Correct, no extra stops. Single pickup in Dallas, single delivery in Charlotte."
+    ],
+    trainerNotes: [
+      "Dispatcher establishes truck position and timing capability.",
+      "Specific ETA (3:30 PM) shows professional planning.",
+      "Confirmation of no extra stops prevents scope creep.",
+      "Broker confidence builds with demonstrated capability."
+    ]
+  },
+  {
+    title: "Rate Negotiation and Justification",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "DISPATCHER: This lane works for us, but with 0°F continuous reefer, heavy weight at 41,500 pounds, and the Wednesday morning set appointment, I need to be at $3,000 to book this now. That's $2.50 per mile for 1,200 miles. Do you have any flexibility?",
+      "BROKER: I can move up to $2,600.",
+      "DISPATCHER: If you can do $2,900, I'll send driver name and ETA immediately and we can lock this in.",
+      "BROKER: Best I can do is $2,700. Can you confirm pickup by 5:00 PM?",
+      "DISPATCHER: Yes, my driver can be there by 3:30 PM. My carrier is asking for $2,800 minimum given the temperature requirements and appointment pressure. Can we meet at $2,800?",
+      "BROKER: Let me check with my manager... Okay, I can stretch to $2,750 final."
+    ],
+    trainerNotes: [
+      "Excellent opening: specific justification with RPM calculation.",
+      "Negotiation flow: $2,500 → $3,000 ask → $2,600 → $2,900 → $2,700 → $2,800 → $2,750.",
+      "Each request includes logical reasoning.",
+      "External constraints (carrier requirements) remove personal conflict.",
+      "",
+      "QUESTIONS:",
+      "Which factors justified the higher rate request?",
+      "",
+      "ANSWERS:",
+      "Answer: 0°F continuous temperature, heavy weight (41,500 lbs), set appointment rigidity, lumper handling."
+    ]
+  },
+  {
+    title: "Closing and Rate Confirmation Terms",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    bullets: [
+      "DISPATCHER: $2,750 works. Can you include specific language in the rate confirmation: Temperature continuous 0°F, detention $50/hour after 2 hours with on-time arrival and timestamps, and lumper payment via Comcheck/EFS code?",
+      "BROKER: Absolutely, I'll include all those terms in the RC.",
+      "DISPATCHER: Perfect. Do you offer quickpay options?",
+      "BROKER: Yes, quickpay is 2% fee for payment in two business days, optional.",
+      "DISPATCHER: We'll go with standard pay terms for now. Please send the rate confirmation to dispatch@prodispatch.com. We're already set up with current MC authority, W-9, and certificate of insurance on file.",
+      "BROKER: Great. I need driver name and phone number, plus your ETA to pickup.",
+      "DISPATCHER: Driver is James Martinez, phone 555-234-5678. ETA to shipper 3:35 PM. I'll also send pickup departure notification and updates when we're 2 hours out from Charlotte.",
+      "BROKER: Perfect. Rate confirmation coming to your email in the next few minutes.",
+      "DISPATCHER: Thank you, Linda. We'll watch for it and confirm receipt. Have a great day."
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Smart move: requesting specific RC language prevents future disputes.",
+      "Quickpay awareness shows professional knowledge.",
+      "Immediate action items: driver info, ETA, status update commitments.",
+      "Professional closing maintains positive relationship."
     ]
   },
   {
-    title: "Section Material",
+    title: "Negotiation Analysis and Key Takeaways",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 13 notes when provided."
+      "Final Rate: $2,750 (10% increase from $2,500 opening)",
+      "RPM Achievement: $2.29 per mile vs $2.08 opening",
+      "Time Duration: 7 minutes total",
+      "Relationship Status: Positive, professional throughout",
+      "Risk Mitigation: All operational terms documented in RC"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 13 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Successful negotiation: achieved significant rate increase while maintaining broker relationship.",
+      "Professional communication throughout - no aggression or confrontation.",
+      "Systematic approach: qualify first, then negotiate.",
+      "Clear documentation prevents future disputes.",
+      "This call demonstrates excellent negotiation fundamentals."
+    ]
+  },
+  {
+    title: "Practice Applications and Next Steps",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Role Reversal: Switch roles and practice with different scenarios",
+      "Variation Practice: Different equipment types, lanes, and complications",
+      "Objection Handling: Practice responses to common broker pushbacks",
+      "Speed Building: Reduce call time while maintaining professionalism",
+      "Relationship Focus: Build long-term broker partnerships through consistent professionalism"
+    ],
+    trainerNotes: [
+      "Use this transcript as a baseline for developing your own authentic style.",
+      "Practice with different load types and market conditions.",
+      "Focus on building genuine relationships, not just winning individual negotiations.",
+      "Remember: every call is practice for the next one.",
+      "",
+      "QUESTIONS:",
+      "What three terms must appear in the rate confirmation before booking?",
+      "",
+      "ANSWERS:",
+      "Answer: Temperature mode/setpoint (0°F continuous), detention clause ($50/hr after 2 hours), lumper payment method (Comcheck/EFS)."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +432,13 @@ export default function LoadisticsSection13({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={13}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -379,7 +487,7 @@ export default function LoadisticsSection13({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(12)} 
-                        disabled={13 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 12)

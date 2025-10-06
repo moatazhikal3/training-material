@@ -1,0 +1,16 @@
+Instructor example
+Dmitry Demishev
+
+A dispatcher booked a load that is scheduled for pickup at 19:00. The driver started driving towards the loading point at 17:30. At 18:00 the broker called the dispatcher back and canceled the load. What actions should the dispatcher take in this situation?
+
+Answer:
+
+Request Truck Ordered Not Used (TONU).
+
+During a weekly call, the owner of a transportation company expressed his dissatisfaction with the dispatcher. He states that over the past month, not a single truck has met the weekly financial plan and is convinced that the dispatcher is underperforming. What actions can the dispatcher take to avoid conflict and retain the customer?
+
+Possible answers:
+
+Take time to analyze the market.
+
+Come up with 2-3 alternative weekly route plans and test them out.

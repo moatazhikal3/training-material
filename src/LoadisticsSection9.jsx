@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,80 +66,300 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 9",
-    title: "Section 9 Title Placeholder",
+    title: "Step 6 — Cargo in Transit: Tracking, Updates, and Detention",
     layout: "title",
-    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 9. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Ready to roll. This step covers everything while the load is moving: tracking, quick status updates, and detention. The aim is fewer surprises and faster fixes.",
+      "",
+      "QUESTIONS:",
+      "Quick poll: what do you think brokers care about most mid-transit—exact location, ETA, or silence avoided? Why?",
+      "Cold call: name one situation where a proactive update would have saved you time.",
+      "",
+      "ANSWERS:",
+      "Answer: ETA: It lets brokers/customers plan docks/appointments; proactive updates prevent 'silence,' which is the real risk.",
+      "Answer: Any delay (traffic, weather, long load time) where a 15–30 min heads-up would have allowed rescheduling and prevented detention/layover.",
+      "",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Why Track Location",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Stakeholders: Broker and customer expect timely location and ETA updates.",
+      "Dispatcher Role: Choose a tracking method, monitor progress, communicate changes.",
+      "Outcome: Fewer surprises, faster issue resolution, better relationships."
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Brokers and customers want two things while the truck is rolling: where is it, and when will it arrive. We choose the right tracking method, watch progress, and speak up early if anything changes.",
+      "",
+      "QUESTIONS:",
+      "Pair-share: what is your default update cadence on a 600-mile run with no issues?",
+      "Group: if an ETA moves by 30 minutes, when do you message, and what do you include?",
+      "",
+      "ANSWERS:",
+      "Answer: Departed pickup → midpoint check (~3–4 hrs) → 1–2 hrs before appointment → arrival; plus any change >15–30 min.",
+      "Answer: Immediately; include load ID, current location/time, cause, new ETA, next update time, and any appointment impact."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Tracking Methods Overview",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Method", "What it is", "Typical Use", "Watch-outs"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["ELD", "Electronic Logging Device with GPS + HOS data", "Fleet compliance, real-time status", "Access may be limited by carrier"],
+        ["MacroPoint (and similar)", "Smartphone-based GPS tracking via app or link", "Broker-initiated shipment tracking", "Get driver consent; time-bounded access"],
+        ["Check Calls", "Manual calls or texts at milestones", "Universal fallback", "Must be disciplined and time-stamped"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Three paths: ELD portal access when available, MacroPoint-style links when brokers initiate tracking, and disciplined check calls for everything else. We match the method to the carrier and the load.",
+      "",
+      "QUESTIONS:",
+      "Scenario: owner-operator declines sharing ELD access. Which method do you choose and why?",
+      "What is one drawback of each method you need to mitigate?",
+      "",
+      "ANSWERS:",
+      "Answer: MacroPoint (time-bounded, consent-based) or structured check calls if driver prefers voice/text; respects privacy and still provides visibility.",
+      "Answer: ELD: portal access limits; MacroPoint: consent/battery/signal; Check calls: manual/latency/missed calls—solve with clear cadence and timestamps."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "ELD: What It Does",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Definition: Records driving time, hours of service, and movement automatically.",
+      "Components: Vehicle tracker + fleet software + mobile app.",
+      "Requirement: Large commercial vehicles must have ELDs (compliance baseline)."
+    ],
+    images: ["/training-material/section9/images/ELD.png"],
+    trainerNotes: [
+      "ELD records movement and hours automatically: driving, on-duty, location pings. If the carrier grants access, we can monitor and forecast ETA from here.",
+      "On screen: ELD_Dashboard.png shows what the data looks like in practice.",
+      "",
+      "QUESTIONS:",
+      "Point to one field on the dashboard that helps you predict ETA and explain how you'd use it.",
+      "If you do not have portal access, what two questions can you ask the driver to approximate status?",
+      "",
+      "ANSWERS:",
+      "Answer: Drive time remaining / duty status + last location timestamp; use it to project arrival against distance/traffic.",
+      "Answer: 'What's your current location/mile marker and time?' 'How much drive time remains before your next break?'"
+    ]
+  },
+  {
+    title: "ELD: Access & Expectations",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Access: Not every carrier will grant dispatcher portal access (common with owner-operators).",
+      "If No Access: Use MacroPoint or structured check calls to stay informed."
+    ],
+    trainerNotes: [
+      "Not every carrier will grant access, especially owner-operators. No problem: we switch to MacroPoint or a tight check-call schedule.",
+      "On screen: ELD_Mobile_App.png so learners recognize what a driver might see.",
+      "",
+      "QUESTIONS:",
+      "Draft a one-sentence request to a driver asking for a quick status without sounding intrusive.",
+      "What is a reasonable check-call cadence on an eight-hour linehaul?",
+      "",
+      "ANSWERS:",
+      "Answer: 'Quick check when safe: current city and ETA to [consignee]?'",
+      "Answer: Departed PU → mid-run (~4 hrs) → 1–2 hrs from consignee → arrival (plus exceptions if anything changes)."
+    ]
+  },
+  {
+    title: "MacroPoint: How It Works",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Process: Broker requests tracking; driver gets link or app request; GPS shares location for a set period.",
+      "Consent: Confirm driver agrees before enabling tracking; clarify duration and privacy."
+    ],
+    images: ["/training-material/section9/images/Macropoint.png"],
+    trainerNotes: [
+      "Broker sends a link or app request. Driver opts in to share GPS for a defined window. We confirm consent and duration up front.",
+      "On screen: MacroPoint_Link_SMS.png and MacroPoint_Tracking_Map.png.",
+      "",
+      "QUESTIONS:",
+      "Role-play: ask for consent in one sentence and state the time window.",
+      "What do you say if the driver asks how to turn it off when the load delivers?",
+      "",
+      "ANSWERS:",
+      "Answer: 'Broker requested MacroPoint from pickup to delivery today (~12 hours). OK to enable for this load?'",
+      "Answer: End the load in-app or let the link expire; location sharing stops when the window ends."
+    ]
+  },
+  {
+    title: "Check Calls: Milestones & Cadence",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Milestone", "What to send", "Why it matters"],
+      rows: [
+        ["Arrived Pickup", "Arrived PU; gate time; dock ETA", "Establish on-time status"],
+        ["Loaded / Departed", "Outgate time; BOL received; ETA to consignee", "Proof of progress"],
+        ["Arrived Delivery", "Arrived DEL; dock time; unload start", "Starts free time clock"],
+        ["Unloaded / Departed", "Empty; docs submitted", "Triggers billing; plan next load"]
+      ]
+    },
+    trainerNotes: [
+      "When we can't automate, we systematize. Milestones: arrived pickup, loaded and outgate, arrived delivery, unloaded and empty. Each touch includes a timestamp and next ETA.",
+      "",
+      "QUESTIONS:",
+      "Write a model text for arrived pickup with gate time and dock ETA in one line.",
+      "What do you log after unloading to start billing and why?",
+      "",
+      "ANSWERS:",
+      "Answer: 'Arrived PU 09:05 (gate). Dock ETA 09:20. Will update when loaded.'",
+      "Answer: Unload start/finish times, outgate time, 'empty' status, copy of POD/BOL; supports billing and detention claims."
+    ]
+  },
+  {
+    title: "Communication Standards",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Proactive Updates: Send ETA changes early; don't wait for problems to escalate.",
+      "Format: Short, factual, time-stamped messages (text or email).",
+      "Escalation: If late or broken down, notify broker immediately so they can adjust appointments."
+    ],
+    trainerNotes: [
+      "Proactive beats reactive. If ETA slips, we message first. For bigger issues, call first, then send a short summary by text or email so there's a record.",
+      "",
+      "QUESTIONS:",
+      "Rewrite this vague note into a precise update: 'running a bit late.'",
+      "What three elements make a status message easy to act on?",
+      "",
+      "ANSWERS:",
+      "Answer: 'Load ABC123: I-40 mile 212 at 10:15. Weather delay, ETA moves from 14:30 to 15:05. Next update 12:00.'",
+      "Answer: Load/ref + timestamp/location; cause/impact; new ETA + next update time (and any needed action)."
+    ]
+  },
+  {
+    title: "Detention: What It Is",
+    layout: "table",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Concept", "Typical Practice", "Notes"],
+      rows: [
+        ["Free Time", "First 2 hours at shipper/receiver", "Clock starts at on-time arrival"],
+        ["Detention Pay", "About 30–100 USD per additional hour", "Not set by law; varies"],
+        ["Proof", "Time-stamped in/out + messages", "Needed to collect"]
+      ]
+    },
+    trainerNotes: [
+      "Free time is typically two hours at shipper or receiver. After that, detention is hourly and varies. Proof matters: clean in and out times and copies of messages sent at arrival.",
+      "",
+      "QUESTIONS:",
+      "When does the detention clock start, exactly? What counts as proof?",
+      "What would you accept as alternative proof if the guard shack is paper-only?",
+      "",
+      "ANSWERS:",
+      "Answer: After free time (typically 2 hours) from on-time arrival; proof = time-stamped in/out (gate/dock) + arrival message + POD/BOL notations.",
+      "Answer: Time-stamped photo of sign-in sheet, ELD log screenshots, phone call logs, time-stamped facility photo."
+    ]
+  },
+  {
+    title: "Detention: Negotiate Upfront",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Booking Time: Ask broker to confirm detention terms in writing or on the rate confirmation.",
+      "Example Term: \"50 USD per hour after first 2 hours, if on-time arrival and broker notified at arrival.\"",
+      "Late/Breakdown: Define what happens if truck is late; align expectations in advance."
+    ],
+    trainerNotes: [
+      "Confirm detention terms when booking, not when you're already waiting. Get it on the rate confirmation if possible and clarify exceptions for late arrival or breakdowns.",
+      "",
+      "QUESTIONS:",
+      "Draft one sentence you want written on the rate confirmation for detention terms.",
+      "If a breakdown makes you late, what do you ask the broker to document to reduce disputes later?",
+      "",
+      "ANSWERS:",
+      "Answer: 'Detention: $50/hr after first 2 hours from on-time arrival; notify at arrival; paid with supporting timestamps.'",
+      "Answer: Written note of breakdown/late exception, revised appointment, and whether detention will apply post-exception."
+    ]
+  },
+  {
+    title: "Problems On The Road",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Reality: Breakdowns, weather, and delays happen; silence makes them worse.",
+      "Best Action: Call broker early; allow them to call the customer and move the appointment.",
+      "Documentation: Keep a log of calls, texts, and times for claims and detention support."
+    ],
+    trainerNotes: [
+      "Breakdowns, weather, missed appointments happen. Silence makes them worse. We call immediately with status and a realistic new ETA, then log the timeline and evidence.",
+      "",
+      "QUESTIONS:",
+      "60-second drill: tire blowout on I-80, ETA slips two hours. List the first three calls or messages you send, in order.",
+      "What evidence will you save to support a reschedule or claim?",
+      "",
+      "ANSWERS:",
+      "Answer: (1) Call broker immediately with status/new ETA; (2) Send text/email recap with timestamps; (3) Arrange roadside, then send next update time.",
+      "Answer: ELD location/drive logs, tow/repair receipts, photos, weather alerts, call/text logs."
+    ]
+  },
+  {
+    title: "Pop Quiz",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "Name three ways to track a truck in transit.",
+        "When might a carrier deny dispatcher access to ELD, and what's your fallback?",
+        "What starts the detention clock, and what proof should you capture?",
+        "Why confirm detention terms at booking instead of after a delay?",
+        "In case of a breakdown, what is the first communication you make?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "ELD portal, MacroPoint (or similar), structured check calls.",
+        "Owner-operator privacy; fallback to MacroPoint or check calls.",
+        "On-time arrival at shipper/receiver; capture in/out times and messages.",
+        "To avoid disputes; terms vary and aren't fixed by law.",
+        "Notify broker immediately with status and revised ETA."
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Quick check to lock it in. You answer first; then I'll reveal model answers in Trainer Mode.",
+      "",
+      "QUESTIONS:",
+      "Ask (students answer aloud): Name three tracking methods we can use.",
+      "When does detention start and what proof do we need?",
+      "Who do you call first when a breakdown happens and what do you say in ten seconds?",
+      "",
+      "ANSWERS:",
+      "Answer: ELD portal; MacroPoint/app link; structured check calls.",
+      "Answer: After free time from on-time arrival; proof = in/out times + arrival message + documents.",
+      "Answer: Broker first. 'Heads-up—truck 123 on load ABC had a tire blowout at I-80 MM 212 at 10:10. Driver safe. ETA moves +2h to 16:30. Next update at 11:00.'"
     ]
   },
   {
     title: "Section Material",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 9 notes when provided."
+      "Inline Assets: ELD and MacroPoint screenshots already shown on their slides.",
+      "Additional Uploads: Use @FileName.png on content slides where relevant; avoid deferring to end.",
+      "Navigation: Use the panel here to go to Next or Previous section."
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 9 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
+      "We placed the screenshots where they matter so you can link the visuals to the workflow. If you send more PNGs later, we'll slot them on the relevant slides using the file name mentions.",
+      "",
+      "QUESTIONS:",
+      "Which slide would you place an ELD geofence alert screenshot on, and what point would it reinforce?",
+      "Thumbs check: which method will you default to next week for an owner-operator who dislikes portal access?",
+      "",
+      "ANSWERS:",
+      "Answer: On the ELD slides to reinforce automated event detection and ETA forecasting (not in a generic materials dump).",
+      "Answer: MacroPoint with explicit consent; if declined, disciplined check-call cadence with set times.",
+      "",
       "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
     ],
     isMaterialsSlide: true
@@ -330,7 +551,13 @@ export default function LoadisticsSection9({ onNavigateToSection, sectionDropdow
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={9}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -368,6 +595,25 @@ export default function LoadisticsSection9({ onNavigateToSection, sectionDropdow
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {/* Image display for slides with images */}
+                {slide.images && slide.images.length > 0 && (
+                  <div className="mt-6">
+                    <div className="grid gap-4">
+                      {slide.images.map((imagePath, i) => (
+                        <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
+                          <img 
+                            src={imagePath} 
+                            alt={`${slide.title} - Image ${i + 1}`}
+                            className="w-full h-auto max-w-2xl mx-auto"
+                            onClick={() => window.open(imagePath, '_blank')}
+                            style={{ cursor: 'pointer' }}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
 

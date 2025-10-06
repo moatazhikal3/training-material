@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,253 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 19",
-    title: "Section 19 Title Placeholder",
+    title: "Step 10 — Repeat! Mastering the Dispatch Cycle and Professional Excellence",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 19. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to the final step in the dispatch process - and it's the most important one for long-term success.",
+      "Tell the class: 'Hey, look at us! Step by step, we've learned the mechanics of the truck loading process.'",
+      "Set the stage: 'This section is about turning what you've learned into a professional, repeatable system.'",
+      "Emphasize mastery: 'The 10th step isn't really a step - it's about mastering the entire cycle through repetition.'",
+      "Connect to career growth: 'This is where you transform from someone who knows the steps to a true professional dispatcher.'"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "The Complete Dispatch Process: Steps 1-9 Review",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Step 1 — Planning: Analyze carrier goals, prepare route options, check driver availability",
+      "Step 2 — Posting Trucks: Log into load boards and notify brokers of truck availability",
+      "Step 3 — Load Search: Sort through options, call brokers, negotiate rates",
+      "Step 4 — Booking: Secure loads verbally, complete documentation and finalize details",
+      "Step 5 — Rate Confirmation: Obtain confirmation and send driver instructions",
+      "Step 6 — Transit Management: Monitor location and provide broker status updates",
+      "Step 7 — Delivery: Driver delivers load and obtains proof of delivery",
+      "Step 8 — Invoicing: Submit invoices on behalf of carrier",
+      "Step 9 — Record Keeping: Track shipments and maintain commission records"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Walk through each step systematically: 'Let's summarize and recall the whole structure we've learned.'",
+      "Emphasize progression: 'Step one - Planning. We analyze the carrier's goals and preferences, prepare route options.'",
+      "Continue methodically: 'Step two - Posting the truck. We log in to load boards and let brokers know we have availability.'",
+      "Build momentum: 'Step three - Searching for loads. We sort through options, call brokers, and negotiate rates.'",
+      "Show completion: 'Each step builds on the previous one, creating a complete professional process.'",
+      "Ask the class: 'But what is the 10th step?' Wait for responses before revealing the answer."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Step 10: The Power of Repetition",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Continuous Cycle: After completing work for one truck, start from scratch for the next",
+      "Multiple Opportunities: Look for next loads for trucks you just finished loading",
+      "Customer Expansion: Apply the same process to new customers and carriers",
+      "Never Boring: Despite repetition, dispatchers are never bored due to constant variety",
+      "Skill Development: Repetition builds the expertise needed to handle multiple trucks simultaneously"
+    ],
+    trainerNotes: [
+      "Reveal the answer: 'Well, actually, it's just repetition. After you've done all the work for one truck, you start from scratch.'",
+      "Explain the cycle: 'You do the same for the next truck, or the next customer, or look for the next load for the truck you just finished.'",
+      "Address concerns: 'It sounds kind of repetitive, but trust me, dispatchers are never bored at work.'",
+      "Connect to growth: 'To work with five or more trucks simultaneously, you need to develop important skills.'",
+      "List key skills: 'Stress resistance, multitasking, and most importantly, excellent time management.'"
+    ]
+  },
+  {
+    title: "Essential Skills for Multi-Truck Operations",
     layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Skill", "Description", "Why It Matters"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        [
+          "Rapid Task Switching",
+          "Perform completely unrelated actions in short time periods",
+          "Essential for managing multiple trucks with different needs"
+        ],
+        [
+          "Stress Resistance",
+          "Maintain composure under pressure and tight deadlines",
+          "Keeps decision-making clear when handling urgent situations"
+        ],
+        [
+          "Multitasking",
+          "Handle several processes simultaneously without losing focus",
+          "Allows efficient management of 5+ trucks at the same time"
+        ],
+        [
+          "Time Management",
+          "Prioritize tasks and optimize workflow for maximum efficiency",
+          "Most important skill - determines overall success and earnings"
+        ],
+        [
+          "Experience Integration",
+          "Apply lessons learned to improve future performance",
+          "Accelerates professional growth and reduces mistakes"
+        ]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Explain skill development: 'Such a list of skills comes only with experience, but why not speed up the process?'",
+      "Share methodology: 'When creating this lesson, I gathered my best employees and spoke with successful colleagues.'",
+      "Pose the key question: 'I asked them all one simple question: How do you get things done?'",
+      "Build anticipation: 'Here's a list of answers and recommendations from the best dispatchers in the industry.'",
+      "Emphasize value: 'These are tricks and secrets from experienced dispatchers that can accelerate your learning.'"
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Professional Tip #1: Strategic Time Management",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Planning Outside Hours: Do all planning and analysis outside of working hours",
+      "Peak Hour Focus: When 8 AM strikes, all focus goes to brokers and booking loads",
+      "Strategic Call Timing: Move long calls with clients and drivers to end of day",
+      "Broker Priority: Prime business hours are reserved exclusively for broker interactions",
+      "Preparation Advantage: Pre-work preparation maximizes productive business hours"
+    ],
+    trainerNotes: [
+      "Quote the expert: 'I do all the planning and analysis outside of working hours.'",
+      "Explain the strategy: 'I try my best to move long calls with clients and drivers to the end of the day.'",
+      "Emphasize focus: 'When the clock strikes 8 AM, all my focus is on brokers and booking loads.'",
+      "Connect to success: 'This time management strategy maximizes your most productive hours.'",
+      "Ask the class: 'Why do you think focusing on brokers during peak hours is so important?'"
+    ]
+  },
+  {
+    title: "Professional Tip #2: Memory Management System",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Write Everything Down: Never keep anything in your head - use a notebook system",
+      "Immediate Capture: Every note, task, and important detail goes into the notebook instantly",
+      "Task Management: If you can't start a new task immediately, write it down first",
+      "High Volume Handling: Sometimes accomplish 100+ tasks per day through systematic tracking",
+      "Mental Clarity: Writing everything down prevents mental overload and missed details"
+    ],
+    trainerNotes: [
+      "Quote directly: 'I don't keep anything in my head. Every little note, every task, every important detail goes into my notebook.'",
+      "Explain the process: 'If a new task comes up and I don't immediately get started on it, it goes straight into my notebook.'",
+      "Share the volume: 'Sometimes I have to write out and accomplish a hundred tasks in a day.'",
+      "Emphasize necessity: 'Unless absolutely everything is written down, my head explodes.'",
+      "Connect to reliability: 'This system ensures nothing gets forgotten and clients can count on you.'"
+    ]
+  },
+  {
+    title: "Professional Tip #3: Strategic Load Board Management",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Morning Routine: Post updates for all trucks and email brokers about availability",
+      "Network Leverage: Build broker relationships that send good offers proactively",
+      "Contact Strategy: Today's trucks get phone numbers, future trucks get email only",
+      "Distraction Control: Email-only contact for future loads prevents unnecessary interruptions",
+      "Systematic Processing: Handle today's trucks first, then process emails, then post tomorrow's trucks"
+    ],
+    trainerNotes: [
+      "Share the routine: 'In the morning, I post updates for all trucks on load boards and send emails to brokers.'",
+      "Explain scale: 'Sometimes I have 12-13 trucks for one day, so it's impossible to search for each one individually.'",
+      "Highlight network value: 'I cover most trucks with incoming offers because I have a broker network that knows me well.'",
+      "Detail the strategy: 'Trucks leaving today get phone numbers, ones leaving tomorrow get email only.'",
+      "Explain reasoning: 'Otherwise I get a lot of distractions when I need to focus on immediate priorities.'"
+    ]
+  },
+  {
+    title: "Professional Tip #4: Load Research and Timing",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    bullets: [
+      "Detailed Notes: Keep separate notes for each load to avoid duplicate calls",
+      "Load Marking: Mark loads you don't like and remove them from your list",
+      "Pickup Time Tracking: Always mark pickup times to monitor load aging",
+      "Timing Strategy: Check how much time brokers have left to close loads",
+      "Rate Leverage: Less time remaining means brokers are more willing to pay higher rates"
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Explain documentation: 'When I call on loads, I always keep a separate note for each load.'",
+      "Show efficiency: 'There might be a lot of calls, so I save information so I don't call the same broker many times.'",
+      "Share board features: 'On most boards you can mark loads you don't like and remove them from the list.'",
+      "Emphasize timing: 'Always mark the pickup time - if it hangs on the board for a long time, check how much time the broker has left.'",
+      "Reveal strategy: 'The less time they have, the more they're willing to pay. This is valuable leverage.'"
     ]
   },
   {
-    title: "Section Material",
+    title: "Professional Tip #5: Client Communication and Planning",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 19 notes when provided."
+      "Upfront Discussion: Discuss timing preferences with clients before searching",
+      "Goal Alignment: Understand how much money the client wants to make",
+      "Expectation Setting: Clarify client goals and timeline preferences early",
+      "Time Efficiency: Good communication prevents wasted search time",
+      "Strategic Planning: Book 1-2 loads in advance when possible for better long-term earnings"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 19 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Share the problem: 'Sometimes you sit around all morning looking for loads and then the client says, Let's wait until evening.'",
+      "Emphasize waste: 'Maybe prices will go up. It's a waste of time.'",
+      "Provide solution: 'It's better to call right away and say I'm looking for loads and discuss goals.'",
+      "Show benefits: 'Good communication saves a lot of time and prevents misunderstandings.'",
+      "Add strategy: 'If possible, I book at least 1-2 loads in advance. Carriers who work this way always earn more long-term.'"
+    ]
+  },
+  {
+    title: "Professional Tip #6: The Power of the Last Hour",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Key to Success: Make the last hour of work count - it's crucial for success",
+      "Mindset Shift: Many people relax in the last hour, but professionals stay focused",
+      "Tomorrow's Advantage: Use end-of-day time to secure tomorrow's loads",
+      "Broker Alignment: Connect with brokers who are also interested in closing tomorrow's shipping",
+      "Relationship Building: Develop daily end-of-day calling partnerships with key brokers"
+    ],
+    trainerNotes: [
+      "Emphasize importance: 'I always make the last hour of work count. It's the key to success.'",
+      "Contrast approaches: 'Many people think the last hour is time to relax. They think, Oh, I have a truck for tomorrow, whatever.'",
+      "Share strategy: 'Me, I sit there at 6 PM calling for tomorrow's loads.'",
+      "Explain advantage: 'I run into brokers who are also interested in closing tomorrow's shipping.'",
+      "Show relationships: 'There are guys I regularly call every day at the end of the day, and together we look for opportunities.'"
+    ]
+  },
+  {
+    title: "Implementing Professional Excellence",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Monthly Review: Make notes and review this training a month after starting work",
+      "Continuous Improvement: Regular review guarantees useful insights and work quality improvement",
+      "Foundation Complete: This module completes the first introductory part of the course",
+      "Advanced Learning: Next modules contain information needed to become a real professional",
+      "Homework Completion: Complete assignments to earn points and reinforce learning"
+    ],
+    trainerNotes: [
+      "Provide actionable advice: 'I recommend making a note to yourself and reviewing this class a month after you start working.'",
+      "Promise results: 'I guarantee that you will recapture useful insights and improve the quality of your work.'",
+      "Mark milestone: 'We're finishing up this module and the first introductory part of the course.'",
+      "Set expectations: 'The next four modules are the advanced part with information to become a real professional.'",
+      "Give instructions: 'Be sure to complete homework assignments to earn points and absorb the information.'"
+    ]
+  },
+  {
+    title: "Your Journey to Professional Dispatcher Excellence",
+    layout: "bullets",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Mastery Through Repetition: Excellence comes from consistently applying the 10-step process",
+      "Professional Skills: Develop stress resistance, multitasking, and time management through practice",
+      "Industry Secrets: Apply tips from the best dispatchers to accelerate your learning curve",
+      "Systematic Approach: Use proven strategies for planning, communication, and load management",
+      "Continuous Growth: Regular review and improvement ensure long-term career success"
+    ],
+    trainerNotes: [
+      "Wrap up the journey: 'You now have the complete framework for professional dispatching success.'",
+      "Emphasize practice: 'Remember, mastery comes through repetition and consistent application of these principles.'",
+      "Highlight advantage: 'You have industry secrets that many dispatchers learn only through years of trial and error.'",
+      "Encourage implementation: 'Start applying these professional tips from day one of your dispatcher career.'",
+      "Close with confidence: 'With this foundation and these professional strategies, you're ready to excel as a company dispatcher.'",
+      "Final message: 'Take a couple of days to rest and absorb this information. See you in the advanced modules!'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +503,13 @@ export default function LoadisticsSection19({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={19}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -375,7 +554,7 @@ export default function LoadisticsSection19({ onNavigateToSection, sectionDropdo
                 {(slideIndex === 0 || slide.isMaterialsSlide) && onNavigateToSection && (
                   <div className="mt-6 p-4 bg-gray-50 rounded-xl border">
                     <div className="text-sm font-semibold mb-3">Section Navigation</div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 flex-wrap">
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(18)} 
@@ -384,6 +563,17 @@ export default function LoadisticsSection19({ onNavigateToSection, sectionDropdo
                       >
                         ← Previous Section (Section 18)
                       </Button>
+                      
+                      {/* Quiz Break #2 Button - only show on last slide */}
+                      {slide.isMaterialsSlide && (
+                        <Button 
+                          onClick={() => onNavigateToSection("quiz-break-2")} 
+                          className="rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all duration-200"
+                        >
+                          🎯 Quiz Break #2
+                        </Button>
+                      )}
+                      
                       <Button onClick={() => onNavigateToSection(20)} className="rounded-xl">
                         Next Section (Section 20) →
                       </Button>

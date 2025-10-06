@@ -1,0 +1,483 @@
+So for your next step, we're going to look at data load board.
+
+That's the one I've used for most of the demonstrations.
+
+Getty is the market leader.
+
+It's the Premier and the biggest load board on the United States market.
+
+So you will definitely want to get that in addition to your one, two, three load board and to your
+
+doffed accounts.
+
+So you log in to gatcombe.
+
+You can see the website right here on the top, and then you go into products and they have multiple
+
+products.
+
+But what you're interested in is the load board.
+
+So I'm going to click load board.
+
+They offer me to sign up now, but actually if I scroll all the way down, let's see.
+
+There you go.
+
+I will come to the package comparison.
+
+Let's take a look at them.
+
+So make sure you're here on the carrier side because they also have the load board accounts for brokers
+
+combination of broker and carrier and for shippers.
+
+What we're interested in is the carrier load board, the one that allows us to search for loads so they
+
+have five packages.
+
+It starts with a trackers edge data trackers edge standard, which is $45 a month currently.
+
+And then the most expensive one power office carrier is a whopping $295 a month.
+
+Once again, getting a load board and paying for a load board like that is only going to be required
+
+for dispatchers who are going to be working as freelancers, as self-employed dispatchers.
+
+So essentially for those who are going to make a business out of it and provide their services to,
+
+you know, multiple carriers, multiple small carriers as customers.
+
+So in that case, you will need to purchase a load board and to pay for a load board as well as some
+
+other tools like a VoIP phone to call that more on that will be in module nine.
+
+But if you're going to get a job.
+
+So if you go the other route and you are getting employment in a trucking company, like as a remote
+
+employee or remote agent in a trucking company or in a dispatching company, in that case, your employer
+
+will certainly provide you all the tools.
+
+You're not going to you're not going to have to go and buy them themselves.
+
+And data load board will definitely be one of those.
+
+So let's check the packages.
+
+We're starting here.
+
+So unlimited search posting is available for each one data one mobile app.
+
+So you just like with the other load boards, you can use data on your computer or you can download
+
+an application and use it on your phone if you're on the road or something.
+
+Load match alarm.
+
+So we've looked at that.
+
+That's the alarm you can set and it will it will ring once, once something based on your search load.
+
+A new load has appeared.
+
+It will ring.
+
+It will give you a little sound so you know that a new load has come up.
+
+Mileage and routing broker created credit data.
+
+So that's the broker credit score and the days to pay that we saw during the demonstration of the load
+
+board and the load counts by state so that the in and out ratio that one will be available in all the
+
+subscriptions and then the average lane rates.
+
+So when that's the one we were looking at, when you search for a load and then you can go and see the
+
+average rate for this load for the past days, that one is not available in the in the cheapest package
+
+for $45.
+
+So you're going to have to pay more.
+
+And in truckers enhanced is going to show you historical data for the past 30 days.
+
+But if you go for a more expensive package, it's going to show you data for the past 15 days call to
+
+post search so you don't actually have to go on the load board.
+
+If you're a driver, you're in a truck.
+
+You can actually search and book loads by phone.
+
+A manager will help you with that and then try hole.
+
+This function will only be available in the third package.
+
+The truckers edge professional so trial is suggested higher paying routes within triangular route suggestions.
+
+So let's say you're looking for a load, let's say from Miami, Florida, going to New York and it's
+
+a two day load and potentially they're going to pay quite low in terms of rate per mile if you go directly
+
+from Miami to New York.
+
+So this trial function on the will actually give you suggestions on how you can break up that longer
+
+load into two shorter loads to maximize your rate per mile.
+
+So maybe in our example it will recommend you to first go from Miami to, let's say, Atlanta, Georgia
+
+and then from Atlanta to go to New York.
+
+And this way you increase your rate per mile, or maybe it will suggest you to go to Alabama or North
+
+Carolina.
+
+So basically it will help you break.
+
+Down a long low, paying loads into shorter, higher paying loads.
+
+That's what the trial function can be used for.
+
+We actually didn't look at it during our presentation, but it's going to be available if you buy truckers
+
+professional or higher assurance helps carriers collect past due payments and then Canadian loads will
+
+be available and then live load board.
+
+So we if you don't go for the truckers Reg, if you go for the more expensive power option, your load
+
+board will be live live search results with instant refresh.
+
+So instead of you having to click refresh button every time to see new loads, the power load board
+
+will actually refresh automatically and then you'll get the market conditions index.
+
+The MCI.
+
+That's something we looked at in module five.
+
+Exact match alarms set an alarm for when a new load matches exactly what you're looking for.
+
+Multiple searches and filtering is also available in the power.
+
+So in Truckers Edge, you have to look for each load.
+
+Individually.
+
+You can only have one search, one load search going at a time.
+
+With power, you can have multiple load searches at a time and then you can switch through them very
+
+easily.
+
+And then in the most expensive package, the one for $295 power of his career, you also get preferred
+
+and blocked companies contract lane rates and lane makers.
+
+Lane makers is something we looked at as well.
+
+That's the tool that helps you find brokers that have been posting the most amount of loads for a certain
+
+area or for a certain lane.
+
+So that's the comparison of the packages.
+
+If you if you're employed and you're working for a company, they they will be the one choosing the
+
+package.
+
+But for an independent dispatcher, that's going to be a choice for you.
+
+I don't suggest paying 295, but you might want to go for either of these three packages because the
+
+cheapest package doesn't provide you with average lane rates.
+
+And this is an important tool for a beginner to see what brokers have been paying on average.
+
+So I suggest going with one of these three packages.
+
+Now you can go ahead and click Buy Now the only issue.
+
+So I already clicked on buy.
+
+Now let me switch here.
+
+The only issue when you set up your account, first of all is going to ask you for authority type.
+
+In the past, you could only get a data account if you had a D or an MSI number.
+
+So you had to be a licensed carrier.
+
+Now you can choose No or MSI.
+
+And then in the type here, you have several options.
+
+You can choose Carrier dispatcher, so you actually can get a data account.
+
+Now being a dispatcher, you do not need to have a license, a carrier license, but it will ask you
+
+for company name and for an address in the United States.
+
+So that wants you to have a trucking company or a dispatching company if you're going to sign up.
+
+So that's a bit of an issue for dispatchers.
+
+For an independent dispatcher, the fastest and easiest way to get access to data is actually to request
+
+an account from one of your customers.
+
+And this is a perfectly normal practice.
+
+There's nothing shameful or distrustful about it.
+
+You can simply explain to the carrier that in order to comply with data rules, you only work with customers
+
+accounts and you can either pay the account fee yourself so you can actually create an account with
+
+a customer's name.
+
+So customer's company name and his address and everything, and then pay for the account yourself.
+
+Or you can agree that they will create an account for you basically, or provide you with their existing
+
+account and then they will deduct the the cost of the load board from your dispatching fee.
+
+So most new dispatchers get the account this way.
+
+There's nothing wrong about it.
+
+The second option for you is to get an account under your own company name and opening a company in
+
+the US.
+
+That's something we're going to discuss in a bit more detail in module nine, but actually it's not
+
+that difficult.
+
+You can open a company remotely.
+
+You don't need to be a resident of the of the United States.
+
+You don't need to be a citizen.
+
+You don't need to go and visit the US yourself.
+
+You don't even need to have any visa to go there.
+
+So there's actually there are ways to open a company in the US completely remotely using a lawyer or
+
+a special company that specializes on that.
+
+It will cost you a bit of money.
+
+So we'll not get too much into detail, but you can and I will show you how in the future modules open
+
+a company in the US and then.
+
+Open the account on your name, on your company, which honestly doesn't change anything.
+
+As I said, most, if not all dispatchers open an account using one of the carriers, one of the customers
+
+that they found.
+
+They just list themselves as carrier dispatcher and then they go ahead and fill out the information
+
+as the carrier.
+
+Even if you open a account on your own company, they will still ask you because you're going to be
+
+a carrier dispatcher.
+
+You're not going to have an number.
+
+So the will still ask you to provide the company name and the contact of at least one carrier that you
+
+dispatch, and then you'll provide that information and they will actually call the carrier and ask
+
+them, check with them whether this person is really dispatching them, and only then they will give
+
+you access to the account.
+
+So in any case, to get an account, you need to first find the carrier.
+
+You don't.
+
+If you don't know how to find carriers yet, that's once again, that's going to be the information
+
+of module eight and module nine.
+
+So don't worry about that.
+
+Actually, finding a carrier to dispatch is not the difficult task at all.
+
+It's actually quite easy and I'll provide you with free tools on how to do that.
+
+The difficult part is to start dispatching that carriers, to start working to find them laws that they
+
+like and to start generating commission.
+
+That's why we're spending all this time learning the best practices on how to be a dispatcher.
+
+But essentially, once you have a carrier, you will just ask them to provide you a account or to open
+
+a VAT account under their name.
+
+You will go through all of these details and then once again, you will need to input a credit card
+
+or a debit card number in order to register, and then you will be able to use that immediately.
+
+Another load board that we're going to look at is Truck Stop.
+
+So the website is truck stop.com.
+
+Truck stop is the main competitor of get.
+
+As you can see here, they're showing how many loads they have.
+
+So they have quite a lot of loads.
+
+Sometimes they even have more loads than one, two, three load board.
+
+As a dispatcher, you don't necessarily need to have a truck stop load board.
+
+So usually a dad and a couple other load boards is sufficient.
+
+But especially if you're working with flatbed carriers or step deck carriers, any platform trailers,
+
+then truck stop typically has more loads for those types of equipments.
+
+So you might want to get a truck stop if you have carriers with that type of equipment.
+
+So here on truck stop, I'm already on the load board here.
+
+You have three packages, basic advanced and pro package in basic cost, $39 per month.
+
+You just get the standard load searching truck posting with the pro package, the one for $149.
+
+You get all the analysis tools.
+
+Essentially these are the same analysis tools, very similar to what you get with 1 to 3 load board
+
+or load board load comparison, real time updates, rate insights.
+
+So that's going to be your average rates.
+
+Heatmap.
+
+That's the same as the maps we saw on 1 to 3 and then on data that shows the load to truck ratio per
+
+region or per state.
+
+And then they also have some of their own features like Best Paint Load Search and Multi-trip.
+
+So truck Stop is also a great option.
+
+Once again, you will face the same problem as with data load boards.
+
+They will want you to have a US based company in order to sign up.
+
+And if I if I'm correct, they don't even have an option to register as a dispatch.
+
+At some point they had an option.
+
+Then they took it off.
+
+So it might be different at the time you're watching the video, maybe they add it back, but in any
+
+case, it costs more money.
+
+And once again, just the same way as it was data load board, the easiest and most effective way to
+
+get access to this load board is to first find the carrier that you will be dispatching and then either
+
+register an account on their company name or ask them to provide you a truck stop account.
+
+And for your third step is going to be getting access to broker load boards.
+
+So many large brokerage firms have their own public load boards very often.
+
+Actually, they will post loads on their own load board first and only after they will post it on a
+
+public load.
+
+Boards like that and one, two, three load boards they will post on their own load boards so that the
+
+carriers who already signed up with them get a first pick, get a first choice of the loads, and then
+
+those loads that haven't been sold after a little while will be posted on a public load board.
+
+Some brokers will actually only post loads on their own load boards, like, for example, Amazon or
+
+Uber freight.
+
+Yeah, you heard correct Uber.
+
+Just like the the taxi company, Uber actually has a very strong standing in the freight brokerage business
+
+and their own load board, their own application allows carriers to book loads without calling the broker,
+
+without negotiating rates.
+
+So everything is done in the application.
+
+There are many broker load boards.
+
+I open this one as an example.
+
+It's tcl.com.
+
+So for many broker load boards you will first need to set up your carrier with that broker and then
+
+they will give you access to the load board.
+
+I chose this one because it actually you can get access right away.
+
+So all the broker load boards are free.
+
+Of course they're not going to charge you for them.
+
+So this one is tcl.com and then you can go here into carriers and click on load board.
+
+I already pre loaded it because a little bit slow but this is how it looks just looks like a normal
+
+standard load board maybe less commercialized.
+
+So I tried to do a search.
+
+I searched for loads out of Dallas, Texas for tomorrow and you can see that there are actually many,
+
+many load offers.
+
+Some of them have rates, some don't.
+
+But you know, large brokers have a lot of loads and.
+
+You'll definitely want to get your carriers set up with as many brokers as possible.
+
+And then with each broker, you can inquire whether they have a load boards and then get them signed
+
+up for that load board.
+
+So this way you have more load opportunities, you have more load options and you'll always have something
+
+to offer to your carrier.
+
+Look at that.
+
+How many loads they have.
+
+Okay.
+
+I am going to leave a list of load boards for you right here in this lesson.
+
+So you'll see it under the video.
+
+It will include the public load boards that we discussed, the free ones, the paid ones, and I will
+
+include a number of largest broker load boards so that when you sign up a carrier, when you start working,
+
+you will already know what brokers to sign up and what load boards you can get access to immediately.

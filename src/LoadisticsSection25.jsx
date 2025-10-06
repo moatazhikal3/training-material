@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,44 +66,219 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 25",
-    title: "Section 25 Title Placeholder",
+    title: "Strategic Load Selection Approaches",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 25. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to Section 25: 'Strategic Load Selection Approaches' - this is Part 3 of our market analysis series, focusing on practical load selection strategies.",
+      "Key focus: 'These are all the analysis tools you will need in your work once you've taken time to analyze the market.'",
+      "Process overview: 'Your next step is pretty straightforward. You log in to a load board, search for loads, call brokers, compare prices, negotiate and book.'",
+      "Professional approach: 'Analysis is needed for working with carriers who give you the freedom to choose their own routes and who rely on you being a professional who knows how to use the available tools.'"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "From Analysis to Action - The Dispatching Process",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Log in to load board and search for available loads",
+      "Call brokers to discuss rates and availability",
+      "Compare prices across multiple brokers and lanes",
+      "Negotiate rates based on market analysis and urgency",
+      "Book loads that maximize profitability and efficiency",
+      "Apply strategic approaches based on market conditions"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Process introduction: 'These are all the analysis tools you will need in your work once you've taken time to analyze the market. Your next step is pretty straightforward.'",
+      "Action steps: 'You log in to a load board, search for loads, call brokers, compare prices, negotiate and book.'",
+      "Complexity acknowledgment: 'If all of this seemed a bit complicated at the first glance, do not be alarmed.'",
+      "Carrier types: 'In reality, many carriers will give you very specific parameters on where they want their trucks to go.'",
+      "Professional requirement: 'Analysis is needed for working with carriers who give you the freedom to choose their own routes and who rely on you being a professional who knows how to use the available tools.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Four Strategic Load Selection Approaches",
     layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Approach", "Strategy", "Best For", "Risk Level"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Hot Loads", "Last-minute urgent loads with premium rates", "Owner operators, flexible carriers", "High"],
+        ["Dedicated Lanes", "Recurring routes with consistent pricing", "Home-based drivers, regular schedules", "Low"],
+        ["Double Load (2-1)", "Book high-paying load first, then connecting load", "Bad zone positioning", "Medium"],
+        ["Partial Load Consolidation", "Multiple loads in one trip for higher earnings", "Experienced dispatchers", "High"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Approach introduction: 'Now let's consider several approaches to load selection. This is a new topic if you're taking notes, start a new chapter.'",
+      "Strategy overview: 'The first approach is booking hot loads. The second approach is looking for dedicated lanes. The third approach we will consider is called double load or two one. And the last approach I would like to talk to you about is partial load consolidation.'",
+      "Professional development: 'If at any point of your career you are confused and don't know where to send your truck to make the highest profit, or you're worried about sending a truck somewhere and not being able to get it out of there, Go back to your notes from this module and you'll find all the answers.'",
+      "Strategic thinking: 'Each approach has specific applications and risk levels that must be carefully considered.'"
+    ]
+  },
+  {
+    title: "Approach 1: Hot Loads - Last-Minute Premium Rates",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Look for last-minute loads with urgent pickup times",
+      "Brokers become desperate when loads aren't covered",
+      "Call broker to find pickup appointment time",
+      "Monitor load board to see which loads remain unbooked",
+      "When broker runs out of time, you have huge bargaining advantage",
+      "Can potentially make excellent money on urgent shipments"
+    ],
+    trainerNotes: [
+      "Hot load definition: 'The first approach is booking hot loads. This approach entails looking for last minute loads and getting a top rate because of the urgency.'",
+      "Broker perspective: 'Brokers, just like dispatchers, work all day long to make sure that cargo is shipped and that they make money from it. Their goals are much the same as those of the dispatcher.'",
+      "Market dynamics: 'Although we're on the opposite teams of the game, the broker needs to sell the load as cheap as possible and the dispatcher needs to get the highest possible price.'",
+      "Urgency factor: 'If the broker fails to sell the load and time is running out. Or maybe if somebody booked his load and then cancelled at the last minute, the load becomes hot.'",
+      "Identification process: 'How do you determine a hot load? It's very simple. Call the broker and find out the pickup appointment time. Do this with multiple loads, write down appointment times and monitor the board to see which of those have not been removed from the board.'"
+    ]
+  },
+  {
+    title: "Hot Loads - Advantages and Disadvantages",
+    layout: "table",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Advantages", "Disadvantages", "Best Carriers", "Strategic Notes"],
+      rows: [
+        ["High rates due to urgency", "No guarantee of finding hot loads", "Owner operators with flexibility", "Use with caution"],
+        ["Significant bargaining power", "Don't build broker relationships", "Small carriers with time", "Risk of being left with nothing"],
+        ["Good money potential", "Take advantage of broker desperation", "Carriers who can wait", "Carrier must be on board"],
+        ["Perfect for flexible drivers", "Relationship damage potential", "No hurry carriers", "Monitor market carefully"]
+      ]
+    },
+    trainerNotes: [
+      "Target carriers: 'A lot of smaller carriers use this approach, especially owner operators who have nowhere to hurry. They're willing to sit and wait for a good opportunity.'",
+      "Profit potential: 'In single cases, you can make good money on this, but companies who rely on this method too much often lose out sooner or later.'",
+      "Relationship concerns: 'They don't build close relationships with brokers but take advantage of their difficult situation.'",
+      "Risk factor: 'Moreover, having waited until late, there is always a chance of not finding such a hot load and being left with nothing.'",
+      "Strategic advice: 'Use this approach with care and only if your carrier is on board to play this game.'"
+    ]
+  },
+  {
+    title: "Approach 2: Dedicated Lanes - Consistent Recurring Routes",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Similar to contract freight with recurring shipments",
+      "Identify broker with regular lane needs (weekly, monthly)",
+      "Negotiate prices in advance for multiple weeks",
+      "Book shipments weeks or months in advance",
+      "No additional contracts required - just rate confirmations",
+      "Perfect for bringing drivers home weekly or starting from home"
+    ],
+    trainerNotes: [
+      "Definition: 'The second approach is looking for dedicated lanes. In essence, dedicated lanes are similar to contract freight.'",
+      "Process: 'In this case, you identify a broker who has a lane that needs to be shipped repetitively at a certain interval. For example, once a week we negotiate prices with the broker in advance and then book the shipment for several weeks in advance.'",
+      "Documentation: 'Usually no additional contracts are required for this. The broker just provides rate confirmations for all of our loads.'",
+      "Driver benefits: 'This approach is especially helpful when you need to bring the driver home every weekend, or maybe get him out of his home every Monday in order to find a dedicated lane.'",
+      "Communication strategy: 'You just need to communicate with the broker after a successful delivery and ask them about the possibility of booking the same load upfront for the next couple of weeks, months, or even for the whole season.'"
+    ]
+  },
+  {
+    title: "Dedicated Lanes - Real-World Example",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Carrier wanted only Los Angeles, CA to Portland, OR routes",
+      "There and back every week consistently",
+      "Developed Monday LA to Portland dedicated lane",
+      "Developed Wednesday Portland to LA dedicated lane",
+      "Whole week booked at stable price for months",
+      "Minimal work required - just commission for organizing schedule"
+    ],
+    trainerNotes: [
+      "Real example: 'For example, I had a carrier that only wanted to move from Los Angeles, California to Portland, Oregon. There and back every week.'",
+      "Development process: 'After a while of working with this carrier, I was able to pre-book a dedicated lane that left from Los Angeles to Portland every Monday and another lane that left from Portland to Los Angeles every Wednesday.'",
+      "Result: 'This way I had the whole week booked for the carrier at a stable price for months.'",
+      "Efficiency: 'I barely had to do any work for this carrier and simply made my commission for organizing the schedule.'",
+      "Strategic value: 'This demonstrates the power of building relationships and creating predictable revenue streams.'"
+    ]
+  },
+  {
+    title: "Approach 3: Double Load (2-1) - Bad Zone Strategy",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Used when truck is in bad zone with low rates everywhere",
+      "First: Find high-paying load in another zone for later date",
+      "Second: Find connecting load to get closer to high-paying load",
+      "Book both loads simultaneously - hence 'double load'",
+      "Book second load first, then first load - hence '2-1'",
+      "Strategy: Accept low rate now to reach high-paying zone"
+    ],
+    trainerNotes: [
+      "Problem identification: 'The third approach we will consider is called double load or two one. This method is often used when the truck is in a bad zone, and no matter where we go, we still get a low rate.'",
+      "Strategy: 'In this case, we first find a second high paying load from another zone for another day and then find a load that will bring us as close to that second one as possible.'",
+      "Process: 'So in this way we're booking two loads at once. Double load. We first booked the second load and then the first one, hence the name two one.'",
+      "Strategic thinking: 'This approach requires forward planning and understanding of market dynamics across different zones.'",
+      "Risk management: 'The key is ensuring the high-paying load is actually available and worth the investment in the connecting load.'"
+    ]
+  },
+  {
+    title: "Approach 4: Partial Load Consolidation - Maximizing Earnings",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Consolidate several partial loads in one trip",
+      "Found on load boards - choose 'partial' or 'both' options",
+      "High professionalism required - potential for increased earnings per mile",
+      "Can lead to serious scheduling difficulties if not managed properly",
+      "Requires careful planning of loading/unloading order",
+      "Must consider weight, space, and driver hours of service"
+    ],
+    trainerNotes: [
+      "Definition: 'And the last approach I would like to talk to you about is partial load consolidation. Consolidation of several loads in one trip.'",
+      "Availability: 'Partial loads can be found in the same way as regular full truck loads on any load board. While searching for loads, we can choose from three options full, partial or both.'",
+      "Requirements: 'Consolidating partial loads requires high professionalism and it has the potential to increase your earnings per mile, but it can also lead to serious scheduling difficulties.'",
+      "Planning importance: 'Here are a few rules to keep in mind. The order of loading and unloading is important.'",
+      "Equipment considerations: 'Well, if we're talking about flatbeds, it's easier. You can load and unload the cargo from either side of the trailer and it doesn't affect anything.'"
+    ]
+  },
+  {
+    title: "Partial Load Consolidation - Critical Rules",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Rule", "Equipment Type", "Application", "Key Consideration"],
+      rows: [
+        ["Loading Order", "Dry Van/Reefer", "First load = last unload", "Can't unload middle cargo"],
+        ["Loading Order", "Flatbed", "Flexible loading/unloading", "Length/width limits"],
+        ["Driver Hours", "All Types", "Monitor HOS closely", "Multiple stops affect schedule"],
+        ["Weight & Space", "All Types", "Count pallets, estimate space", "Consider total capacity"],
+        ["Teamwork", "Flatbed", "Work with driver closely", "Skill and ingenuity required"]
+      ]
+    },
+    trainerNotes: [
+      "Dry van/reefer rules: 'However, in the case of dry vans, reefers box trucks, the first load that has been loaded into the trailer must be unloaded last because no one will bother unloading the whole trailer, taking the part they need and then loading the rest of the product back.'",
+      "Strategic loading: 'Therefore, the longest load should be loaded first so that it can be unloaded last. This will give you the opportunity to pick up and unload other cargo along the way.'",
+      "HOS management: 'You have to keep a very close eye on the drivers work schedule. A large number of pick ups and drop offs can greatly affect the hours.'",
+      "Scheduling risk: 'If pickup and delivery appointments don't combine well, you could lose an extra day due to this partial load consolidation.'",
+      "Capacity planning: 'It's important to count not only the weight but also the space the load takes up. If all the goods are on pallets, it's a little easier.'"
+    ]
+  },
+  {
+    title: "Strategic Load Selection - Decision Framework",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Use market analysis tools: average rates, trends, load-to-truck ratios",
+      "Determine general direction for highest profit potential",
+      "Apply appropriate strategy based on market conditions",
+      "Hot loads: When urgent pickup and driver is close by",
+      "Dedicated lanes: After successful delivery, ask about recurring opportunities",
+      "Double load: When in bad zone with no good options",
+      "Partial consolidation: When experienced and can handle complexity"
+    ],
+    trainerNotes: [
+      "Tool integration: 'Okay, let's recap everything we learned so far. In order to make informed load decisions and build route plans, we can utilize multiple tools available to us.'",
+      "Analysis foundation: 'Checking average rates. Market trends, load to truck ratios. All of this will give us a general idea of what direction to bring the highest profit to our truck.'",
+      "Real-world application: 'After analyzing the market, we log in to our load board and start looking at the real picture. How much are they really paying for the lanes we're looking for?'",
+      "Strategy selection: 'If you find a hot load and your driver is close enough to make it to the pickup, request a high rate.'",
+      "Bad zone strategy: 'If you're in a bad zone, use the double load technique book a high paying load in another zone, and then use any available load to bring the truck closer to that load.'",
+      "Relationship building: 'After a successful delivery of a good load, be sure to ask the broker about dedicated lane opportunities and to maximize the profitability of the truck.'"
     ]
   },
   {
@@ -111,35 +287,46 @@ const slides = [
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "What are the four strategic load selection approaches discussed?",
+        "How do you identify a 'hot load' and what advantage does it provide?",
+        "What makes dedicated lanes attractive for certain types of carriers?",
+        "When should you use the double load (2-1) strategy?",
+        "What are the key considerations when consolidating partial loads?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Hot Loads, Dedicated Lanes, Double Load (2-1), and Partial Load Consolidation",
+        "Monitor pickup appointment times and watch for loads that remain unbooked as time runs out - provides huge bargaining advantage and premium rates",
+        "Dedicated lanes offer consistent recurring routes, stable pricing, and are perfect for carriers who need to come home weekly or start from home regularly",
+        "Use double load strategy when truck is in a bad zone with low rates everywhere - book high-paying load in another zone first, then connecting load",
+        "Loading/unloading order (first in, last out for dry vans), driver hours of service, weight and space calculations, and close teamwork with driver"
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Question 1: Review all four approaches and their specific applications in different market conditions.",
+      "Question 2: Emphasize the monitoring process and timing sensitivity of hot loads.",
+      "Question 3: Highlight the relationship-building aspect and predictability benefits of dedicated lanes.",
+      "Question 4: This strategy requires forward planning and understanding of market dynamics across zones.",
+      "Question 5: Partial load consolidation is the most complex approach requiring high professionalism and careful planning."
     ]
   },
   {
-    title: "Section Material",
+    title: "Section Materials",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 25 notes when provided."
+      "Market analysis tools: Average rates, trends, load-to-truck ratios",
+      "Strategic approaches: Hot loads, dedicated lanes, double load, partial consolidation",
+      "Decision framework for load selection based on market conditions",
+      "Risk assessment for each approach and carrier compatibility",
+      "Relationship building strategies for long-term success",
+      "Advanced dispatching techniques for maximum profitability"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 25 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Tool integration: 'In order to make informed load decisions and build route plans, we can utilize multiple tools available to us.'",
+      "Strategic application: 'Look for opportunities to consolidate multiple partial loads.'",
+      "Professional development: 'If at any point of your career you are confused and don't know where to send your truck to make the highest profit, or you're worried about sending a truck somewhere and not being able to get it out of there, Go back to your notes from this module and you'll find all the answers.'",
+      "Continuous learning: 'These strategic approaches provide the foundation for professional dispatching success.'",
+      "Practical application: 'Apply these strategies based on market conditions, carrier preferences, and risk tolerance.'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +517,13 @@ export default function LoadisticsSection25({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={25}
+                  /> </div>
               </div>
 
               <div className="space-y-6">

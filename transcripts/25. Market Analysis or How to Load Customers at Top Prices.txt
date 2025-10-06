@@ -1,0 +1,307 @@
+Hello.
+
+We're starting to analyze the market and the first thing we will touch upon are the tools of macro analysis.
+
+We already know that in order to be certain that we'll be able to get a truck out of an area within
+
+a state, we should pick areas as close as possible to major cities, ports and transportation hubs.
+
+However, when we have a truck to load, we need to decide on an overall direction.
+
+That is to choose the state to which we will send those trucks.
+
+Before we go on one of the load boards and start looking for available freight, we can check the Bureau
+
+of Transportation and Statistics and look at freight flows by state.
+
+Follow the link attached to this lesson to the.gov website to the freight flow by state page.
+
+Here we can select the state we're interested in and look at the statistics of inbound and outbound
+
+shipments.
+
+This way we will know how much each state trades with the other states, which will give us an idea
+
+of which states will be the easiest to get the truck out at a good price.
+
+All right.
+
+So I've logged in to the freight flows by state page of the Bureau of Transportation Statistics website,
+
+and we have a map here and we have a couple parameters to put in.
+
+It's actually quite straightforward, really.
+
+When you log in, all the parameters are already put in for you.
+
+So we have the state, um, by default, it's choosing the state of Alabama, but we'll be choosing
+
+different states.
+
+Let's just start with Alabama for now for the year.
+
+The latest year available is 2021.
+
+So that's the one we're choosing for the measure.
+
+We're keeping the current value in millions of dollars.
+
+You can later play around with other values if you want.
+
+And for the type we just keep all.
+
+But then once again, if you want to play around with it, you can check for domestic, you can check
+
+for export and import.
+
+But for our purposes, we're just going to keep type of freight all.
+
+And so here we go.
+
+We move on to the map.
+
+We have chosen Alabama.
+
+Alabama is right.
+
+Oops.
+
+There you go.
+
+Okay, so we've chosen Alabama is right here and by the color.
+
+So the darker the color, the more, um, the state of Alabama trades with the state.
+
+So we see the darkest one is Georgia.
+
+It has the current current value.
+
+So Georgia is trading the most with Alabama and we also see Florida, Mississippi, Tennessee.
+
+So, I mean, it makes sense that the bordering states are the ones that Alabama trades with the most.
+
+But if we move a little bit further, we can see that also Alabama trades a lot with Texas and with
+
+California.
+
+So that gives us an idea.
+
+If we have a truck in Alabama, it's most likely that you will be able to find a higher number of loads
+
+going out to those states and then we can choose a different state.
+
+I don't know.
+
+Let's go for Colorado, for example.
+
+As you can see, the map changed.
+
+So now we're here in Colorado, and Colorado does trade a lot with its bordering states.
+
+It trades a lot with Wyoming as well as Utah, Nebraska and Kansas.
+
+But it actually trades the most with California, Texas, and it trades a lot with Illinois.
+
+So that's about it.
+
+Another great free tool for understanding the market is trend lines.
+
+The link is attached to this lesson.
+
+Data is a major player in the market.
+
+The company earns money not only from the load board but also from other logistics related products.
+
+One of them is collecting and selling data from market analysis.
+
+You can buy a whole range of analysis tools from data that vary in price, but a novice dispatcher doesn't
+
+need to spend too much money on these products.
+
+What will present in this lesson will be sufficient.
+
+Okay, here we are on the Data Trend Lines website.
+
+We're on the main page and the first thing we see here is a weekly snapshot by the numbers.
+
+So these are percentage changes in demand and supply for transportation over periods of time.
+
+And we have the weekly period of time, monthly period of time and a yearly period of time.
+
+So let's look at let's look at the monthly period.
+
+So this is statistics between April 2023 and May 2023.
+
+First thing we see is spot load posts plus 29.4%.
+
+So this means that there are pretty much 30% more loads available on the market in May 2023 than in
+
+April 2023.
+
+And then we see spot truck posts which grew by 8.6%.
+
+So actually the number of trucks available also increased, but the number of loads increased by 30%,
+
+the number of trucks increased by 9%, which indicates that actually the demand for transportation grew
+
+faster than the supply, rather more loads on the market.
+
+But there are not as many more trucks available on the market.
+
+So these statistics usually means that the rates, the prices for transportation have increased between
+
+the between the months of April and the months of May, just because of the increase of the demand.
+
+And then we see for each type of equipment for driver and flatbed and reefer load to truck ratio.
+
+So load to truck ratio is essentially the ratio of demand.
+
+And the demand for transportation went up by pretty much 30, almost 32% for driving.
+
+And then the spot rates.
+
+So average price is actually haven't increased, even though the demand became higher.
+
+This is normal.
+
+Usually it takes a bit of time for the prices to adjust to the changes in demand and supply.
+
+So it would be expected that the prices would grow over time if this number of demand remains higher
+
+than the supply and we have the same for the flatbed.
+
+So actually for the flatbed, the load to truck ratio didn't increase.
+
+It went down a little bit.
+
+And we see that the rates also went down, but not so much.
+
+So flatbed pretty much stayed at the same level.
+
+And then for the reefer, we once again see saw a higher increase, 34% in the low to truck ratio,
+
+but a very small increase in rates.
+
+And in the end, we have the fuel prices.
+
+So the fuel prices have been going down little by little, which also has an effect on the rates.
+
+When fuel prices go up, the rates go up slightly.
+
+And when they go down, the rates also go down.
+
+So.
+
+You can check out the statistics and follow it weekly.
+
+If you log in to TRENDLines every week, you'll be able to check the weekly statistics, which will
+
+give you an understanding of how much you can negotiate with brokers.
+
+So let's say you're always running the same lane and you usually, you know, your driver usually runs
+
+it for $1,000, but then you see a very big spike in the number of load posts and a very big spike in
+
+load to track ratio.
+
+And this could mean for you that for the next week you can try and negotiate a higher rate with the
+
+brokers for the same lane.
+
+So maybe instead of a thousand, you ask them for 1200 or 1300 and most likely they will have to provide
+
+it to you just because there's not so many other trucks that can take this load for the same price.
+
+So if you follow the statistics, you'll have a better understanding of the market.
+
+If we scroll down, we see to the next point, which is national spot rates.
+
+So these are actually nationwide countrywide averages for each of the three key types of equipment.
+
+So in June 2023, the average rate for a driven is $2.09.
+
+So this is a rate per mile.
+
+So for each mile traveled, truckers have gotten $2.09 on average.
+
+For flatbeds, it's $2.66 per mile.
+
+And for reefers it's $2.48 per mile.
+
+Once again, this statistics updates monthly, so you should be going on trend lines and you should
+
+be checking the statistics just to understand where the market is at right now.
+
+Let's see what else is available here.
+
+Fuel prices.
+
+You can check out the percentage change and this is average fuel price per gallon in the US right now,
+
+which is $3.80.
+
+If we go back up to our trends snapshot by the numbers here where it says view trends, you can also
+
+see a demand and capacity map for each type of equipment for drive and flatbed and reefer.
+
+And you can see a national rates map once again for each type of equipment.
+
+So let's choose a let's choose flatbeds.
+
+Let's take a look at flatbed demand and capacity map.
+
+So this is again, low to track ratio.
+
+Low to track ratio is a very important indicator.
+
+It explains how much demand there is for transportation and it explains how the pricing for transportation
+
+is formed.
+
+So on this map, we have all our states and the darker the color gets, the higher load to truck ratio,
+
+there is meaning higher demand for transportation with this specific type of equipment, flatbed.
+
+So we can see the darkest colors on this map are here on the southeast Louisiana, Mississippi, Alabama,
+
+Arkansas, Oklahoma.
+
+All of these states will pay a rate above market average coming out of this state.
+
+Also, South Carolina and a few other states in the north, Idaho, Oregon, there's not enough flatbed
+
+trucks in this area.
+
+So if you have a truck in Oregon or Idaho, you can expect a higher than average rate and also Maine.
+
+I guess there's just not there's usually not too many loads coming out of Maine.
+
+It's a small place, not much production, but I guess there's just not enough flatbed trucks to keep
+
+up with the demand.
+
+So you can look at this map.
+
+It also gets updated on a monthly basis and you can look at this map for each type of equipment and
+
+then for flatbeds.
+
+Another thing we can look at is national flatbed rates.
+
+So this is going to be another map, but it's just going to show average rate per mile for each of the
+
+five zones of the US.
+
+So for flatbeds at the moment, Midwest area and southeast area, oops, like this southeast area are
+
+paying the most meaning that coming out of these areas you will you can expect a rate around $2.79 and
+
+then the western part of the US has the lowest demand for trucking in general and the lowest demand
+
+for flatbeds right now.
+
+So coming out of the west, you will get a lower rate of around $2.35 per mile.
+
+So you can get a general idea coming from southeast to the west, you can expect a higher rate.
+
+But coming back from the west to the southeast, you can expect a lower rate.

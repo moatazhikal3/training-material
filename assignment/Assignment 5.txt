@@ -1,0 +1,81 @@
+Instructor example
+Dmitry Demishev
+
+Cities with major international ports are great examples of Key Market Areas. There is always a demand for trucking in these areas. Name 3 examples of cities that have key international ports in the United States.
+
+
+Possible correct answers:
+
+New York, New Jersey, Baltimore, Norfolk, Charleston, Savannah, Jacksonville, Miami, Mobile, New Orleans. Houston, Los Angeles, Oakland, Seattle.
+
+Evaluate a dispatcher's weekly route plan that begins on Monday.
+
+
+Truck #2720 (Dry Van) Weekly Goals
+
+2500+ Weekly Miles
+
+$8000+ Weekly Gross Rate
+
+Driver must come back home in Cincinnati OH by the end of the week.
+
+
+Truck #2720 (Dry Van) Weekly Plan
+
+Cincinnati, OH - Kansas City, KS (Expected rate: $3.30 per mile)
+
+Kansas City, KS - Dallas, TX (Expected rate: $3.45 per mile)
+
+Dallas, TX - St Louis, MO (Expected rate: $2.50 per mile)
+
+St Louis, MO - Pittsburg, PA (Expected rate: $3.70 per mile)
+
+Pittsburgh, PA - Cincinnati, OH ($3.45 per mile)
+
+
+1. Will this plan achieve the carrier's weekly goals?
+
+2. Will the driver be able to complete his mileage goals?
+
+3. Will the truck be able to generate over $8,000 based on the expected freight rates?
+
+4. Is it realistic for the driver to get home by Saturday?
+
+
+*Use Google Maps for mileage calculations.
+
+
+Answer:
+
+The plan will achieve all weekly goals. The driver will drive about 2,671 miles and make about $8677 for the week. It is realistic for the driver to deliver all the loads and be home by Saturday.
+
+
+Answer explanation:
+
+Cincinatti, OH - Kansas City, KS. 593 miles. $3.30 per mile. Gross: $1957
+
+Kansas City, KS - Dallas, TX. 554 miles. $3.45 per mile. Gross: $1911
+
+Dallas, TX - St Louis, MO. 631 miles. $2.50 per mile. Gross: $1577
+
+St Louis, MO - Pittsburg, PA. 604 miles. $3.70 per mile. Gross: $2235
+
+Pittsburg, PA - Cincinnati, OH. 289 miles. $3.45 per mile. Gross: $997
+
+
+Total: 2671 Miles. $8677 Gross Rate.
+
+
+
+A dispatcher created a plan for his driver to drive at least 2,000 miles in a week. Along the way, one of the scheduled loads got canceled at the last minute and the dispatcher had to deviate from the plan. At the moment, his driver is in Nashville, TN. In 2 days, the driver is scheduled to return to Indianapolis, IN. So far, the driver has only traveled 1,500 miles, and Indianapolis is only 288 miles away.
+
+
+Using Google Maps, find a suitable way out: an area where you can go from Nashville with a one day load, in order to then take a one day load to Indianapolis. That total mileage for the 2 loads has to be over 500 miles. Rate is not so important in this assignment, but still, try to choose major cities so that the dispatcher can easily find loads according to your plan.
+
+
+Possible answer:
+
+I found a great option. Nashville, TN - St Louis, MO - Indianapolis, IN. Total mileage: 552 miles. Enough to complete the weekly plan.
+
+
+What other options are available? Find at least 1  more to complete the assignment.

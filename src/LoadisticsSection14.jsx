@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,314 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 14",
-    title: "Section 14 Title Placeholder",
+    title: "Step 4 — Booking Loads and Filling Out Documents",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 14. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "This section covers the critical transition from negotiation to booking.",
+      "Students will learn the complete documentation process for new broker relationships.",
+      "Focus on speed and accuracy - brokers won't wait for slow paperwork.",
+      "Emphasize the difference between existing relationships vs. new setups."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Verbal Booking Process",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Verbal Confirmation: 'All right, let's book it' or 'Okay, let's go for it'",
+      "MC Number Verification: Broker checks carrier in database for compliance",
+      "Database Check: Operating history, violations, reviews, license status",
+      "Broker Requirements: Some work only with 6+ months experience, 5+ trucks, etc.",
+      "Green Light: If approved, proceed to documentation phase"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Verbal booking is the commitment point - both parties are now obligated.",
+      "MC number check is automatic - broker must verify carrier legitimacy.",
+      "Database shows: months/years operating, violations, bad reviews, license status.",
+      "Each broker has different requirements - some very strict on experience.",
+      "If rejected, find another broker - negotiation rarely works at this stage."
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Two Documentation Scenarios",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Scenario", "Process", "Documents Needed"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        [
+          "Existing Relationship",
+          "Carrier already worked with broker previously",
+          "Rate Confirmation only - agreement already signed"
+        ],
+        [
+          "New Relationship Setup",
+          "First time working with this broker",
+          "Complete setup packet: Agreement, W-9, Insurance, Authority"
+        ]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Existing relationships are fast - just rate confirmation sent immediately.",
+      "New setups require full documentation exchange before any loads can move.",
+      "Setup process can take 30 minutes to several hours depending on broker.",
+      "Always ask: 'Do we need to get set up?' to clarify the situation.",
+      "",
+      "QUESTIONS:",
+      "What's the difference between these two scenarios in terms of time?",
+      "",
+      "ANSWERS:",
+      "Answer: Existing relationship = 5 minutes; New setup = 30 minutes to 2 hours."
     ]
   },
   {
-    title: "Knowledge Check",
-    layout: "bullets",
-    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
-    trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
-    ]
-  },
-  {
-    title: "Section Material",
+    title: "Setup Packet Request Process",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 14 notes when provided."
+      "Broker Request: 'We need to get set up. Let me send you a setup packet. What's your email?'",
+      "Information Exchange: Provide email address and get broker's direct contact",
+      "Contact Details: Get broker name, direct phone line, or extension number",
+      "Avoid Auto-Attendant: Direct contact prevents future delays and confusion",
+      "Time Sensitivity: Setup packets must be completed quickly to secure load"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 14 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Setup packet = document package sent via email for completion.",
+      "Always get broker's direct contact - avoid main switchboard delays.",
+      "Extension numbers let you reach the same person directly.",
+      "Time is critical - other dispatchers are competing for the same load.",
+      "Professional approach: organized, responsive, complete documentation."
+    ]
+  },
+  {
+    title: "Setup Packet Formats and Tools",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Online Packets: Software-based forms (broker subscription service)",
+      "PDF Documents: Single file attachment requiring PDF editor",
+      "Recommended Tools: Free PDF editors or paid options like Adobe",
+      "Digital Signatures: Electronic signatures accepted in US - no printing needed",
+      "Efficiency Focus: Complete forms digitally for speed and professionalism"
+    ],
+    trainerNotes: [
+      "Online packets are faster but less common - usually larger brokers.",
+      "PDF packets are standard - most brokers use this format.",
+      "Never print and handwrite - looks unprofessional and wastes time.",
+      "Digital signatures are legally binding in the US transportation industry.",
+      "Speed matters - slow paperwork loses loads to competitors."
+    ]
+  },
+  {
+    title: "Sample Setup Packet Analysis - Broker Credentials",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "TIA Membership: Transportation Intermediary Association certificate",
+      "NASTC Affiliation: National Association of Small Trucking Companies",
+      "Broker Information: Legal name, address, DOT number, Federal ID (EIN)",
+      "Operating History: Established date showing market experience",
+      "Credit References: Partner companies for verification"
+    ],
+    trainerNotes: [
+      "First pages are broker marketing - showing legitimacy and credentials.",
+      "TIA and NASTC memberships indicate professional standing.",
+      "Look for: company legal name, full address, DOT number, EIN number.",
+      "Established date shows how long they've been in business.",
+      "Credit references can be called if you have concerns about payment.",
+      "These pages require no action from you - just review for legitimacy."
+    ]
+  },
+  {
+    title: "Payment Options - Quickpay Programs",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Standard Terms: Typical 30-day payment from brokers",
+      "Quickpay Option: Faster payment for percentage fee (usually 2-3%)",
+      "Example Terms: 3 business days payment for 3% of gross freight bill",
+      "Selective Use: Can choose quickpay per load, not all loads",
+      "Carrier Decision: Check with carrier owner before agreeing to fees"
+    ],
+    trainerNotes: [
+      "Standard broker payment is NET 30 days from delivery.",
+      "Quickpay is alternative to factoring companies for faster cash flow.",
+      "Typical quickpay: 2-3% fee for payment in 2-5 business days.",
+      "Advantage: Can select quickpay per load when carrier needs fast cash.",
+      "Always confirm with carrier before agreeing to quickpay fees.",
+      "",
+      "QUESTIONS:",
+      "When would a carrier choose quickpay over standard terms?",
+      "",
+      "ANSWERS:",
+      "Answer: Cash flow problems, immediate expenses, or avoiding factoring company fees."
+    ]
+  },
+  {
+    title: "Insurance and License Verification",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Broker Insurance: Certificate showing active coverage and policy dates",
+      "License Verification: Active broker authority from FMCSA database",
+      "FMCSA Extract: Government database information proving legitimacy",
+      "Due Diligence: Verify broker has proper authority and insurance",
+      "Red Flags: Expired policies, inactive licenses, missing documentation"
+    ],
+    trainerNotes: [
+      "Always verify broker insurance is current - check policy dates.",
+      "Broker license must be active in FMCSA database.",
+      "Some brokers include FMCSA extract to prove their information is accurate.",
+      "This verification protects carrier from working with illegal brokers.",
+      "If documents are expired or missing, question the broker's legitimacy."
+    ]
+  },
+  {
+    title: "Broker-Carrier Agreement Key Terms",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Section", "Carrier Responsibilities", "Broker Responsibilities"],
+      rows: [
+        [
+          "Authority & Compliance",
+          "Licensed motor carrier, no re-brokering, maintain compliance",
+          "Licensed broker, maintain surety bond, notify of authority changes"
+        ],
+        [
+          "Equipment & Personnel",
+          "Provide equipment and qualified drivers",
+          "Arrange transportation (not perform it)"
+        ],
+        [
+          "Insurance & Liability",
+          "Carry proper insurance, liable for cargo damage/loss",
+          "Maintain broker insurance, not liable for transportation"
+        ],
+        [
+          "Payment Terms",
+          "Cannot bill shipper directly, only collect from broker",
+          "Sole party responsible for carrier payment"
+        ]
+      ]
+    },
+    trainerNotes: [
+      "This is the core legal document governing the relationship.",
+      "Carrier cannot re-broker loads - must transport under own authority.",
+      "Carrier is responsible for cargo damage/loss - insurance must cover this.",
+      "Payment flows: Shipper → Broker → Carrier (never direct to carrier).",
+      "Broker maintains surety bond to protect carriers from non-payment.",
+      "",
+      "QUESTIONS:",
+      "Why can't carriers bill shippers directly?",
+      "",
+      "ANSWERS:",
+      "Answer: Broker is the contracting party with shipper and legally responsible for payment to carrier."
+    ]
+  },
+  {
+    title: "Agreement Completion Process",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Header Information: Fill in current date, carrier company name, DOT number",
+      "Signature Requirements: Electronic signature acceptable in US",
+      "Authority Levels: Dispatcher may sign or forward to carrier owner",
+      "Required Documents: Completed agreement, W-9 form, insurance certificate",
+      "Submission Timeline: Complete and return within 30 minutes maximum"
+    ],
+    trainerNotes: [
+      "Fill header with: today's date, exact legal company name, DOT number.",
+      "Some agreements ask for MC number instead of DOT - both are acceptable.",
+      "Check with carrier: can dispatcher sign or must owner/manager sign?",
+      "Electronic signatures are legally binding - no wet signatures needed.",
+      "Speed is critical - brokers will give load to faster competitors.",
+      "Double-check all information before submitting - errors cause delays."
+    ]
+  },
+  {
+    title: "Required Supporting Documents",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Motor Carrier Authority: MC certificate showing active authority",
+      "Certificate of Insurance: Current policy with proper coverage limits",
+      "W-9 Tax Form: IRS form with carrier's EIN number",
+      "Notice of Assignment: If using factoring company for payments",
+      "Document Organization: Send all documents in single email for efficiency"
+    ],
+    trainerNotes: [
+      "These are standard documents every carrier must maintain.",
+      "Insurance must show: General Liability, Auto Liability, Cargo coverage.",
+      "W-9 provides carrier's tax ID (EIN) for broker's 1099 reporting.",
+      "Notice of Assignment redirects payments to factoring company if applicable.",
+      "Organize documents professionally - shows competence and attention to detail."
+    ]
+  },
+  {
+    title: "Sample Carrier Documents Package",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Complete Package: All required documents in professional format",
+      "Document Review: Each page serves specific legal and business purpose",
+      "Quality Standards: Clean, current, properly formatted documentation",
+      "Submission Process: Organized email with clear subject line and attachments"
+    ],
+    pdf: "/training-material/section14/pdfs/Sample+Carrier+Packet-2.pdf",
+    trainerNotes: [
+      "Show the PDF to demonstrate professional document package.",
+      "Walk through each document explaining its purpose and importance.",
+      "Point out formatting standards and attention to detail.",
+      "Emphasize that sloppy documentation reflects poorly on carrier.",
+      "Professional presentation builds broker confidence and trust."
+    ]
+  },
+  {
+    title: "Speed vs. Accuracy Balance",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Time Pressure: Brokers won't wait hours for documentation",
+      "Competitive Reality: Other dispatchers are completing packets faster",
+      "Legal Understanding: Dispatcher is not a lawyer - focus on key terms",
+      "Efficiency Priority: Complete accurately but quickly to secure loads",
+      "Quality Control: Double-check critical information before submission"
+    ],
+    trainerNotes: [
+      "This is the reality of dispatching - speed matters for load securing.",
+      "Don't spend hours analyzing every contract clause - not your job.",
+      "Focus on: legitimate broker, active licenses, standard terms.",
+      "If carrier has special contract requirements, they'll tell you.",
+      "Balance: thorough enough to avoid problems, fast enough to win loads.",
+      "",
+      "QUESTIONS:",
+      "What's the maximum time you should spend on a setup packet?",
+      "",
+      "ANSWERS:",
+      "Answer: 30 minutes maximum from receipt to submission - faster is better."
+    ]
+  },
+  {
+    title: "Next Steps and Best Practices",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Follow-Up Process: Confirm broker received complete packet",
+      "Rate Confirmation: Request immediate rate confirmation after setup approval",
+      "Relationship Building: Professional, efficient service builds repeat business",
+      "Documentation Storage: Keep copies of all agreements for future reference",
+      "Continuous Improvement: Learn from each setup to increase speed and accuracy"
+    ],
+    trainerNotes: [
+      "Always confirm broker received and approved the setup packet.",
+      "Request rate confirmation immediately after setup approval.",
+      "First impression matters - efficient setup leads to more loads from that broker.",
+      "Maintain organized files of all broker agreements for quick reference.",
+      "Each setup makes you faster and more professional for the next one.",
+      "Goal: Build reputation as reliable, fast, professional dispatcher.",
+      "Next section: We'll cover rate confirmations and driver instructions."
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +564,13 @@ export default function LoadisticsSection14({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={14}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -342,6 +582,24 @@ export default function LoadisticsSection14({ onNavigateToSection, sectionDropdo
                   <ul className="list-disc pl-6 text-lg md:text-xl leading-8">
                     {slide.bullets.map((t, i) => (<li key={i} className="mb-3"><EmphasisText text={t} /></li>))}
                   </ul>
+                )}
+
+                {/* PDF display for slides with pdf property */}
+                {slide.pdf && (
+                  <div className="mt-6">
+                    <div className="text-lg font-semibold mb-3">Sample Carrier Documents Package</div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <iframe 
+                        src={slide.pdf}
+                        className="w-full"
+                        style={{ height: '600px', minHeight: '400px' }}
+                        title="Sample Carrier Documents Package"
+                      />
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      Review this complete package to understand professional document standards
+                    </p>
+                  </div>
                 )}
 
                 {slide.layout === "bullets" && slide.quiz && slide.quiz.questions && (
@@ -379,7 +637,7 @@ export default function LoadisticsSection14({ onNavigateToSection, sectionDropdo
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(13)} 
-                        disabled={14 === 1}
+                        disabled={false}
                         className="rounded-xl"
                       >
                         ← Previous Section (Section 13)

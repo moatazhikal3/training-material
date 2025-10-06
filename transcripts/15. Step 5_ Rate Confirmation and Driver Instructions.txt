@@ -1,0 +1,293 @@
+Hey, we're getting to the part every dispatcher enjoys the most.
+
+You found a great load.
+
+You filled out the documents.
+
+You're just sitting there waiting, sipping coffee, completing other tasks, and suddenly an email
+
+arrives with the subject line rate confirmation.
+
+At this moment, each dispatcher releases serotonin, the hormone of happiness.
+
+But your work doesn't end here.
+
+Let's figure out what we're supposed to do with this email.
+
+A rate confirmation, also known as a load confirmation, is a legally binding document that confirms
+
+the agreed upon rate and load details between the broker and the carrier.
+
+This document contains a full load description, loading and unloading times, special instructions,
+
+and most importantly, the agreed upon rate.
+
+It's our job to check this document and sign it.
+
+Let's take a look at the sample rate confirmation.
+
+Okay, so I found this old rate confirmation that we can use as an example.
+
+Let's just see what it contains.
+
+So this one is called carrier rate and load confirmation.
+
+And it came to us from a broker called Steam Logistics or Steam Logistics International.
+
+We have their full address here and we have the contact of the person who sent it to us, Shawne Merriman,
+
+And we have his email.
+
+Shawne Merriman at Steam logistics.com.
+
+So we have the load number here 132061 the date this was it's an old rate confirmation.
+
+This was back in 2021 in September, by the way, you probably already noticed in the US they write
+
+the months first and then the date.
+
+So zero nine is September and then 14 is the date of 2021.
+
+Equipment type driven bill of lading number.
+
+They have a space for a bill of lading number, but they haven't included it and then motor carrier.
+
+So here it's not listed, but typically it would list the name of the motor carrier.
+
+So once again, if it was our sample, Dmitri Logistics, it would say motor carrier.
+
+Dmitri Logistics, and then it would have my contact phone number or my email.
+
+Total weight.
+
+We know the exact weight of the load £26,438 and we're moving to shipper pickup.
+
+So this is stop one where we picking up the load.
+
+The facility has a strange name.
+
+K1486K1486 NSD DC.
+
+So this probably just a name of some kind of a warehouse.
+
+That's why it has such a strange name.
+
+And it's located in a city called Rialto.
+
+K is abbreviation for California, so it's in Rialto, California.
+
+And here we have the full address of this facility 1686 West Baseline Road, Rialto, California, USA.
+
+And the zip code, 92376 expected date.
+
+This is the date we have to show up for.
+
+The pickup is zero 915.
+
+So this is 15th of September 2021.
+
+Shipping receiving hours are not listed, but appointed appointment required.
+
+Yes.
+
+So there is a strict appointment and we have the appointment time 1415 so 2:15 p.m. contact is not listed
+
+pickup instructions.
+
+There are no specific instructions, but there are shipper reference numbers.
+
+We have three numbers here and pickup delivery numbers.
+
+We have also three numbers here.
+
+So all of this good stuff, all these numbers is what we're going to be sending to the driver.
+
+And when the driver arrives, he's going to show the manager the facility at this warehouse or whatever
+
+it is.
+
+He's going to show them these numbers and they will know exactly what product needs to be loaded in
+
+this truck and they will know what truck has arrived and what is prepared for it.
+
+And the same thing for the consignee.
+
+Sometimes delivery is called a consignee receiver stop too.
+
+So this one is called Unified Western Rock Commerce Distribution.
+
+And once again, we have an address.
+
+It's also in California, different city commerce.
+
+California expected date zero 916.
+
+So this is the next date.
+
+And once again, we have a fixed appointment at 1630 or 4:30 p.m. Delivery instructions arrive 30 minutes
+
+early, keep doors sealed.
+
+Conf Well, this is an abbreviation, so confirmation number is this long number.
+
+And then once again continue references and pickup delivery numbers.
+
+Once again, all of this is just needed for the driver.
+
+This is something you must send to the driver when you're sending him the instructions.
+
+If you're working with an owner operator, you can just send him this information directly.
+
+If you're working with a driver, you will need to get this instructions separately.
+
+Actually they put them very conveniently so that you can actually take a screenshot if the driver is
+
+okay with that and just send them the screenshot.
+
+That will save you some time.
+
+Next shipment information.
+
+As you can see, we don't have the number of units.
+
+We don't have any information on the packaging, we only have the weight and commodity description.
+
+So all we know actually is that we're moving snack foods, which I mean tells us nothing could be anything
+
+and we know the exact weight.
+
+So we don't have all of these descriptions, but this is something the driver will receive when he comes
+
+to the pickup, when they give him the papers, the bill of lading, the bill of lading must have all
+
+of this information.
+
+And obviously you can ask the driver to send it to you so you have full information.
+
+How is the product packaged?
+
+If it's snack foods, it's probably packed.
+
+I don't know if it's potato chips or something.
+
+It's packed in its normal packaging and then it's put into boxes and then boxes are put into pallets.
+
+So in the bill of lading, you should have information about the number of boxes, the number of pallets
+
+and carrier fees, net freight charges, $750 total cost $750.
+
+I'm not sure why they put it two times, but we know that this load is paying $750.
+
+If you're interested about the rate per mile, actually, how we check the exact mileage on the on the
+
+load when we're negotiating with the broker initially, we don't have the exact address.
+
+The broker will not provide us the exact address until we book the load and receive the rate confirmation.
+
+But now that we have the exact address, I can just copy it.
+
+Go to my Google Maps.
+
+Inputs the pickup location.
+
+Uh, going this and then copy the address for the delivery location.
+
+Now let's see what this load was paying.
+
+So actually, it's only 50 miles.
+
+This is a very short run, just 50 miles, and they're paying $750.
+
+So the rate per mile is very high.
+
+This is what typically happens on short loads because this load takes a full day.
+
+You pick up on the 15th and deliver on the 16th.
+
+They can't really pay, you know, $100 or $200.
+
+Nobody's going to book it.
+
+So they pay the low, low mileage loads, always have a higher rate per mile.
+
+And finally, we have some additional nodes here on the bottom.
+
+All shipments are subject to Steam Steam's broker carrier agreement.
+
+So obviously before we started working with this broker, we signed the carrier agreement, no double
+
+brokering, which means we cannot resell this load, so we cannot re broker this load.
+
+We book this as a carrier and we must ship this load.
+
+Please send final invoices and documents to AP at Steam logistics.com so we already know where to send
+
+the invoice to.
+
+Invoices will not be processed without pod.
+
+Pod is a proof of delivery.
+
+Is the signed bill of lading that the driver receives when he delivered the load.
+
+And if you are a Triumph Bay customer and would like quick pay, then please send invoices and pod to
+
+quick pay at steam logistics.com for priority processing.
+
+So this is just information for when the load is already delivered.
+
+Where to send an invoice.
+
+If you want quick pay, you send an invoice to a different place.
+
+So this is actually important information for a dispatcher or for whichever person in the company will
+
+be doing invoicing.
+
+That's it.
+
+This invoice.
+
+Sorry, this information actually doesn't have a spot for signing, but all rate confirmation needs
+
+to be signed.
+
+So even even though it doesn't have a spot for signing, what you would do is you would sign the rate
+
+confirmation in whatever space is blank, whatever space is available, and then you would send it back
+
+to the broker after sending the side rate confirmation back to the broker.
+
+The load is officially booked.
+
+Now we need to coordinate our driver and make sure he starts moving to the pickup.
+
+If the carrier you're working with is an owner operator, he's the company owner and the driver.
+
+In that case, you can just send him the rate confirmation directly.
+
+But if you're working with a company that has a hired company driver that gets paid by the mileage,
+
+typically the owner doesn't want him to see the whole rate.
+
+Con in particular, owners don't want their drivers to see the rate of the load is paying and the broker
+
+from whom the load was booked.
+
+In this case, you will write out the driver's instructions and send them to the driver separately via
+
+email or text message.
+
+Making drivers instructions is super simple.
+
+Just include all the information from the rate confirmation except the rate itself and the name of the
+
+brokerage.
+
+Make sure it contains all the info the driver needs time and place of loading and unloading, cargo
+
+type and weight, all the reference numbers, temperature and other additional instructions.
+
+There isn't one single template on how to send the driver instructions.
+
+Just ask your driver what's the most convenient form for him to receive it?

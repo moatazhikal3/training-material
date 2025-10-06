@@ -1,0 +1,359 @@
+Okay.
+
+We learned the three most common payment methods.
+
+Now let's discuss how to send an invoice regarding of the payment method.
+
+In order to complete the invoicing process, you will need the following items.
+
+Rate Confirmation Signed Bill of lading Check for lumper fee payments if applicable.
+
+So if the driver did pay for a lumper, ask him to send you a photo or a scan of the check.
+
+And of course the invoice itself.
+
+Now how do we know where to send it?
+
+Usually you will check on the rate confirmation.
+
+I found yet another old rate confirmation in my email and I'll use it to demonstrate.
+
+Okay.
+
+So here is a sample rate confirmation I found that we're going to use for invoicing and here is a sample
+
+invoice I've prepared for you guys.
+
+I mean, it's as simple as it gets.
+
+Honestly, you can get any other invoice template if you want or create your own.
+
+It's up to you.
+
+But this one works just fine.
+
+So what do we have here?
+
+Your company.
+
+That's where you put the name of the carrier that you're working with right now on behalf of whom you're
+
+submitting this invoice.
+
+So if I'm working with my customers, Dmitri Logistics, that's what I'm going to put when I'm working
+
+with the next customer.
+
+I'll just put a different name over here and I have to fill out the address and the phone number and
+
+then invoice submitted on.
+
+We can see here, let's see this array confirmation.
+
+What do we have?
+
+This is a rate confirmation from Three Rivers Logistics.
+
+Picking up in Elizabeth, New Jersey, delivering in Bolingbrook, Illinois.
+
+I can see that this one is delivering on 22nd of January 2021.
+
+So that, I would imagine, would be the date when I'm submitting this invoice.
+
+So I can very quickly put here 2021.
+
+So that would be the date when the invoice is submitted and then invoice for name, company name, street
+
+address.
+
+You don't have to put the name of the person.
+
+It's not necessary.
+
+But here we have.
+
+Dispatcher Houston.
+
+Daniels Well, actually, this is a little bit confusing because he is a dispatcher for a brokerage
+
+company.
+
+And the brokerage company at dispatch is somebody who's who's selling the freight, who's communicating
+
+with carriers.
+
+So he's a dispatcher for the brokerage.
+
+You're a dispatcher for the carrier company.
+
+And you are the two people who are arranging the transportation of this freight.
+
+Okay.
+
+Since we have his name, Houston Daniels, I can put it here in the name and then company name I can
+
+find right over here, Three Rivers Logistics is the name of the company, and I have the address here
+
+as well.
+
+60 Dog Boy Road.
+
+Interesting name.
+
+Uh, let's put it like this.
+
+You can make it a little pretty if you want, but it doesn't really matter as long as all the information
+
+is there.
+
+That's all that matters.
+
+City, State.
+
+Zip.
+
+I have it.
+
+Invoice number.
+
+So it depends on your carrier.
+
+How they want to number their invoices.
+
+Some carriers number them one by one.
+
+So they go like invoice number one, two, three, four, five each.
+
+Next invoice is the next number.
+
+Some carriers number, the invoices based on the load number.
+
+So, for example, I can go here, I can see load number 218142, and that's going to be the number
+
+of the invoice you can check with the carrier if you providing the invoicing services for them, you
+
+can check with them if they have a preference on how to number the invoices and due date.
+
+I'm going to fill that out in a moment.
+
+And then a description load number.
+
+Once again, I can actually input the load number here as well.
+
+It's okay if the number is shown multiple times, it's not a problem.
+
+Price How much was this load paying?
+
+Let's check.
+
+I didn't actually check.
+
+So where is it?
+
+Where is it?
+
+Oh, there you go.
+
+$1,400 is amount to invoice.
+
+So this load is paying $1,400.
+
+So total price.
+
+This has formulas.
+
+So you do not actually put the total price you put units.
+
+So quantity one, we move to one load for them.
+
+Sometimes you're going to be submitting multiple invoices.
+
+You can put multiple loads in one invoice if you want.
+
+I don't usually do it, but some people do it and unit price is 1400.
+
+There you go.
+
+Total price came to 1400, and that's our subtotal.
+
+If we have any additional charges.
+
+So maybe added detention, added layover, I don't know, added lump lumber fee payments, we can put
+
+that in the additional charges and then the formula will calculate the total price for us.
+
+Any notes, if any notes are required.
+
+And for the due date.
+
+So now we've pretty much filled out the whole invoice and now we need to see where do we send it and
+
+what's going to be the due date for the payment.
+
+On the raid confirmation, especially if we scroll to the very bottom.
+
+There you go, for freight payments.
+
+So this is a note for a dispatcher, for an accountant or for whoever is going to be sending the invoices.
+
+What do we have here?
+
+Email bills and invoice along with any unloading receipts to payables at Three Rivers logistics.com.
+
+So there you go.
+
+We already know where to send the invoice.
+
+Next one beginning May 1st, 2018.
+
+Our standard payment will be made in seven days via direct deposit.
+
+So this is actually amazing.
+
+It's not 30 days, it's not 20 days.
+
+It's not 25 days.
+
+They're going to be paying within seven days via direct deposit.
+
+So the money will go directly into the carrier's bank account and they're not charging anything extra
+
+for it.
+
+So that's fantastic.
+
+They're promising to pay within seven days.
+
+Okay.
+
+Our invoice date is zero 122, so let's put the due date in seven days.
+
+After that, you can use the calendar or you can just input this.
+
+So seven days after the 22, that's going to be the 29th, 1021.
+
+There you go.
+
+Due date.
+
+Done.
+
+I would fill out this, but we don't have a specific company.
+
+But that's it.
+
+That's it.
+
+The invoice is filled out.
+
+We know exactly where to send it.
+
+Now we're going to download it.
+
+Send it to payables at Three Rivers logistics.com.
+
+Let's just see what else they have.
+
+If you haven't already done so in the last few weeks, please send avoid the check along with your bills
+
+and invoice so that we can set up your direct deposit.
+
+So what is avoided?
+
+Check in the US they still use bank checks and avoid the check is just a check that's been crossed out
+
+so nobody can use this check anymore.
+
+Why are they asking for avoid the check?
+
+Because actually every single bank check contains all the needed information for direct deposit.
+
+So on a check you will see bank account number, routing numbers, name of the bank address of the bank.
+
+Basically all of the information they need to set up the carrier for direct deposit.
+
+So instead of just asking for all of this information, they're simply saying, please submit a voided
+
+check.
+
+So if we if they don't have avoid the check on file for this carrier, we can ask the carrier to send
+
+us a voided check and we can attach it to the invoice.
+
+And this way the carrier will be paid in seven days via direct deposit.
+
+Please check with payables at Three Rivers logistics.com about any quickpay or non standard payment
+
+options.
+
+So they're saying if you want quick pay, maybe you want to get paid even faster within one day, then
+
+you can send them an email and just send an inquiry.
+
+Say hey, I'm interested in a quick pay option, what can you offer me?
+
+That's it.
+
+What's left to do?
+
+Just send an email.
+
+We already know where to send it in the email subject.
+
+It's best to specify the load number so that it's easier for their accountant to locate.
+
+For example, invoice for load number 218142 from Dmitri Logistics.
+
+In the email we attach all the documents rate confirmation and bill of lading and the invoice.
+
+Plus the broker asked to send the void the check for payment to the bank account.
+
+If it is not yet been sent, we ask the carrier for it and we attach it.
+
+If you're providing an invoicing service for your carrier, I also recommend that you create a simple
+
+spreadsheet and keep a record of when each invoice was sent and when the payment is expected.
+
+That's it.
+
+The job is done.
+
+If I did it during working hours without taking time for explanation, it wouldn't take me more than
+
+five minutes.
+
+I will not do a separate demonstration for Quickpay and factoring for these methods.
+
+Each case is different.
+
+All you need to do is follow the instructions.
+
+As you saw in the case of this broker.
+
+Three Rivers Logistics.
+
+They want you to send an email to their payables department and inquire about quick pay options.
+
+They will reply to you with terms and instructions.
+
+They might ask you to send invoices to a different email or to mark them differently in order to get
+
+quick pay.
+
+When it comes to factoring, each company also has their own process.
+
+Some will provide you with a link or an online portal and explain how to use it.
+
+Some might just provide an email address and ask to send all invoices there.
+
+All of these instructions will be provided by your carrier or directly by his factoring company.
+
+So let's summarize quickly and move on to the next lesson.
+
+You already know what standard pay, quick pay and factoring are.
+
+You now have an invoice template that you can use to work with any carrier.
+
+Now you can safely say that you know how to ensure transportation invoices and add this skill to your
+
+resume.

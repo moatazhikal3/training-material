@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,80 +66,165 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 10",
-    title: "Section 10 Title Placeholder",
+    title: "Step 7 — Delivery & Unloading: Arrival, Lumpers, and the BOL/POD",
     layout: "title",
-    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 10. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "We've made it to delivery. There isn't much to do, unless you want to get paid fairly and on time. We'll handle arrival notice, lumpers, and the BOL that becomes our POD.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Arrival Notice",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "What to do: Call or email the broker when the driver arrives at the receiver.",
+      "Why: Establishes arrival time for detention eligibility and keeps appointments on track."
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "First move: call or email the broker that our driver has arrived. That time stamp is your foundation if detention comes up, and it helps them manage the dock.",
+      "Example message: 'Arrived receiver, gate 10:12. Unload start pending. Will update on progress.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Lumper Fee: What It Is",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Definition: Third-party workers who load/unload at facilities (common at food warehouses/grocery distributors).",
+      "Who pays: Broker often pays; sometimes carrier pays first and gets reimbursed."
+    ],
+    trainerNotes: [
+      "Many receivers—especially food warehouses and grocery distributors—use third-party crews to unload. That's the lumper. Sometimes the broker pays directly; sometimes the carrier pays first and gets reimbursed."
+    ]
+  },
+  {
+    title: "Lumper Fee: How To Pay",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Method", "What happens", "Dispatcher action"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Cash/Card", "Driver pays onsite; gets receipt", "Collect receipt; send to broker; request new rate confirmation with added amount"],
+        ["E-check / Comcheck / T-check / AFS", "Broker issues a code to pay lumpers directly", "Call broker: 'Need a check code to pay lumper'; give code to driver; no out-of-pocket"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "If the driver pays cash/card, we need a clean receipt; we forward it and request a revised rate confirmation with the added amount.",
+      "If we use an electronic check, the broker issues a code—Comcheck, T-check, AFS—driver gives the code to the lumper and no one pays out-of-pocket.",
+      "Say to broker: 'I need a check code to pay the lumper at delivery.'",
+      "Checkpoint (ask briefly): What proof do we save after paying a lumper?"
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Time Stamps That Matter",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Arrived time: Gate/dock time at receiver (starts free time).",
+      "Unload start/finish: Proof for detention and delivery status.",
+      "Message log: Short, time-stamped updates for claims support."
+    ],
+    trainerNotes: [
+      "Mark the arrival, unload start, and unload finish. Pair those with short, time-stamped messages. That's your backbone for detention or any delivery dispute."
+    ]
+  },
+  {
+    title: "Bill of Lading (BOL): What It Is",
+    layout: "bullets",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Roles: Receipt of freight services; Contract between carrier and shipper; Document of title.",
+      "Use: Provides shipment details and supports invoicing once signed at delivery."
+    ],
+    images: ["/training-material/section10/images/BOL.jpg"],
+    trainerNotes: [
+      "The BOL is three things at once: a receipt of the service, a contract between shipper and carrier, and a document of title. Here's a sample on screen so you recognize the layout.",
+      "Everything we invoice later leans on this document."
+    ]
+  },
+  {
+    title: "BOL: Fields To Check",
+    layout: "table",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Field", "Why it matters"],
+      rows: [
+        ["Units/Dimensions/Weight/Packaging", "Confirms what was actually shipped"],
+        ["Arrival/Load/Unload Times", "Supports detention and on-time performance"],
+        ["Receiver's Signature/Stamp", "Converts BOL to Proof of Delivery (POD)"],
+        ["Legibility/Clean Photos", "Prevents billing delays and disputes"]
+      ]
+    },
+    trainerNotes: [
+      "Before we leave the dock, check units, dimensions, weight, packaging, all the times, and a clear signature/stamp. Make sure the photo is legible edge-to-edge.",
+      "Checkpoint (ask briefly): If the signature is missing but the driver already left the dock, what's our next step?"
+    ]
+  },
+  {
+    title: "From BOL to POD",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Event: Once receiver signs/stamps at delivery, BOL becomes the POD.",
+      "Action: Ask driver to send a clean photo/PDF immediately after unloading.",
+      "Next step: Use POD to invoice in the next section."
+    ],
+    trainerNotes: [
+      "When the receiver signs the BOL, it becomes the POD. Ask the driver to snap a clean photo or PDF and send it right away so we can invoice without delay."
+    ]
+  },
+  {
+    title: "Common Pitfalls & Fixes",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Missing times/signature: Have driver return to office/window for sign-off; annotate arrival time in message log.",
+      "Blurry photo: Re-shoot in good light; include all corners.",
+      "Wrong commodity/weight: Note discrepancy in message to broker and keep copy."
+    ],
+    trainerNotes: [
+      "Missing time or signature? Have the driver return to the office/window if possible, and log what happened. Blurry photos—re-shoot. Wrong weights—note the discrepancy to the broker in writing."
+    ]
+  },
+  {
+    title: "Pop Quiz",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "Why notify the broker at arrival?",
+        "Name two ways lumpers get paid.",
+        "What event converts a BOL into a POD?",
+        "List two BOL fields you must verify before invoicing."
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Establishes time for detention and keeps appointments aligned.",
+        "Cash/Card with receipt; E-check/Comcheck/T-check/AFS code from broker.",
+        "Receiver signs/stamps the BOL at delivery.",
+        "Arrival/Unload times; Receiver signature/stamp; Units/dimensions/weight."
       ]
     },
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Quick check. You answer first; I'll reveal model answers in Trainer Mode.",
+      "Model answers (for Trainer Mode):",
+      "- Arrival notice sets the clock for detention and helps with scheduling.",
+      "- Lumpers: cash/card with receipt, or e-check/comcheck/T-check/AFS code.",
+      "- BOL becomes POD once signed/stamped at delivery.",
+      "- Verify times, signature/stamp, and shipment details (units/dimensions/weight)."
     ]
   },
   {
     title: "Section Material",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 10 notes when provided."
+      "Files on hand: @BOL.jpg (also shown inline on the BOL slide).",
+      "Use: Keep BOL/POD images accessible for quick verification and invoicing."
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 10 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
+      "The sample BOL image is already on the content slide so you can connect the concept to the visual. Keep it here as well so you can pull it up quickly when you teach invoicing next.",
       "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
     ],
     isMaterialsSlide: true
@@ -330,7 +416,13 @@ export default function LoadisticsSection10({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={10}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -368,6 +460,25 @@ export default function LoadisticsSection10({ onNavigateToSection, sectionDropdo
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {/* Image display for slides with images */}
+                {slide.images && slide.images.length > 0 && (
+                  <div className="mt-6">
+                    <div className="grid gap-4">
+                      {slide.images.map((imagePath, i) => (
+                        <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
+                          <img 
+                            src={imagePath} 
+                            alt={`${slide.title} - Image ${i + 1}`}
+                            className="w-full h-auto max-w-2xl mx-auto"
+                            onClick={() => window.open(imagePath, '_blank')}
+                            style={{ cursor: 'pointer' }}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
 

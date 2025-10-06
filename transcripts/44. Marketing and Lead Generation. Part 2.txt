@@ -1,0 +1,425 @@
+On average, about 30% of all marketing emails are opened by the receiver in the US, and the percentage
+
+of taking action or clicking on the link within the marketing email is about 5%.
+
+Meaning if you send an email campaign to only 200 contacts, about 60 people will open it and up to
+
+ten people will take some sort of action.
+
+For example, visit your website, fill out a contact form or give you a call.
+
+If that doesn't seem like a lot, imagine sending the same campaign to 2000 or even 10,000 carriers.
+
+Email marketing is one of the best performing B2B sales tools in the US.
+
+Let's find out how you can make it use of it and promote your truck dispatching service.
+
+There are two types of email marketing, cold email and warm email.
+
+Cold emails are sent to people who don't know you and didn't give consent to receiving communications
+
+from you.
+
+Sending cold emails to license carriers is completely legal in the United States because their contact
+
+information is publicly available.
+
+This can create a great flow of customers interested in your offer.
+
+The simplest way to start is simply to create a separate email account.
+
+Collect some emails of carriers and start sending them messages manually.
+
+However, email marketing is a game of numbers and automation tools will come handy to start sending
+
+more.
+
+I recommend you to check out some cold email automation tools, and here are a couple that I've used
+
+in the past and can say with certainty that they work.
+
+snow.io instantly dot i mailshake.com and smart rich.io this cold email automation tools allow you to
+
+upload the list of contacts which you already know where to get right to your email, text and send
+
+emails automatically.
+
+All of these tools have excellent instructions and guidelines on how to set up your campaigns using
+
+their service.
+
+But if you don't want to spend time figuring it out, you can just hire an expert, pay them a couple
+
+of hundred dollars and have them take care of the setup part for you.
+
+I'll show you some results.
+
+We're getting out of cold email campaigns in my company.
+
+Okay, so I'll quickly show you one of the email setups that we use in our company.
+
+So for these campaigns, we're using instantly and we currently have these three campaigns that just
+
+finished.
+
+They they were just completed.
+
+So they started a month ago.
+
+Exactly.
+
+So these three campaigns have been running for a month.
+
+And over here, you can see that around 2600 emails have been sent for each campaign.
+
+And the next point here is opened.
+
+So as you can see, I told you before that industry averages of opening emails is about 30%.
+
+But in tracking in logistics, people are used to using email all the time.
+
+They always check their email.
+
+You know, small tracking company owners, they're always on the email.
+
+So they actually open many more emails than USA average.
+
+My results are more than 50%.
+
+So let's say 2600 emails sent, 1500 opened and then the next here is replied.
+
+So these are the actions, These are the email replies, these are the clicks, this could be clicks
+
+on the link or just simply the hit reply.
+
+And they tell you like, Hey, I'm interested in more info.
+
+So throughout three campaigns I have what, 3537 4517 Let me add that up.
+
+37 plus 45 plus 1799 So let's just go with 100.
+
+So let's say in one months I received a hundred leads, 100 potential customers out of this email campaigns.
+
+Let's take, I don't know, a week scenario.
+
+Let's say we only sign one out of ten incoming leads.
+
+So with 100, that would be ten new customers within a month just from email campaigns.
+
+And also consider that not all customers will have just one truck.
+
+They might have two, 3 or 5 trucks.
+
+And actually, if you sign one customer that has 5 or 6 trucks, that's already enough work for you.
+
+If you dispatch all of their trucks, you'll be swamped.
+
+You'll be working all day with just that one customer.
+
+So this is a very strong tool and not just instantly, but any other email, cold email sending providers.
+
+You can go on their website, they have instructions how to use them, how to set everything up.
+
+I'll show you one of the campaigns we're doing, um, let's say the sequence.
+
+So the way it works, it sends.
+
+Sequence of emails to each lead.
+
+So let's say I added one of the leads in the database.
+
+They receive the first email, first Hi, and then here they get so their name gets input automatically
+
+their first name.
+
+So Hi John.
+
+For example, I'm Dmitri with Pro Dispatch 24.
+
+We book loads 20 to 30% above the current market for our customers.
+
+We also have dedicated regular and direct shipper freight.
+
+So I mean, this sentence was written specific to my company.
+
+You don't have to write the same thing.
+
+You can come up with your own text and then test them, see which one works.
+
+I've been using many different texts.
+
+This is not the single optimal campaign I've been testing, testing, testing, different copies, different
+
+texts, different call to actions, different offers, and then just choosing whichever works best.
+
+So we also have dedicated regular shipper freight.
+
+I would be happy to let you know what we can do for your type of equipment.
+
+You can reply to this email or dial me.
+
+My number is at the bottom.
+
+So actually on top of those 99 leads we got, many people also called or texted on our company phone
+
+number.
+
+So in reality, we got even more leads from these campaigns.
+
+So they get this first email.
+
+If they reply to it, then a manager starts speaking to them by email and trying to get them on a call.
+
+If they don't reply, then this program waits for five days and then it sends them the second email.
+
+Hey, I know you're super busy just making sure this email didn't get buried.
+
+Our customers typically see in 2,030% increase in their gross in the first month.
+
+I'd love to see you succeed.
+
+That's why I'm offering a way to try our service at zero charge.
+
+So actually, as you know, trying the service of a dispatcher is usually at zero charge anyway.
+
+But it's just just a marketing trick.
+
+Just something I've been trying out to see if it works, to see if it catches their interest.
+
+Send me a quick reply and let's jump on a call to discuss.
+
+So I already added a call to action here and they received a second email.
+
+If they don't reply to the second email, the program waits another five days and then sends them the
+
+last third email.
+
+Hi.
+
+At this point I'll assume that improving dispatch and getting more load opportunities is not a priority
+
+for you right now.
+
+Please feel free to reach out when this changes.
+
+Would love to work with you in the future.
+
+Best Dmitri.
+
+So they'll receive this last message.
+
+Maybe they didn't notice the previous two messages and then they'll go and see one and they'll be like,
+
+Hey, what is this about?
+
+So they'll go back and check this once and then potentially reply So you can create this sequence even
+
+even larger.
+
+You can add, you know, five, ten steps.
+
+I usually do three steps just because I feel in tracking, in dispatching, if a person is not interested
+
+in your service at all, then there is no point pushing it on them.
+
+But three a sequence of three steps I feel is just enough.
+
+You know, you can copy what I did you can check out on instantly.
+
+They have a great database of, you know, copywriting, how to make text, how to write a good email
+
+so you can get I got a lot of pointers and advice from them.
+
+But yeah, you can use instantly, you can use any other service and you know, get anywhere near 100
+
+leads per month.
+
+I can scale this campaign instead of three campaigns.
+
+I can make six and potentially make 200 leads per month.
+
+So it's scalable.
+
+It's possible to get more or less leads depending on your company size, depending on your dispatching
+
+service size.
+
+So that's called email campaigns for you.
+
+Second option of using email marketing to get more customers is sending warm email campaigns.
+
+Warm emails are the ones you send to people who gave you their contact information and gave consent
+
+to send them emails.
+
+How are you going to find these people?
+
+Of course, through cold calling and social media networking, let's say you cold call a carrier, they
+
+don't sign up with you right away, but they give you their email address in a couple of weeks.
+
+You collect, let's say, a hundred such emails and decided to send them a warm email campaign reminding
+
+them about your service and maybe offering a discount.
+
+This will allow you to sign up new customers from the database of carriers who you've already interacted
+
+with but haven't signed up.
+
+Today, there are thousands of companies that provide mass warm email services using their software.
+
+You can create a beautiful design of an email, send it quickly to all your contacts and track the statistics
+
+to see who opened the email and how many times they did it.
+
+Out of the best platforms on the market, I recommend Constant Contact Sendinblue and MailChimp.
+
+All of these offer a free trial.
+
+Origin.
+
+You can upload a certain number of contacts for free and send a certain number of emails per month.
+
+The top of my list is MailChimp.
+
+Their mailing system is super easy to use.
+
+You can create beautiful designs in minutes, plus it has a lot of additional features.
+
+You can create landing pages.
+
+Do a comparison of the effectiveness of different email campaigns.
+
+You can automatically insert the name of a person or the name of their company and the subject line
+
+of the letter.
+
+But best of all, MailChimp offers the most extensive free package.
+
+You can upload 2000 contacts and send up to 10,000 emails per account.
+
+If you have more than 2000 contacts, you can archive them and add another 2000 and send emails to them
+
+too.
+
+I've been using this program for several years now and I've never paid a dime for it.
+
+This is one of my favorite tools to sign up more customers with almost no additional effort.
+
+What else can you do to attract carriers?
+
+Paid ads on tracking related websites and communities.
+
+Yes, you can purchase ads on different websites to promote your services.
+
+Cheapest options are usually Facebook communities or Instagram pages.
+
+For example, those communities on Facebook that do not allow unsolicited advertisement will usually
+
+be happy to post the ad for your dispatching service on their page for a small payment or donation.
+
+The larger the audience, the more expensive the advertisement.
+
+For example, the Truckers Report.com, a truckers forum which is visited by tens of thousands of truckers
+
+daily, will add your company to their list of recommended dispatch services for a fee, and the trucker
+
+path for a fee will add your advertisement to its load board and it will be displayed to thousands of
+
+carriers who visited looking for loads.
+
+Another good tool.
+
+Advertising on classified websites.
+
+So this method is actually very closely related to the topic of the job search module because I suggest
+
+you advertise your services on the same sites on online bulletin boards.
+
+First of all, is Craigslist.
+
+But instead of searching through ads in the job section, you can post your own in the automotive services
+
+section.
+
+Many carriers go to this section to find an auto mechanic or tow truck service or a dispatcher.
+
+That way they may come across your ad and call you.
+
+Don't forget that Craigslist is organized by area.
+
+So if you post an ad, say, in New York, people who search for automotive services in Chicago will
+
+not see your ad, but the cost of an ad on Craigslist is very low.
+
+It's starting at about $5.
+
+Even if you place multiple ads in multiple regions and only sign up one customer from them, it's worth
+
+it.
+
+You can make the money and you invest it back in just one week, working with a new carrier.
+
+Another good classifieds platform is Oodle on Oodle.
+
+You can place an ad in the auto services section.
+
+Absolutely for free.
+
+You can find many classified websites on Google just search for USA classifieds or classified boards.
+
+And the final promotion method I will discuss today is targeted social media marketing and Google ads.
+
+These are the ads that appear when you scroll through your feed on Facebook or Instagram or when you
+
+watch videos on YouTube or when you search for something on Google.
+
+This is a more advanced stage, and I don't recommend it for novice dispatchers.
+
+However, for rapid growth and development in the future, you will definitely need it.
+
+This advertising is based on the principles of pay per view or paper action.
+
+So you're paying for the number of views or for the number of actions performed by your audience.
+
+For example, clicks on ads or transfers to your website.
+
+I will not dwell on it because I'm not a professional marketer and I cannot advise you in depth on this
+
+subject.
+
+The only thing I can tell you is that I pay a marketing contractor about $500 a month for this service.
+
+He sets up the ads, selects the right audience for my dispatching company, and monitors the ad performance.
+
+In addition to this, I myself choose the amount of money to spend on advertising budget depending on
+
+the needs of the dispatch department.
+
+In large companies, this budget runs into hundreds of thousands of dollars.
+
+If you want to go this route, be sure to find a good marketing company and watch their performance
+
+closely.
+
+But once again, if you just starting out, you don't have a team of dispatchers you'll be dispatching
+
+on your own.
+
+There is absolutely no need to spend money on paid ads.
+
+The free tools I gave in this module will allow you to attract carriers with ease and without any investment.
+
+All you need is to put in a bit of time, a bit of effort and just treat it as one of your business
+
+processes.
+
+If you absolutely hate selling and don't want to worry about finding your own carriers to dispatch,
+
+go back to module eight and focus on finding a dispatcher job.
+
+Otherwise, move on to the next lesson.
+
+We'll talk about the list of services you can provide as an independent dispatcher working with partners
+
+and accepting payments from carriers.

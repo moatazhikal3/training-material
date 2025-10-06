@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,81 +66,256 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 17",
-    title: "Section 17 Title Placeholder",
+    title: "Step 8 — Invoicing: How to Create and Submit an Invoice",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 17. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to the practical side of invoicing - this is where we put payment method knowledge into action.",
+      "Tell students: 'We've learned about the three payment methods, now let's see how to actually send an invoice regardless of which method you choose.'",
+      "Emphasize: 'This process is the same whether you're using standard pay, quickpay, or factoring - the documents and steps remain consistent.'",
+      "Set expectations: 'By the end of this section, you'll be able to create and submit professional invoices in under 5 minutes.'",
+      "Point out: 'This is a skill that adds real value to your dispatcher services and can justify higher rates.'"
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Required Documents for Invoicing",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Rate Confirmation: Signed copy with all load details and payment terms",
+      "Bill of Lading: Signed POD (Proof of Delivery) from consignee",
+      "Lumper Fee Receipts: Photos or scans of any lumper payment checks (if applicable)",
+      "Invoice Document: Professional invoice template with all required information",
+      "Voided Check: For direct deposit setup (if not already on file with broker)"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Start by asking: 'What documents do you think we need to get paid for a completed load?'",
+      "Explain each requirement: 'The rate confirmation proves the agreed terms, the BOL proves delivery was completed.'",
+      "Emphasize lumper fees: 'If the driver paid for a lumper, ask him to send you a photo or scan of the check - this is reimbursable.'",
+      "Point out: 'The invoice itself ties everything together and formally requests payment.'",
+      "Mention voided check: 'This contains all the banking information needed for direct deposit setup.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
-    layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    table: {
-      headers: ["Topic", "Description"],
-      rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
-      ]
-    },
-    trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
-    ]
-  },
-  {
-    title: "Knowledge Check",
+    title: "Finding Invoice Submission Instructions",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    bullets: [
+      "Check Rate Confirmation: Look at the bottom section for 'Freight Payment' instructions",
+      "Email Address: Usually found as 'payables@brokercompany.com' or similar",
+      "Payment Terms: Standard pay timeline (7-30 days) clearly stated",
+      "Special Instructions: Quickpay options, direct deposit requirements, document format preferences",
+      "Contact Information: Phone number for payment department if questions arise"
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Tell students: 'The rate confirmation is your roadmap - everything you need to know about payment is usually at the bottom.'",
+      "Use the sample: 'Let's look at this Three Rivers Logistics rate confirmation I found in my email.'",
+      "Point out: 'See here - they want invoices sent to payables@threeriverlogistics.com.'",
+      "Highlight good terms: 'This broker pays in 7 days via direct deposit - that's fantastic! Not 30 days like many others.'",
+      "Emphasize: 'Always read the payment section carefully - each broker has different requirements.'"
     ]
   },
   {
-    title: "Section Material",
+    title: "Sample Rate Confirmation Analysis",
+    layout: "bullets",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    pdf: "/training-material/section17/pdfs/Sample+Rate+Con+for+Invoice-1.pdf",
+    bullets: [
+      "Header Information: Three Rivers Logistics contact details and load number 218142",
+      "Route Details: Elizabeth, New Jersey to Bolingbrook, Illinois",
+      "Payment Amount: $1,400 total invoice amount clearly stated",
+      "Delivery Date: January 22nd, 2021 - this becomes our invoice submission date",
+      "Payment Instructions: Email bills to payables@threeriverlogistics.com with 7-day payment terms"
+    ],
+    trainerNotes: [
+      "Walk through the PDF systematically: 'Let's examine this real rate confirmation step by step.'",
+      "Point to header: 'Here's the broker name, Three Rivers Logistics, and load number 218142.'",
+      "Trace the route: 'Pickup in Elizabeth, NJ, delivery in Bolingbrook, IL - standard freight lane.'",
+      "Highlight payment: 'Most important - $1,400 total, and look at these excellent 7-day payment terms.'",
+      "Explain timing: 'Delivery was January 22nd, so that's when I would submit the invoice.'",
+      "Read payment section aloud: 'Email bills and invoice along with any unloading receipts to payables...'",
+      "Emphasize direct deposit: 'They pay via direct deposit in 7 days - no fees! This is a great broker to work with.'"
+    ]
+  },
+  {
+    title: "Creating the Invoice - Company Information",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Your Company Section: Name of the carrier you're working with (not your dispatcher company)",
+      "Carrier Details: Full legal business name, address, phone number, and tax ID if required",
+      "Example: 'Dmitri Logistics' when working with that customer, different name for next customer",
+      "Professional Appearance: Clean formatting and complete information builds credibility",
+      "Consistency: Use the same format and information for all invoices from that carrier"
+    ],
+    trainerNotes: [
+      "Clarify the relationship: 'You put the name of the carrier you're dispatching for, not your own dispatcher business.'",
+      "Use examples: 'If I'm working with my customer Dmitri Logistics, that's what goes on the invoice.'",
+      "Explain why: 'The broker has a contract with the carrier, not with you as the dispatcher.'",
+      "Emphasize completeness: 'Fill out the address and phone number - incomplete information looks unprofessional.'",
+      "Point out flexibility: 'When I work with my next customer, I'll put their company name instead.'"
+    ]
+  },
+  {
+    title: "Invoice Header and Reference Information",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 17 notes when provided."
+      "Invoice Submitted Date: Use the delivery date from the rate confirmation (January 22, 2021)",
+      "Bill To Information: Broker company name, dispatcher name (if available), full address",
+      "Invoice Number: Check with carrier - some use sequential (1,2,3), others use load number (218142)",
+      "Load Reference: Include the load number multiple times - it's okay to repeat this information",
+      "Due Date Calculation: Add payment terms to invoice date (7 days = January 29, 2021)"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 17 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Walk through each field: 'Let's fill out this invoice using our Three Rivers Logistics example.'",
+      "Explain date logic: 'Delivery was January 22nd, so that's our invoice submission date.'",
+      "Point to broker info: 'Houston Daniels is the dispatcher for the brokerage - he's our contact.'",
+      "Clarify dispatcher roles: 'He's a dispatcher for the brokerage, you're a dispatcher for the carrier - you work together.'",
+      "Discuss numbering: 'Some carriers number invoices 1, 2, 3, 4... others use the load number. Ask your carrier what they prefer.'",
+      "Calculate due date: 'Invoice date January 22nd plus 7 days equals due date January 29th.'"
+    ]
+  },
+  {
+    title: "Invoice Line Items and Calculations",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Description Field: Load number and brief route description for easy reference",
+      "Quantity: Always '1' for one completed load (can combine multiple loads if preferred)",
+      "Unit Price: Enter the total load amount ($1,400 from our example)",
+      "Formula Calculation: Template automatically calculates total price (Qty × Unit Price)",
+      "Additional Charges: Detention, layover, lumper fees can be added as separate line items"
+    ],
+    trainerNotes: [
+      "Show the process: 'Description gets the load number 218142 - this helps their accountant locate the file.'",
+      "Explain quantity: 'We moved one load for them, so quantity is 1.'",
+      "Demonstrate pricing: 'Unit price is $1,400 - the full amount from the rate confirmation.'",
+      "Point out automation: 'The template has formulas, so it calculates the total automatically.'",
+      "Mention extras: 'If there was detention, layover, or lumper fees, we add those in additional charges section.'",
+      "Emphasize accuracy: 'Double-check all numbers against the rate confirmation - mistakes delay payment.'"
+    ]
+  },
+  {
+    title: "Invoice Template and Spreadsheet",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    pdf: "/training-material/section17/pdfs/Invoice-spreadsheet.pdf",
+    bullets: [
+      "Professional Template: Clean, simple invoice format that works with any carrier",
+      "Automated Calculations: Built-in formulas calculate totals automatically",
+      "Customizable Fields: Easy to modify for different carriers and load types",
+      "Multiple Load Support: Can combine several loads on one invoice if preferred",
+      "Professional Appearance: Builds credibility with brokers and speeds payment processing"
+    ],
+    trainerNotes: [
+      "Show the invoice template: 'Here's the actual invoice template I use - it's simple but professional.'",
+      "Point out simplicity: 'As I mentioned, it's as simple as it gets.'",
+      "Emphasize functionality: 'This one works just fine and has formulas built in for automatic calculations.'",
+      "Highlight customization: 'You can modify this for different carriers - just change the company information section.'",
+      "Mention alternatives: 'Honestly, you can get any other invoice template if you want, but this covers all the basics.'",
+      "Connect to efficiency: 'The key is having a consistent template so you can fill invoices quickly and professionally.'"
+    ]
+  },
+  {
+    title: "Understanding Voided Checks for Direct Deposit",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    images: ["/training-material/section17/images/Sample+Void+Check.jpg"],
+    bullets: [
+      "Purpose: Contains all banking information needed for direct deposit setup",
+      "Routing Number: Bank's unique identifier (bottom left - 9 digits)",
+      "Account Number: Carrier's specific account number (middle section)",
+      "Check Number: Individual check identifier (bottom right)",
+      "Voiding Process: Write 'VOID' across the check so it cannot be used for payment"
+    ],
+    trainerNotes: [
+      "Show the sample check image: 'Here's what a voided check looks like and why brokers need it.'",
+      "Point to routing number: 'This 9-digit number identifies the bank - every bank has a unique routing number.'",
+      "Indicate account number: 'This middle section is the carrier's specific account number at that bank.'",
+      "Explain check number: 'This identifies the individual check, but it's not needed for direct deposit.'",
+      "Emphasize security: 'Writing VOID across it prevents anyone from using this check to steal money.'",
+      "Clarify efficiency: 'Instead of asking for all this banking information separately, brokers just say send a voided check.'",
+      "Connect to payment: 'With this information, they can deposit payments directly into the carrier's bank account.'"
+    ]
+  },
+  {
+    title: "Email Submission Best Practices",
+    layout: "bullets",
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Subject Line: 'Invoice for Load Number 218142 from Dmitri Logistics' - specific and clear",
+      "Email Body: Brief, professional message confirming invoice submission",
+      "Attachments: Rate confirmation, signed BOL, invoice, and voided check (if needed)",
+      "File Naming: Use descriptive names like 'Load_218142_Invoice.pdf' for easy identification",
+      "Follow-up: Keep records of when invoices were sent and payment due dates"
+    ],
+    trainerNotes: [
+      "Emphasize subject line: 'Make it easy for their accountant - include the load number and carrier name.'",
+      "Keep email simple: 'Professional but brief - they just need the documents.'",
+      "List attachments: 'Rate confirmation proves the deal, BOL proves delivery, invoice requests payment.'",
+      "Mention voided check: 'Only needed if they don't have the carrier's banking information on file.'",
+      "Recommend tracking: 'I suggest creating a simple spreadsheet to track when invoices were sent and when payment is expected.'",
+      "Time estimate: 'Once you have the system down, this whole process takes less than 5 minutes.'"
+    ]
+  },
+  {
+    title: "Payment Method Variations",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Standard Pay: Follow the exact process we just covered - submit and wait for payment terms",
+      "Quickpay: Contact broker's payables department to inquire about accelerated payment options",
+      "Factoring: Submit documents to factoring company portal or email instead of broker",
+      "Special Instructions: Each company has different processes - always follow their specific requirements",
+      "Documentation: Same documents required regardless of payment method chosen"
+    ],
+    trainerNotes: [
+      "Clarify variations: 'The invoicing process is basically the same, but submission destinations may differ.'",
+      "Standard pay example: 'For Three Rivers Logistics, we'd send everything to payables@threeriverlogistics.com.'",
+      "Quickpay process: 'If we wanted faster payment, we'd email them asking about quickpay options and rates.'",
+      "Factoring difference: 'With factoring, documents go to the factoring company, not the broker.'",
+      "Emphasize consistency: 'The documents and invoice format remain the same - only the destination changes.'",
+      "Stress instructions: 'Always read and follow each company's specific requirements - they're all slightly different.'"
+    ]
+  },
+  {
+    title: "Tracking and Record Keeping",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Invoice Tracking Spreadsheet: Record submission date, load number, amount, and expected payment date",
+      "Payment Status: Track when payments are received and flag any overdue invoices",
+      "Document Storage: Keep copies of all submitted invoices and supporting documents",
+      "Follow-up Schedule: Contact brokers about overdue payments after grace period expires",
+      "Client Reporting: Provide regular payment status updates to your carrier clients"
+    ],
+    trainerNotes: [
+      "Recommend organization: 'If you're providing invoicing services for carriers, stay organized with a simple tracking system.'",
+      "Show the value: 'This tracking helps you spot problems early and follow up on late payments.'",
+      "Explain timing: 'Three Rivers promised 7 days, so if we don't see payment by January 29th, we follow up.'",
+      "Emphasize service: 'Your carriers will love getting regular updates on their payment status.'",
+      "Professional advantage: 'This level of service sets professional dispatchers apart from the competition.'"
+    ]
+  },
+  {
+    title: "Summary and Next Steps",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Process Mastery: You now understand the complete invoicing workflow from documents to submission",
+      "Payment Methods: Same process works for standard pay, quickpay, and factoring arrangements",
+      "Time Efficiency: Experienced dispatchers complete this process in under 5 minutes per load",
+      "Professional Skill: Invoicing expertise makes you more valuable to carriers and employers",
+      "Service Addition: This capability can justify higher dispatcher rates and build stronger client relationships"
+    ],
+    trainerNotes: [
+      "Congratulate progress: 'You now have the complete payment picture - from choosing methods to submitting invoices.'",
+      "Reinforce universality: 'These skills work with any broker, any carrier, any payment method.'",
+      "Set realistic expectations: 'It might take 15-20 minutes at first, but with practice you'll be doing this in 5 minutes.'",
+      "Emphasize career value: 'You can now safely add invoicing and payment management to your resume and service offerings.'",
+      "Connect to business: 'This complete skill set - payment methods plus invoicing - makes you a full-service dispatcher.'",
+      "Preview future: 'Next, we'll cover what happens after you submit the invoice and how to handle payment issues.'"
     ],
     isMaterialsSlide: true
   }
@@ -330,7 +506,13 @@ export default function LoadisticsSection17({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={17}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -368,6 +550,46 @@ export default function LoadisticsSection17({ onNavigateToSection, sectionDropdo
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {/* Images display */}
+                {slide.images && slide.images.length > 0 && (
+                  <div className="mt-6">
+                    <div className="text-lg font-semibold mb-3">Sample Voided Check</div>
+                    <div className="grid gap-4">
+                      {slide.images.map((imgSrc, i) => (
+                        <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
+                          <img 
+                            src={imgSrc} 
+                            alt={`Sample Voided Check`}
+                            className="w-full max-w-2xl mx-auto cursor-pointer hover:opacity-90 transition-opacity"
+                            onClick={() => window.open(imgSrc, '_blank')}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      Click image to view larger version. Note the routing number, account number, and check number locations.
+                    </p>
+                  </div>
+                )}
+
+                {/* PDF display */}
+                {slide.pdf && (
+                  <div className="mt-6">
+                    <div className="text-lg font-semibold mb-3">Sample Rate Confirmation for Invoicing</div>
+                    <div className="border border-gray-200 rounded-xl overflow-hidden">
+                      <iframe 
+                        src={slide.pdf}
+                        className="w-full"
+                        style={{ height: '600px', minHeight: '400px' }}
+                        title="Sample Rate Confirmation for Invoicing"
+                      />
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2 text-center">
+                      Review this rate confirmation to understand where to find payment instructions and load details
+                    </p>
                   </div>
                 )}
 

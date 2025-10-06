@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -65,83 +66,234 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 30",
-    title: "Section 30 Title Placeholder",
+    title: "Building Relationships with Brokers",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 30. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
+      "Welcome to Section 30 - Building Relationships with Brokers. This is a critical skill for professional dispatchers.",
+      "Most dispatcher training focuses on load boards and negotiation, but rarely covers relationship building.",
+      "This section provides practical tools to build lasting business relationships from day one.",
       "Navigation cue: Use the navigation box to move between sections."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "The Importance of Broker Relationships",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Most important skill: making people feel comfortable and building lasting relationships",
+      "Most training focuses on load boards and negotiation, not relationship building",
+      "Experienced dispatchers spend 45% less time searching for loads",
+      "Experienced dispatchers spend 42% less time on load boards",
+      "They take loads directly through established contacts"
+    ],
+    trainerNotes: [
+      "Emphasize that relationship building is often overlooked in dispatcher training.",
+      "Share the statistics: 45% less time searching, 42% less time on load boards.",
+      "Explain that experienced dispatchers have established customers and know what works.",
+      "This is the key to professional success - building relationships from day one."
+    ]
+  },
+  {
+    title: "The Broker-Carrier Relationship",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Brokers and carriers work together to move freight",
+      "Personal relationships often influence load assignments",
+      "Brokers prefer working with familiar, reliable dispatchers",
+      "Building trust leads to better loads and rates",
+      "Long-term relationships benefit both parties"
+    ],
+    images: [
+      {
+        src: "/training-material/section30/images/carrier.png",
+        alt: "Carrier and Broker Relationship",
+        caption: "The partnership between carriers and brokers is built on trust and communication"
+      }
+    ],
+    trainerNotes: [
+      "Explain the symbiotic relationship between brokers and carriers.",
+      "Emphasize that personal relationships matter in business decisions.",
+      "Show the carrier.png image to illustrate the partnership concept.",
+      "Explain that trust and reliability are key factors in load assignments."
+    ]
+  },
+  {
+    title: "Tool 1: Keep a List of Brokers",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "Over 50% of dispatchers don't keep a broker contact list",
+      "This is a critical mistake that limits opportunities",
+      "Record: broker name, company, phone number, extension",
+      "Track: carrier setups, preferred zones, load history",
+      "Example: Dave (reefer loads Jacksonville-Orlando), Cindy (frozen produce Winter Haven)"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Emphasize that most dispatchers don't keep proper contact lists - this is a competitive advantage.",
+      "Explain the importance of tracking broker specializations and zones.",
+      "Share the example of Dave and Cindy working for the same company but different clients.",
+      "Stress that this simple tool can transform a dispatcher's career."
     ]
   },
   {
-    title: "Placeholder Slide 2",
-    layout: "table",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
-    table: {
-      headers: ["Topic", "Description"],
-      rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
-      ]
-    },
+    title: "Tool 2: Be Respectful and Friendly",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "People want to work with those they like personally",
+      "Personal relationships influence load assignments",
+      "Always greet brokers professionally and warmly",
+      "Show genuine interest in their business",
+      "Remember: brokers are people too, not just business contacts"
+    ],
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Emphasize that personal relationships matter in business decisions.",
+      "Explain that brokers prefer working with friendly, respectful dispatchers.",
+      "Share examples of how a simple greeting can make a difference.",
+      "Stress that being professional doesn't mean being cold or impersonal."
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Tool 3: Use Names and Build Personal Connection",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
-    quiz: {
-      questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
-      ],
-      answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
-      ]
-    },
+    bullets: [
+      "Add brokers to your phone book immediately",
+      "Call them by name when they call: 'Hey Dave, how are you doing?'",
+      "Dale Carnegie: 'A person's name is the sweetest sound to them'",
+      "This simple trick builds instant rapport",
+      "They'll remember you and call you by name too"
+    ],
     trainerNotes: [
-      "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Share the Dale Carnegie quote about names being important.",
+      "Explain how this simple technique builds instant rapport.",
+      "Emphasize that people remember those who remember their names.",
+      "This is a small gesture that has huge impact on relationships."
     ]
   },
   {
-    title: "Section Material",
+    title: "Tool 4: Provide Active Communication During Transit",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Brokers love dispatchers who communicate actively",
+      "Send updates on arrival, departure, and daily location",
+      "Even with GPS tracking, send personal emails",
+      "Don't worry about being 'annoying' - more updates = better service",
+      "This sets you apart from other dispatchers"
+    ],
+    trainerNotes: [
+      "Explain that brokers need to keep their customers informed.",
+      "Emphasize that active communication shows professionalism.",
+      "Share that this is what brokers want but rarely get.",
+      "This is a simple way to stand out from the competition."
+    ]
+  },
+  {
+    title: "Tool 5: Send Proof of Delivery Immediately",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 30 notes when provided."
+      "Brokers need PODs quickly for their customers",
+      "Some customers charge brokers for late PODs",
+      "Help brokers improve their image with customers",
+      "Make agreements with drivers in advance",
+      "Explain the importance to your carriers"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 30 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Explain the broker's pain point with late PODs.",
+      "Emphasize how this helps brokers maintain customer relationships.",
+      "Share strategies for getting drivers to cooperate.",
+      "This simple act builds tremendous goodwill with brokers."
+    ]
+  },
+  {
+    title: "Tool 6: Thank Brokers After Delivery",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Prepare a thank you template for after delivery",
+      "Express gratitude and desire to continue working together",
+      "Attach the signed BOL to the same email",
+      "This costs nothing but makes a huge impression",
+      "Can also be done via phone call"
     ],
-    isMaterialsSlide: true
+    images: [
+      {
+        src: "/training-material/section30/images/email-message-example.png",
+        alt: "Thank You Email Example",
+        caption: "Example of a professional thank you email to brokers after delivery"
+      }
+    ],
+    trainerNotes: [
+      "Show the email example image to demonstrate proper format.",
+      "Emphasize that this simple gesture sets you apart from other dispatchers.",
+      "Explain that gratitude goes a long way in business relationships.",
+      "This is a small investment that pays huge dividends in relationship building."
+    ]
+  },
+  {
+    title: "Tool 7: Build Working Relationships",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Ask about regular loads after successful deliveries",
+      "Tell brokers about your trucks and operating zones",
+      "Share your regular load needs and patterns",
+      "Help brokers understand how you can be useful",
+      "Find common ground for mutual benefit"
+    ],
+    trainerNotes: [
+      "Explain how to transition from one-time loads to regular relationships.",
+      "Emphasize the importance of sharing information about your operations.",
+      "Share how brokers look for reliable dispatchers in their zones.",
+      "This is where relationships become profitable for both parties."
+    ]
+  },
+  {
+    title: "Tool 8: Request Load Lists from Brokers",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Ask brokers for their load lists",
+      "Some send daily/weekly emails to all contacts",
+      "VIP dispatchers get exclusive loads before public posting",
+      "These loads often have better rates and terms",
+      "Example: 12-truck carrier loads 50% of trucks from one broker contact"
+    ],
+    trainerNotes: [
+      "Explain the concept of VIP load lists and exclusive access.",
+      "Share the example of the 12-truck carrier success story.",
+      "Emphasize that these relationships take time to build but are extremely valuable.",
+      "This is the ultimate goal - exclusive access to high-paying loads."
+    ]
+  },
+  {
+    title: "The Handshake of Success",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "Building relationships takes time and consistent effort",
+      "Use all tools from day one of your career",
+      "Results will come after a few months of consistent application",
+      "For every equipment type, state, and season, you'll have contacts",
+      "This is the path to professional success as a dispatcher"
+    ],
+    images: [
+      {
+        src: "/training-material/section30/images/broker+hand+in+dispatcher+hand.jpg",
+        alt: "Broker and Dispatcher Handshake",
+        caption: "The successful partnership between brokers and dispatchers built on trust and mutual respect"
+      }
+    ],
+    trainerNotes: [
+      "Show the handshake image to symbolize successful partnerships.",
+      "Emphasize that relationship building is a long-term investment.",
+      "Explain that consistency is key - use these tools every day.",
+      "This concludes the module on finding loads and building relationships."
+    ]
   }
 ];
 
@@ -330,7 +482,13 @@ export default function LoadisticsSection30({ onNavigateToSection, sectionDropdo
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={30}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -371,6 +529,26 @@ export default function LoadisticsSection30({ onNavigateToSection, sectionDropdo
                   </div>
                 )}
 
+                {slide.images && slide.images.length > 0 && (
+                  <div className="space-y-4">
+                    {slide.images.map((image, index) => (
+                      <div key={index} className="text-center">
+                        <div className="border border-gray-200 rounded-xl overflow-hidden mb-3">
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="w-full h-auto max-h-96 object-contain cursor-pointer hover:opacity-90 transition-opacity"
+                            onClick={() => window.open(image.src, '_blank')}
+                          />
+                        </div>
+                        {image.caption && (
+                          <p className="text-sm text-gray-600 italic">{image.caption}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 {/* Section Navigation - show on first and last slides */}
                 {(slideIndex === 0 || slide.isMaterialsSlide) && onNavigateToSection && (
                   <div className="mt-6 p-4 bg-gray-50 rounded-xl border">
@@ -386,6 +564,21 @@ export default function LoadisticsSection30({ onNavigateToSection, sectionDropdo
                       </Button>
                       <Button onClick={() => onNavigateToSection(31)} className="rounded-xl">
                         Next Section (Section 31) →
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Quiz Break Button - show on last slide */}
+                {slide.isMaterialsSlide && onNavigateToSection && (
+                  <div className="mt-4 p-4 bg-blue-50 rounded-xl border border-blue-200">
+                    <div className="text-sm font-semibold mb-3 text-blue-800">Ready for a Quiz?</div>
+                    <div className="flex gap-3">
+                      <Button 
+                        onClick={() => onNavigateToSection("quiz-break-5")} 
+                        className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                      >
+                        🎯 Take Quiz Break #5 (Sections 28-30) →
                       </Button>
                     </div>
                   </div>

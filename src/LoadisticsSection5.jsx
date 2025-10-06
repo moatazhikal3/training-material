@@ -1,4 +1,5 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect } from "react";import { SlideNavigation } from "./components/ui/SlideNavigation";
+
 import loadisticsLogo from "./assets/Loadistics-Logo.jpg";
 
 // ===== Minimal UI primitives (no external deps) =====
@@ -578,7 +579,13 @@ export default function LoadisticsSection5({ onNavigateToSection, sectionDropdow
                     {slide.title}
                   </h1>
                   <div className="text-xs text-gray-500">Slide {slideIndex + 1} of {slides.length}</div>
-                </div>
+               
+                  <SlideNavigation 
+                    currentSlide={slideIndex} 
+                    totalSlides={slides.length} 
+                    onSlideChange={setSlideIndex}
+                    sectionNumber={5}
+                  /> </div>
               </div>
 
               <div className="space-y-6">
@@ -627,7 +634,7 @@ export default function LoadisticsSection5({ onNavigateToSection, sectionDropdow
                 {(slideIndex === 0 || slide.isMaterialsSlide) && onNavigateToSection && (
                   <div className="mt-6 p-4 bg-gray-50 rounded-xl border">
                     <div className="text-sm font-semibold mb-3">Section Navigation</div>
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 flex-wrap">
                       <Button 
                         variant="outline" 
                         onClick={() => onNavigateToSection(4)} 
@@ -636,6 +643,17 @@ export default function LoadisticsSection5({ onNavigateToSection, sectionDropdow
                       >
                         ← Previous Section (Section 4)
                       </Button>
+                      
+                      {/* Quiz Break Button - only show on last slide */}
+                      {slide.isMaterialsSlide && (
+                        <Button 
+                          onClick={() => onNavigateToSection("quiz-break")} 
+                          className="rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all duration-200"
+                        >
+                          🎯 Quiz Break #1
+                        </Button>
+                      )}
+                      
                       <Button onClick={() => onNavigateToSection(6)} className="rounded-xl">
                         Next Section (Section 6) →
                       </Button>

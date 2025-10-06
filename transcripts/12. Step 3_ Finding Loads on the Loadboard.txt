@@ -1,0 +1,705 @@
+Hey, welcome back.
+
+We continue working with load boards.
+
+In the last lesson, we posted our reefer on the board for our driver, Quinton.
+
+We even got some calls and found a pretty good load.
+
+Actually, I didn't even post the other truck, but he's in Chicago.
+
+You remember?
+
+That city is a huge logistics hub.
+
+I'm sure we could get some calls if we posted that one as well.
+
+But of course, in real life, we're not just going to sit around waiting for a call.
+
+We're going to pick up the phone and start making calls ourselves.
+
+I'm logging back into my load board to show you the process.
+
+All right, team.
+
+So I'm back on my load board, and now we're going to be inputting all the parameters in order to search
+
+for a load.
+
+So we will be using an example of our second driver, Derek.
+
+If you remember, he is unloading today in Chicago, Illinois, city of Chicago, state of Illinois.
+
+So let's check out the national load counts.
+
+Let's see the in and out ratio for Illinois.
+
+Equipment is driven.
+
+There you go, Illinois, 984 loads coming out, coming in, 620 loads coming out.
+
+So this is actually not a hot state.
+
+And we can expect the number of trucks to be slightly higher than the number of loads.
+
+This indicates that we probably shouldn't be expecting any crazy high rates coming out of that state.
+
+But still, it's a large transportation area.
+
+There's a lot of production, so there actually quite a lot of loads coming out right now, more than
+
+600.
+
+We don't have any specific destination where we need to bring Derek.
+
+So we're quite open.
+
+If we were doing this in real life, we would just basically be looking for a load that fits the carrier's
+
+demands or his parameters.
+
+Maybe he needs a specific amount of money that he wants to make on this load or a specific rate per
+
+mile that he wants to achieve on this load.
+
+But in this class, we're just going to be inputting all the information in order to search for the
+
+load properly.
+
+So here on the left, in my menu, last time we used this function, my trucks and we were posting a
+
+truck for brokers to see, but now we're going to be using search loads, so we're going to be searching
+
+for loads.
+
+So a window pops up when I click on search loads and we will start inputting our parameters.
+
+Same thing pretty much as what we're doing for posting a truck.
+
+So the origin is where my truck is located right now.
+
+He's in Chicago, so I'm going to be put in Chicago.
+
+There you go.
+
+Chicago, Illinois.
+
+We put that in and then d o.
+
+So this is a trucking term.
+
+It means that had to origin essentially.
+
+It means the number of miles that the truck is willing to travel empty in order to pick up the load.
+
+Right.
+
+Because the load doesn't have to be specifically in the city of Chicago.
+
+Chicago is a large city, but outside of it, there are many small towns and villages where there is
+
+a lot of production, a lot of warehousing.
+
+So it's quite possible that a good load will be picking up outside of Chicago.
+
+And when I input this parameter into the load board, I'm, I'm basically inputting the radius around
+
+Chicago in which I want to see the loads that are available right now.
+
+So this is calculated in miles Right now here is 150 miles.
+
+That's quite a lot.
+
+I am not looking to deadhead so much, usually unless the area I'm based in is completely dead and there
+
+is nothing around because the more you travel empty, you know, the lower your rate per mile, because
+
+those empty miles also cost money for the carrier.
+
+They have to pay drivers salary based on the number of miles they move.
+
+They have to pay the diesel and truck depreciation, etcetera, etcetera.
+
+So I'm just going to put, let's say, about 75 miles.
+
+That's going to be about one hour drive out of Chicago in any location.
+
+So in any destination in this is just a radius around Chicago.
+
+Okay.
+
+And for the destination, once again, you remember last time we were putting Florida and Texas.
+
+So I can put a certain state by its abbreviation or I can put a number of states or I can even put a
+
+specific city.
+
+So, for example, let's say he was going, I needed to bring him to Miami.
+
+I would put going to Miami, Florida.
+
+There we go.
+
+And then again, this is deadhead to destination.
+
+So once again, I have a radius for pickup around Chicago, but I also have a radius for delivery around
+
+Miami because let's say my driver lives in Miami and I want to bring him back home.
+
+But it doesn't mean that I have to bring him specifically into the city of Miami.
+
+Once again, if I put here 75 miles as well, this will show me loads that are picking up within one
+
+hour drive around Chicago and delivering within one hour drive around Miami.
+
+So you can play around with it and put different deadheads when you're searching for loads.
+
+But in the case of Derek, he doesn't have a specific destination, so I might as well just check out
+
+all the available loads, all the available options.
+
+In order to do that, I'm just going to leave the destination blank.
+
+If I'm leaving the destination blank, it doesn't really matter what deadhead I put here because it
+
+only shows me the deadhead when I input a specific location.
+
+So a specific city.
+
+Okay, we leave the destination blank and then for the equipment type, last time we posted a truck
+
+for a reefer for Quinton, but our driver Derek, is using a standard drive in, so it's the first one
+
+here in the Options Van Standard.
+
+And I'm going to choose that.
+
+Actually, I can, I can choose multiple types of equipment if needed.
+
+But in that case, in this case, we just have a standard drive.
+
+And so I'm just going to input that date range.
+
+Once again, if I am looking for loads that are picking up only today, I'm going to leave it like that.
+
+If I want to see loads that are picking up today and tomorrow or let's say even today, tomorrow and
+
+the next day after that.
+
+So I would put from the 12 from Monday to the 14 to Wednesday, and in that case, I will see all of
+
+the loads that are picking up between today and Wednesday.
+
+But once again, in our case, we're looking to pick up a load for the driver today.
+
+We don't want him to sit and do nothing for no reason.
+
+You know, the wheels of the truck have to be moving.
+
+So I'm just going to click on 12 again and put the date range only for today.
+
+And actually we can already click search.
+
+But on the bottom here, we have more parameters that we can use load requirements.
+
+So this is similar to what we were inputting when we were posting a truck.
+
+So we can choose to either look at full loads or partial loads or in this case, when we're searching
+
+load, we can also look at all loads.
+
+So this will show me full and partial and then for the lengths we can leave, the lengths and the weight
+
+blank in this point and it will just show us all loads available.
+
+But if we want to be more specific, we'll input that the lengths of our trailer is standard 53ft driven
+
+and the maximum weight this driver is ready to carry is £45,000.
+
+Once again, if my driver is not willing to move anything heavier than £42,000, then this is the place
+
+to put this.
+
+And this way it will filter out the loads that are heavier than what my driver is looking to move.
+
+But in my case he's willing to move anything.
+
+So I'm just going to put maximum legal weight, which is £45,000.
+
+Okay.
+
+Done with this one.
+
+And it actually starts a search for me so I can already see the loads here.
+
+I have 428 results available to me right now, but there are more options that I can look at.
+
+Search back.
+
+So some loads have been posted a minute ago, some loads have been posted two hours ago, some loads
+
+have been posted.
+
+23 hours ago.
+
+If I don't want to see loads that have been on the board for too long, I can choose this parameter
+
+here.
+
+So for example, I want to see only the fresh loads, the lows that have been posted in the past hour.
+
+What I'm going to do age and hours.
+
+One you see, I had 428 loads.
+
+Now I have 312 loads, all the old loads that have been posted more than one hour ago.
+
+I'm not going to see in this case, it's up to you what to look at.
+
+Sometimes brokers forget to remove a load, so it's just hanging there.
+
+Sometimes you can call on a load that's been posted a couple hours ago and the broker will pick up the
+
+phone and you will actually get the load because he forgot about this posting.
+
+He hasn't refreshed it.
+
+It went all the way down here and not so many people see it.
+
+So it's up to you what to choose.
+
+I usually just leave it at 24 hours just to see the whole picture, just to know how many loads are
+
+actually available for 128.
+
+Now company.
+
+I can have some preferences here.
+
+I can choose to block some of the brokers, for example.
+
+So this is actually not even available to me.
+
+I have to call date and I have to request this function.
+
+I've never used it in my life.
+
+Private loads.
+
+Private loads or loads offered to selected carriers from brokers that have added their carriers to their
+
+private carrier list.
+
+Not something to worry about too much right now.
+
+If you start working, you get more experience and you have some of the brokers that would like to add
+
+you to their private loads private carrier list.
+
+In that case, you'll be able to use this function and then the book and bid only show bookable loads.
+
+So some of the loads on data load board, you don't have to call the broker and negotiate.
+
+You can just book it right there on the moment.
+
+And if I press here, it will only show me loads that I am able to book right away.
+
+Let's try this out.
+
+Let's see how many loads I can book right away.
+
+Only three loads, actually.
+
+Only three loads out of 400 I can book right away.
+
+So if I click book here, open a new tab, the company website.
+
+So this is going to move me to the website of this carrier.
+
+Well, right now it's not even available to me.
+
+Oh, it's loading.
+
+I'm not a robot, okay?
+
+So this broker actually decided to provide this option.
+
+And you can book the load directly on their website, but I don't know why it's so slow.
+
+Their website.
+
+I'm just going to leave it here loading and maybe we'll get back to it.
+
+Anyway, I do not want to use this function.
+
+I want to see all the loads available to me.
+
+So here you go.
+
+I have 423 results that I can choose from.
+
+Let's just go very quickly over these results.
+
+So at first I have the age.
+
+So this is how long ago the load has been posted.
+
+You can notice that my load board is self-updating, so when a new load comes up, it automatically
+
+pops up here.
+
+So this load just appeared and therefore it's showing that it was posted one minute ago.
+
+And then the rate some brokers choose to post a rate, other brokers choose not to do it.
+
+They want you to call or to send them an email and negotiate with them.
+
+In any case, regardless guess of whether you see the rate or not, you can always negotiate.
+
+So if this broker, for example, posted his load for $1,300, it doesn't mean that I cannot call this
+
+broker and, you know, offer my own price.
+
+Maybe I'm willing to move this load, but only for $1,600 so I can still call them and let them know
+
+that my rate is actually slightly higher and then they will either agree to it or they will pass, or
+
+maybe they will negotiate a bit more with me and we'll end up booking it for like $1,500.
+
+So pretty much every load, especially on the load board, you can call or email and negotiate after
+
+rate.
+
+We have the trip.
+
+So the number of miles, this is the number of miles from pick up to the delivery.
+
+So this obviously doesn't account for my Deadhead.
+
+So for example, this load picks up in Bolingbrook, Illinois, and is 474 miles.
+
+This is just from Bolingbrook to the Spencer, Iowa.
+
+This doesn't account my empty miles moving from Chicago to Bolingbrook.
+
+But to see how many empty miles is from Chicago to Bolingbrook, I see this indicator here is.
+
+Oh, right.
+
+It's the same indicator as we were inputting in the radius.
+
+So it's showing me 27.
+
+So now I know that actually this load is picking up 27 miles away from where my truck is, 27 miles
+
+away from Chicago.
+
+And then from pickup to delivery, it's another 474 miles.
+
+So it's actually quite convenient that they're putting it all in the same place because I can very easily
+
+calculate I can add up 474 plus 27, and I can calculate my total mileage, my loaded mileage plus my
+
+empty miles will equal total mileage.
+
+Next comes the pickup.
+
+So we chose the pickup only on the 12th of June.
+
+So all of these loads are picking up on the 12th of June.
+
+Actually, you see this one, it can pick up either on the 12th of June or on the 13th of June.
+
+So it's up to the carrier.
+
+But all of this loads will be available on the 12th of June because I input it in the date range next
+
+equipment.
+
+So for the equipment we chose dry van van Standard.
+
+But as you can see, there are some other types of equipment.
+
+So for example, this one is VM van with a team.
+
+So it needs a team driver has to be two drivers in the same truck because this load needs to be delivered
+
+as soon as possible.
+
+Or for example, this one, this one is van or flatbed.
+
+So you can either use a dry van or you can use a flat trailer.
+
+This load can be loaded in both trailers.
+
+So once again, same thing as with the pickup, it might have, you know, something additional to the
+
+dry van, but pretty much all of these loads you can pick up with a standard driver.
+
+Next one is the weight.
+
+So this load weighs £8,000.
+
+I think you already noticed that if I click on any certain load, another menu pops out with a more
+
+detailed explanation of the load.
+
+So let's just choose one load so we stay on it.
+
+Okay, Let's choose this one.
+
+Illinois to Ohio.
+
+So I click on it and £15,000 is the weight of this load.
+
+It's also written here.
+
+And the full description, £15,000.
+
+We can also see that this is for a 53ft dry van and this is a full load.
+
+So this is not a partial load.
+
+You can not put any more product in in the trailer.
+
+If you pick up this load, even though it's not very heavy, it's only £15,000.
+
+But because it's a full load, you will not be able to add any other product.
+
+And here in more detailed description, we can see the commodity.
+
+So this broker indicated that this is skidded empty boxes.
+
+Well, there you go.
+
+This is why this load is so light.
+
+It's only £15,000 because it's empty boxes.
+
+They're very light.
+
+But.
+
+They will take up the whole trailer.
+
+So that's why he put it as a full load.
+
+What else can we see here?
+
+The trip is 344 miles.
+
+So many of the things you see here in the short description are repeating in the longer description.
+
+But if we move further here to the company, we can see company here and we can see company here.
+
+So the broker who posted this load is Countrywide Transportation Inc.
+
+Uh, Hinsdale, Illinois.
+
+Oh, I guess this is their location.
+
+So this is Countrywide Transportation Inc out of Hinsdale, Illinois.
+
+And this broker chose to post this load with an email.
+
+Uh, if we click on another load, you will see a phone number here.
+
+But that specific broker chose an email, so he's not looking for me to call him to negotiate, but
+
+he's looking for me to send him an email and then I can see the number of the broker.
+
+I can see where they're from.
+
+They are indeed from Hinsdale, Illinois.
+
+I can see their reviews.
+
+So they have two out of five stars.
+
+I can see their credit score.
+
+97 and days to pay is how many days on average they take to pay a carrier.
+
+So we'll get to credit scores factoring and invoicing.
+
+But typically, brokers take up to 30 days to pay a carrier, and this specific broker actually takes
+
+23 days on average.
+
+So slightly less than 30 days.
+
+So these are all the parameters and we can actually sort the load board by this parameter.
+
+So I'm going back up right now.
+
+As you can see here, age is in blue.
+
+So right now I'm sorting by age.
+
+Let me just click on this again.
+
+There you go.
+
+Now I'm sorting by age.
+
+So all of these loads have been posted one minute ago, and these are the first loads I see.
+
+And then I see the loads that have been posted two minutes ago, then three minutes ago.
+
+Then four minutes ago.
+
+Five.
+
+ET cetera.
+
+So right now it's posted by post age, sorted by post age.
+
+I can also sort by rate.
+
+So if I click this here, it will first show me loads with the highest rate.
+
+Well, these loads are coming up, so it's a bit lagging.
+
+But here you go, the highest paying load right now coming out of Chicago, Illinois, and 75 mile radius
+
+around Chicago is paying $3,500.
+
+But then again, take into account that not every broker is posting the rates.
+
+So there actually might be more higher paying loads available, but they just don't have the rate posted.
+
+So this only sorts it first shows me the highest rate and then it goes to the lowest and then it will
+
+show me the loads without the rate.
+
+I don't know if I can scroll all the way to the lows that don't have a rate.
+
+Probably not.
+
+So it still has a rate 500.
+
+But if I were to scroll even more down it would show me loads like right here that don't have the rate.
+
+I don't know why it's coming out.
+
+So I guess the new loads that are popping up don't get sorted and they just kind of come up for me to
+
+see what is new.
+
+Anyway.
+
+I can also sort by trip.
+
+So let's say for example, I'm looking for long loads, I'm looking to send my driver out far, you
+
+know, for, for three, 4 or 5 days.
+
+So right now I clicked on the trip and it actually is showing an arrow from down to up.
+
+So it means it will first show me the shortest routes and then it will go up to the highest routes.
+
+But if I click this trip again, it the arrow changes from up to down and now it's showing me the longest
+
+loads first.
+
+So these loads are actually going to Canada, Vancouver.
+
+So the longest trips out of Chicago are going to Canada.
+
+But if I go a bit.
+
+Oh, this is really.
+
+New loads are coming up and they just don't get sorted.
+
+So but if I go down here so you can see California.
+
+So for example, California is all the way in the Southwest and Chicago is kind of in the Middle East.
+
+And well, the area is called Midwest, but Chicago is in the eastern part of the US and California
+
+is in the Western.
+
+So it's more than 2000 miles for this trip.
+
+I can also sort by deadhead to show me the lowest Deadhead first and then if I go, well, actually
+
+I cannot even change, so I can only sort by shortest deadhead first.
+
+So in that case, if I sort like this, it will first show me loads that are picking up right there
+
+in Chicago.
+
+But if I move much further, you see here already ten miles away from Chicago, 11, 12 miles away.
+
+So I can sort by pickup date, but I only input one specific date so there is no point to sort.
+
+And that's it.
+
+So this is what I can sort by age of the load posting posted rate trip which is number of miles deadhead
+
+to origin pickup date and that's it.
+
+Well, it's funny because I, I, I sorted by pickup date and they start showing me loads that are picking
+
+up between the six of June and the 30 of June.
+
+So this load can actually pick up any time or you see it says not a real load looking for carriers with
+
+alcohol permits for an active bid.
+
+So this is actually like a dedicated lane or like a short term contract and they're just posting it
+
+like this.
+
+But really, there's not a specific load.
+
+They're just looking for carriers that will provide the quote for a specific short term contract.
+
+And then this is something you can do as a dispatcher as well.
+
+You can agree with a broker to not just book one single load, but to pre-book for several weeks or
+
+even several months in advance.
+
+All right.
+
+So this is the sorting.
+
+And once again, if we click on any specific load, it will show us more parameters.
+
+I do recommend you to click on loads that you're interested in because it has more explanation.
+
+For example, the comments are only available here in full description and the commodity or any other
+
+type of comments that the broker is inputting is also only available in here and also the spot rate.
+
+So the spot rate is something once again, the load board provides me depending on the subscription
+
+that I buy, it will provide me an average rate for this lane.
+
+So in this case, it's a 15 day average.
+
+So in the basically it indicates that in the past two weeks for this specific lane, brokers have been
+
+paying around $697.
+
+It even shows me a range.
+
+They've been paying between 600 and $27 all the way up to $799.
+
+And this kind of gives me a bit of a more of an understanding of how much I should be asking for a load
+
+or how much is realistic to ask for a load because the rate is not posted here and many brokers don't
+
+post the rate because they're hoping that some dispatcher or some carrier is going to call and they
+
+will accept a very low rate.
+
+But the load board is helping us by by showing what was the average rate in the past 15 days.
+
+All right, that's it.
+
+That's how you search for loads on data load board.
+
+And to be honest, on any other load board, the process is pretty much the same.
