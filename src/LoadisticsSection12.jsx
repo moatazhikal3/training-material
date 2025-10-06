@@ -254,7 +254,7 @@ const slides = [
       "Objection Handling: Prepare responses to common broker pushbacks",
       "Relationship Building: Focus on long-term broker partnerships and repeat business"
     ],
-    video: "https://github.com/moatazhikal3/training-material/raw/main/public/section12/links/dispatcher-broker-mockup.mp4",
+    video: "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section12/links/dispatcher-broker-mockup.mp4",
     trainerNotes: [
       "The goal is developing authentic communication style, not memorizing scripts.",
       "Practice these techniques with different load types and market conditions.",

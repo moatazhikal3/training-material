@@ -111,7 +111,7 @@ const slides = [
       "Broker checks with boss: $1,350 maximum",
       "Final agreement: $1,400 (dispatcher gets extra $50)"
     ],
-    video: "https://github.com/moatazhikal3/training-material/raw/main/public/section27/images/Script1.mp4",
+    video: "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script1.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the first conversation - a standard reefer load from Atlanta to Louisville. This is a perfect example of professional negotiation.'",
       "Load details: 'Pick up today in Atlanta anytime between 9 a.m. and 2 p.m. deliveries tomorrow in Louisville at 9 a.m., £15,000 of fresh salad greens, 45 degrees from the reefer. And I got $1,200 on this one.'",
@@ -159,7 +159,7 @@ const slides = [
       "Dispatcher minimum: $5,500",
       "Result: No deal - dispatcher walked away professionally"
     ],
-    video: "https://github.com/moatazhikal3/training-material/raw/main/public/section27/images/Script2.mp4",
+    video: "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script2.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the second conversation - a complex load from Los Angeles to Portland. This shows a different negotiation scenario where the dispatcher walks away.'",
       "Load identification: 'The first thing the broker asked was a load posting number at the big brokerage companies. All the loads posted are assigned a unique number that makes it easier for them to find the load in their system.'",
@@ -207,7 +207,7 @@ const slides = [
       "Dispatcher strategy: Emphasize professionalism and experience",
       "Result: Broker took risk, agreed to $2,500"
     ],
-    video: "https://github.com/moatazhikal3/training-material/raw/main/public/section27/images/Script3.mp4",
+    video: "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script3.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the third conversation - a new carrier setup from Saint Louis to Mobile. This demonstrates how to build trust with new brokers.'",
       "Load details: 'Pick up today in Saint Louis at any time. First come, first serve before 5 p.m.. It needs to be delivered at any time tomorrow. The facility is open from 8 a.m. until 8 p.m. It's £35,000 of car parts requires at four feet tarp.'",
