@@ -112,7 +112,7 @@ const slides = [
       "Final agreement: $1,400 (dispatcher gets extra $50)"
     ],
     video: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-      ? "/section27/images/Script1.mp4"
+      ? "/training-material/section27/images/Script1.mp4"
       : "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script1.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the first conversation - a standard reefer load from Atlanta to Louisville. This is a perfect example of professional negotiation.'",
@@ -162,7 +162,7 @@ const slides = [
       "Result: No deal - dispatcher walked away professionally"
     ],
     video: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-      ? "/section27/images/Script2.mp4"
+      ? "/training-material/section27/images/Script2.mp4"
       : "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script2.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the second conversation - a complex load from Los Angeles to Portland. This shows a different negotiation scenario where the dispatcher walks away.'",
@@ -212,7 +212,7 @@ const slides = [
       "Result: Broker took risk, agreed to $2,500"
     ],
     video: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-      ? "/section27/images/Script3.mp4"
+      ? "/training-material/section27/images/Script3.mp4"
       : "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section27/images/Script3.mp4",
     trainerNotes: [
       "Video introduction: 'Now we'll watch the third conversation - a new carrier setup from Saint Louis to Mobile. This demonstrates how to build trust with new brokers.'",
