@@ -475,18 +475,19 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                 {/* Video display for slides with video property */}
                 {slide.video && (
                   <div className="mt-6">
-                    <div className="text-lg font-semibold mb-3">Video Demo: Dispatcher-Broker Call Example</div>
-                    <div className="relative w-full max-w-4xl mx-auto" style={{ paddingBottom: "56.25%", height: 0 }}>
+                    <div className="text-lg font-semibold mb-3 text-gray-700">Video Demo: Dispatcher-Broker Call Example</div>
+                    <div className="relative w-full max-w-4xl mx-auto bg-gray-100 rounded-xl overflow-hidden" style={{ paddingBottom: "56.25%", height: 0 }}>
                       <iframe
                         src={slide.video}
-                        className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                        className="absolute top-0 left-0 w-full h-full"
                         style={{ border: "none" }}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
+                        loading="lazy"
                         title="Dispatcher-Broker Call Demonstration"
                       />
                     </div>
-                    <p className="text-sm text-gray-600 mt-2 text-center">
+                    <p className="text-sm text-gray-600 mt-3 text-center">
                       Watch a demonstration of professional dispatcher-broker negotiation
                     </p>
                   </div>
