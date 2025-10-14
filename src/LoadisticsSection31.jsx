@@ -66,81 +66,335 @@ const brand = { red: "#C8102E", black: "#0F1115", gray: "#4A4A4A", lightGray: "#
 const slides = [
   {
     sectionLabel: "Section 31",
-    title: "Section 31 Title Placeholder",
+    title: "Principles of Problem Solving",
     layout: "title",
     icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     trainerNotes: [
-      "Welcome to Section 31. This section content will be provided later.",
-      "Placeholder trainer notes for the introduction slide.",
-      "Navigation cue: Use the navigation box to move between sections."
+      "Welcome to Section 31 - Principles of Problem Solving. This is your last module related to professional dispatching skills.",
+      "You are at the finish line! There is one last push before we move on to monetizing your knowledge.",
+      "This module will free you from stress and help you find the best way out of difficult situations at work.",
+      "We'll break down complex problems into manageable processes with clear, step-by-step solutions."
     ]
   },
   {
-    title: "Placeholder Slide 1",
+    title: "Why Problem Solving Matters",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "This is a placeholder bullet point for content to be added later.",
-      "Another placeholder bullet point for future content.",
-      "Additional placeholder content will be inserted here."
+      "**Professional problem solving** involves two key processes: creativity and decisiveness",
+      "**Creativity** - generating options and possible solutions",
+      "**Decisiveness** - choosing the best solution from available options",
+      "Essential skill for any successful dispatcher and business professional",
+      "Prevents panic when facing rare or complex problems"
     ],
     trainerNotes: [
-      "Trainer notes for this slide will be provided when content is added.",
-      "Placeholder instructions for presenting this material."
+      "Opening statement: 'Problem solving is one of the greatest skills not only for a dispatcher but for any successful business.'",
+      "Explain the two-part process: 'Professional problem solving involves two very different, perhaps even contradictory thought processes - creativity and decisiveness.'",
+      "Break down each part: 'The first part creativity is about generating options and possible solutions. And the second part decisiveness is about choosing the best one.'",
+      "Emphasize the practical benefit: 'Even when faced with a rare problem, a dispatcher doesn't begin to panic. He or she acts according to a familiar set of practices and easily finds a way out of any situation.'"
     ]
   },
   {
-    title: "Placeholder Slide 2",
+    title: "Three-Step Problem Solving Process",
     layout: "table",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
     table: {
-      headers: ["Topic", "Description"],
+      headers: ["Step", "Description", "Key Focus"],
       rows: [
-        ["Placeholder Topic 1", "Placeholder description for the first topic."],
-        ["Placeholder Topic 2", "Placeholder description for the second topic."],
-        ["Placeholder Topic 3", "Placeholder description for the third topic."]
+        ["Step 1", "Identifying the real issue", "Get to the root cause using Five Whys technique"],
+        ["Step 2", "Generating possible solutions", "Use brainstorming, mind maps, and decision trees"],
+        ["Step 3", "Selecting and implementing optimal solution", "Evaluate with five key questions"]
       ]
     },
     trainerNotes: [
-      "Walk through each row of the table when content is provided.",
-      "Placeholder trainer guidance for table presentation."
+      "Introduce the framework: 'We will now break down the problem solving process into three key steps.'",
+      "Step 1 explanation: 'This step, which is often overlooked, revolves around the idea that you have to correctly identify the causes of any problem.'",
+      "Step 2 explanation: 'The most well known and effective process of generating ideas is brainstorming.'",
+      "Step 3 explanation: 'Selecting the right solution is obviously a key step in solving any problem.'",
+      "Emphasize the systematic approach: 'With this approach, even when faced with a rare problem, a dispatcher doesn't begin to panic.'"
     ]
   },
   {
-    title: "Knowledge Check",
+    title: "Step 1: The Five Whys Technique",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Purpose**: Get to the real root cause of problems",
+      "**Method**: Ask 'why' up to five times until you reach the core issue",
+      "**Problem**: Surface symptoms often hide deeper underlying causes",
+      "**Solution**: Dig deeper to prevent recurring problems"
+    ],
+    trainerNotes: [
+      "Introduce the concept: 'There is a technique for this known as the Five Whys. The idea is that you ask the question why up to five times until you get to the real root of the problem.'",
+      "Explain why it's needed: 'Sometimes the cause of the problem can be much more complex than what's visible on the surface, and you need to get to the root of it.'",
+      "Set up the example: 'Here's an example from a recent recording I listened to of a conversation between one of my dispatchers and his driver.'",
+      "Transition to the story: 'The driver didn't arrive in time to pick up a load at 6 a.m. and didn't answer his phone until lunchtime.'"
+    ]
+  },
+  {
+    title: "Five Whys Example: Driver No-Show",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Why Question", "Driver's Response", "Deeper Issue Revealed"],
+      rows: [
+        ["Why didn't you come to pickup?", "Had stomach problems, sitting on toilet", "Surface symptom - illness"],
+        ["Why didn't you pick up the phone?", "I'm sick of this, can't miss pickup once", "Frustration and stress"],
+        ["Why are you so frustrated?", "Been driving 3 months straight, sleep in truck", "Burnout and isolation"],
+        ["Why don't you go home?", "Need quarterly bonus for daughter's private school", "Financial pressure"],
+        ["Why is money so critical?", "Daughter Juanita's education depends on it", "Root cause: Family financial need"]
+      ]
+    },
+    trainerNotes: [
+      "Walk through each 'why' question: 'So the dispatcher picks up the phone and goes, Alejandro, I'm not calling you to scold you. Let's just have a chat. Tell me, why didn't you come to the pickup?'",
+      "First response: 'The driver responds, Everything is fine. No one will die because I didn't pick up a load. I had stomach problems and I've been sitting on the toilet all day long.'",
+      "Second why: 'The dispatcher goes, No problem. I'll solve the issue with the broker. But I'm worried about you. Tell me, why didn't you pick up the phone?'",
+      "Third why: 'The dispatcher answers. Okay, but why? I feel there is more to it. Talk to me.'",
+      "Fourth why: 'The dispatcher answers, Okay, why don't you finish this load and then go home?'",
+      "Reveal the solution: 'So at this point, the dispatcher, having already understood the essence of the problem, says, okay, let me talk to the boss.'"
+    ]
+  },
+  {
+    title: "The Five Whys in Action",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/fivewhys.png",
+      alt: "Five Whys Method - ask the question 'why' up to five times to get to the real root of the problem",
+      caption: "The Five Whys Method - A systematic approach to root cause analysis"
+    },
+    bullets: [
+      "**Surface Problem**: Driver missed pickup due to stomach issues",
+      "**Real Problem**: Driver is burned out from 3 months of non-stop work",
+      "**Root Cause**: Financial pressure for daughter's private school tuition",
+      "**Solution**: Owner provided paid time off and paid the quarterly bonus anyway",
+      "**Result**: Problem solved permanently, not just temporarily"
+    ],
+    trainerNotes: [
+      "Show the Five Whys image: 'Here's what the Five Whys method looks like visually.'",
+      "Analyze the conversation: 'I don't know if you noticed, but during this conversation the dispatcher asked the question why four times and only then understood how to solve the problem.'",
+      "Contrast with bad management: 'A bad manager finds it easier to fix a problem superficially rather than digging deeper and finding out if it's something more serious.'",
+      "Emphasize the importance: 'But in order to solve a problem, you need to get to its root, because otherwise it will keep happening again and again.'",
+      "Explain the outcome: 'The dispatcher call the owner of the company. And made it clear that the driver was burned out and he urgently needed a vacation. Then the owner or the CEO of the company gave the driver some paid time off and decided to pay him the bonus he deserved.'"
+    ]
+  },
+  {
+    title: "The 80/20 Principle (Pareto Principle)",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Vilfredo Pareto** observed that 80% of land in Italy belonged to 20% of people",
+      "**Logistics Application**: 80% of dispatch time is used to load 20% of trucks",
+      "**Problem Solving**: 80% of problems come from 20% of underlying causes",
+      "**Focus Strategy**: Fix 20% of problems to save 80% of time and money",
+      "**Best Use**: Apply to complex, recurring problems rather than one-time issues"
+    ],
+    trainerNotes: [
+      "Introduce Pareto: 'A big name in the world of problem solving experts is Vilfredo Pareto. I believe many of you have heard about the 80 over 20 principle, also known as the Pareto Principle.'",
+      "Explain the origin: 'Which began with the observation that 80% of the land in Italy belonged to 20% of the people.'",
+      "Apply to logistics: 'This 8020 rule also applies to the logistics industry. For example, according to statistics, 80% of time spent working dispatch is used to load 20% of their truck.'",
+      "Connect to problem solving: 'And 80% of all your problems will usually come from 20% of underlying reasons. In other words, there are only a few underlying causes that create most of your problems.'",
+      "Explain the strategy: 'If you focus on fixing just 20% of your problems, you will save 80% of the cost and 80% of your time and money.'"
+    ]
+  },
+  {
+    title: "Pareto Principle Real Example",
+    layout: "table",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Client Analysis", "Income Contribution", "Time Investment", "Action Taken"],
+      rows: [
+        ["Top 3 Clients", "80% of total income", "Minimum time required", "Kept and focused on"],
+        ["Problematic Clients", "Very little income", "Maximum time spent", "Dropped these clients"],
+        ["Result", "More time for training", "Better income efficiency", "Started dispatching company"]
+      ]
+    },
+    trainerNotes: [
+      "Share personal experience: 'For example, when I was an independent dispatcher, at some point I had too much work and realized that I could no longer cope. Because of this, the quality of my work began to suffer and I began to make mistakes.'",
+      "Analyze the situation: 'I analyzed my earnings over the past months and realized that out of all my clients, I had three who brought me the majority of my income and I spent a minimum amount of time loading them.'",
+      "Identify the problem clients: 'Also, I found out that I had some clients whom I spent a lot of time loading but earned very little from them. They constantly refused all my loads and I spent my whole day trying to find a load that will satisfy their needs.'",
+      "Explain the financial impact: 'As a result, they end up taking their own loads and I don't charge them for that, so I don't get paid.'",
+      "Describe the solution: 'Having carefully thought about everything, I dropped some of my clients and began to devote my free time to training. One of my good friends who eventually became a key player in starting my dispatching company.'"
+    ]
+  },
+  {
+    title: "Step 2: Brainstorming - The Foundation",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/brainstorm.png",
+      alt: "Brainstorming concept with lightbulb, multiple hands pointing, and idea generation elements",
+      caption: "Brainstorming - Generate maximum ideas without immediate evaluation"
+    },
+    bullets: [
+      "**Goal**: Generate maximum number of ideas for solving the problem",
+      "**Include**: Wild and crazy ideas - no judgment during generation phase",
+      "**Process**: Write down ALL ideas first, then evaluate later",
+      "**Avoid**: Evaluating ideas as they emerge - resist this temptation",
+      "**Why it works**: Brain automatically jumps from bad ideas to good ones"
+    ],
+    trainerNotes: [
+      "Show the brainstorming image: 'This is what effective brainstorming looks like.'",
+      "Define the method: 'The method of brainstorming is basically just generating a maximum number of ideas for solving the problem, including the most wild and crazy ideas you may have.'",
+      "Emphasize effectiveness: 'One thing I can say about brainstorming sessions is that they are extremely effective for both a team and for a sole professional.'",
+      "Warn about common mistakes: 'But most people conduct brainstorming sessions incorrectly instead of writing down a big list of ideas As they emerge, people begin to evaluate and pick at every idea that is thrown into the list.'",
+      "Explain the correct way: 'The correct way to do it is to create a list and then move on to evaluate every idea. It's just human nature to evaluate every idea as it comes up. But it's key to resist this temptation.'",
+      "Explain why it works: 'The reason this works is because our brains are set to automatically jump from a stupid idea to an ingenious one by elimination.'"
+    ]
+  },
+  {
+    title: "Mind Maps - Visual Problem Solving",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/mindmap.png",
+      alt: "Mind map template with central topic, subtopics, and related ideas branching out",
+      caption: "Mind Maps - Visual representation of interconnected ideas and solutions"
+    },
+    bullets: [
+      "**Advantage**: Natural to human brain - reflects how we actually think",
+      "**Visual**: Makes problems visual and easier to understand",
+      "**Brain Integration**: Involves both left and right sides of the brain",
+      "**Flexible**: Quick to draw, add elements in any order as they come to mind",
+      "**Expandable**: Always room for additional bubbles as you expand outward"
+    ],
+    trainerNotes: [
+      "Show the mind map image: 'This is what a mind map looks like.'",
+      "Explain the natural appeal: 'The second tool that I always go through with my coworkers is called Mind Maps. There is something about them that seems natural to the human brain and they help me think.'",
+      "Compare to lists: 'They work much better than regular lists.'",
+      "Explain the benefits: 'And the best thing about them is that they actually reflect the way we think. They make a problem visual. They involve both the left and the right side of the brain.'",
+      "Highlight flexibility: 'They are quick to draw and you can add any elements in any order as soon as they come to mind.'",
+      "Explain expandability: 'Also, because the diagram starts in the Middle. As you expand it, there's always room for additional bubbles.'",
+      "Recommend hand-drawing: 'There are special applications and programs that help you draw a mind map, but I would recommend you to simply do it by hand on paper.'"
+    ]
+  },
+  {
+    title: "Decision Trees - Sequential Analysis",
+    layout: "bullets",
+    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Purpose**: Analyze sequences of possible events and outcomes",
+      "**Structure**: Contains time axis unlike mind maps",
+      "**Analogy**: Like unfolding a chess game - each move leads to new possibilities",
+      "**Application**: Perfect when you have multiple solutions but can't decide which is best",
+      "**Real Use**: Some dispatchers use this for driver route planning"
+    ],
+    trainerNotes: [
+      "Introduce decision trees: 'A step further from the mind map is a decision tree.'",
+      "Explain the key difference: 'The essence of a decision tree is that it contains a time axis. Unlike mind maps, decision, trees represent a sequence of possible events like the unfolding of a chess game.'",
+      "Use chess analogy: 'If we do one action, move one piece, then three possible scenarios can happen in the first scenario happens. Then we can do either A or B, and if we choose option A, the two more options can occur and so on. It all grows into a big tree.'",
+      "Explain when to use: 'This tool is especially effective when you have multiple possible solutions to a problem, but you can't decide which one will lead to the best result.'",
+      "Share practical application: 'Some dispatchers in my company even use this method when they plan the route of their drivers. I highly recommend giving it a try.'",
+      "Emphasize effectiveness: 'Believe me, I'm not just talking about these tools for the sake of appearing clever or giving you extra homework. There is a direct correlation between the incorporation of these tools into the workflow and the effectiveness of problem solving.'"
+    ]
+  },
+  {
+    title: "Decision Tree Success Story",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Scenario**: Dispatcher comes to office saying 'I have a problem. I don't know what to do.'",
+      "**Response**: 'Go make a decision tree and then come back and we can discuss it.'",
+      "**Result**: Dispatcher never comes back - finds the solution himself",
+      "**Lesson**: The process of creating the tree often reveals the answer",
+      "**Application**: Use decision trees for complex routing and scheduling problems"
+    ],
+    trainerNotes: [
+      "Share the real story: 'Here is a real life scenario for you. A dispatcher comes to my office and says, I have a problem. I don't know what to do.'",
+      "Explain the response: 'I haven't even heard of his problem yet. I just say, Go make a decision tree and then come back and we can discuss it.'",
+      "Reveal the outcome: 'Guess what? The dispatcher never comes back. He finds the solution himself.'",
+      "Explain why it works: 'The process of creating the decision tree forces you to think through all the possible outcomes and consequences of each choice.'",
+      "Encourage practical use: 'At work, it's impossible for everything to go according to plan. And in order to be good at your job, you need to be able to solve problems effectively.'",
+      "Transition to final step: 'Moving on to the third stage, selecting and implementing the optimal solution.'"
+    ]
+  },
+  {
+    title: "Step 3: Five Key Questions for Decision Making",
+    layout: "table",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    table: {
+      headers: ["Question", "Purpose", "Example Application"],
+      rows: [
+        ["Will my decision satisfy all parties?", "Check stakeholder impact", "Broker relationship preservation"],
+        ["Can it be implemented in acceptable time?", "Feasibility assessment", "Pickup deadline considerations"],
+        ["Is it cost-effective and realistic?", "Financial viability", "Rate vs. cost analysis"],
+        ["Is result comparable to risks?", "Risk-benefit analysis", "Cancellation consequences"],
+        ["Does it align with professional ethics?", "Moral compass check", "Industry standards compliance"]
+      ]
+    },
+    trainerNotes: [
+      "Introduce the final step: 'Selecting the right solution is obviously a key step in solving any problem. For this stage, unfortunately, there are no magical tools.'",
+      "Explain the process: 'The whole idea is that previous two stages, given that they performed well, will lead you to a well balanced solution to get the desired result.'",
+      "Introduce the five questions: 'The only thing I can suggest at this stage is to go over your final decision with the five key questions.'",
+      "Set up the example: 'For example, let's imagine I decided to cancel a newly booked load because I unexpectedly received a call from a different broker who offered a better paying load.'",
+      "Explain the methodology: 'Before taking this decision, I'll check myself by asking these questions.'"
+    ]
+  },
+  {
+    title: "Five Questions Example: Load Cancellation Decision",
+    layout: "bullets",
+    icon: <Icon.Truck className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Question 1**: Will my decision satisfy all parties involved? → Broker won't be happy, but plenty of time to find replacement",
+      "**Question 2**: Can it be implemented in acceptable time? → Yes, load just booked, can cancel immediately",
+      "**Question 3**: Is it cost-effective and realistic? → Yes, higher rate means more money for company and commission",
+      "**Question 4**: Is result comparable to risks? → Minimal risk since load just booked, broker has time to find alternative",
+      "**Question 5**: Does it align with professional ethics? → Acceptable within first 30 minutes, unprofessional if last-minute"
+    ],
+    trainerNotes: [
+      "Walk through each question with the load cancellation example:",
+      "Question 1: 'First one, will my decision satisfy all parties involved in the conflict? Well, in principle, yes. The broker with whom I canceled the shipment certainly will not be happy. But since I just booked it, there's still plenty of time before the load needs to be picked up.'",
+      "Question 2: 'Number two, can it be implemented within an acceptable time frame? Well, yes, I can do it right now because I just booked the load.'",
+      "Question 3: 'Number three, is it cost effective, reliable and realistic? Well, yes, because I will earn more money for my company and a higher commission for myself.'",
+      "Question 4: 'Next one is the result comparable to the possible risks? I believe so. The only serious risk I identified was that the broker could possibly get mad at me.'",
+      "Question 5: 'And finally, is the decision comparable to the principles of my professional ethics? Well, I do not support dispatchers and brokers who cancel loads at the last moment.'",
+      "Conclude: 'There you go. I've double checked my decision with the five key questions methodology. I discarded all possible doubts and I'm ready to confidently proceed to implementation.'"
+    ]
+  },
+  {
+    title: "Knowledge Check - Problem Solving Principles",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
     quiz: {
       questions: [
-        "Placeholder question 1?",
-        "Placeholder question 2?",
-        "Placeholder question 3?"
+        "What are the two key thought processes involved in professional problem solving?",
+        "How many times should you ask 'why' to get to the root cause of a problem?",
+        "According to the Pareto Principle, what percentage of problems come from what percentage of causes?",
+        "What is the key rule to remember when conducting a brainstorming session?",
+        "What are the five key questions to ask before implementing a solution?"
       ],
       answers: [
-        "Placeholder answer 1.",
-        "Placeholder answer 2.",
-        "Placeholder answer 3."
+        "Creativity (generating options) and decisiveness (choosing the best solution)",
+        "Up to five times - the Five Whys technique helps identify root causes",
+        "80% of problems come from 20% of underlying causes",
+        "Write down ALL ideas first without evaluating them, then evaluate later",
+        "Will it satisfy all parties? Can it be implemented in time? Is it cost-effective? Is result worth the risks? Does it align with ethics?"
       ]
     },
     trainerNotes: [
       "Ask each question and get volunteer answers before revealing model answers.",
-      "Placeholder coaching notes for quiz administration."
+      "Emphasize practical application: 'These principles aren't just theory - they're tools you'll use daily as dispatchers.'",
+      "Encourage discussion: 'Let's discuss how you might apply these techniques in real dispatch scenarios.'",
+      "Connect to next section: 'In the next lesson, we'll focus on real examples and practical applications of these principles.'"
     ]
   },
   {
-    title: "Section Material",
+    title: "Section Summary & Next Steps",
     layout: "bullets",
-    icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    icon: <Icon.BookOpen className="w-12 h-12" style={{ color: brand.red }} />,
     bullets: [
-      "No material uploaded yet. This slide will embed PDFs/images/links when provided.",
-      "PDFs inline; images as a simple gallery; links listed with short descriptions — no new libraries.",
-      "Trainer script for materials will be pulled from the Section 31 notes when provided."
+      "**Theory Complete**: You now understand the systematic approach to problem solving",
+      "**Three-Step Process**: Identify real issue → Generate solutions → Select and implement optimal solution",
+      "**Tools Mastered**: Five Whys, Pareto Principle, Brainstorming, Mind Maps, Decision Trees, Five Questions",
+      "**Next Section**: Real-world examples and practical applications",
+      "**Your Journey**: You're at the finish line of professional dispatching skills!"
     ],
     trainerNotes: [
-      "State of materials: There's no uploaded material for Section 31 yet. When we receive PDFs, images, or links, they'll appear here.",
-      "How it will look: PDFs — displayed inline on this slide. Images — simple on-slide gallery; clicking can open a larger view in a new tab. Links — short list with one-line descriptions and what to check.",
-      "Trainer script (when materials arrive): We'll follow the step-by-step instructions provided with the materials.",
-      "Navigation cue (last slide): Use the navigation box here to jump to the next section or back to the previous one."
+      "Summarize the learning: 'I hope I didn't torture you too much with the theory. It's important to me that you understand these basics so that your brain begins to think in the right direction.'",
+      "Emphasize the completion: 'You are at the finish line! Very soon you will be applying for jobs or looking for customers, selling your professional services and earning well deserved income with your newly acquired skills.'",
+      "Encourage continued learning: 'I recommend not to take a long break and immediately proceed to the next lesson so that practical knowledge from lesson two is combined with the theory of lesson one.'",
+      "Build excitement: 'I'm excited for you. You've learned systematic problem solving that will free you from stress and help you find the best way out of difficult situations at work.'",
+      "Navigation cue: 'Use the navigation box to proceed to Section 32 for practical examples, or go back to review any previous sections.'"
     ],
     isMaterialsSlide: true
   }
@@ -375,6 +629,25 @@ export default function LoadisticsSection31({ onNavigateToSection, sectionDropdo
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                )}
+
+                {/* Image Display */}
+                {slide.image && (
+                  <div className="mt-6">
+                    <div className="text-center">
+                      <div className="border border-gray-200 rounded-xl overflow-hidden mb-3">
+                        <img
+                          src={slide.image.src}
+                          alt={slide.image.alt}
+                          className="w-full h-auto max-h-96 object-contain cursor-pointer hover:opacity-90 transition-opacity"
+                          onClick={() => window.open(slide.image.src, '_blank')}
+                        />
+                      </div>
+                      {slide.image.caption && (
+                        <p className="text-sm text-gray-600 italic">{slide.image.caption}</p>
+                      )}
+                    </div>
                   </div>
                 )}
 
