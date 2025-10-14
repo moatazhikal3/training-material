@@ -228,7 +228,8 @@ function getSectionTitle(sectionNumber) {
     28: "Loadboards Overview and How to Use Them - Part 1",
     29: "Loadboards Overview and How to Use Them - Part 2",
     30: "Building Relationships with Brokers",
-    "quiz-break-5": "🎯 Quiz Time! Sections 28-30 Recap"
+    "quiz-break-5": "🎯 Quiz Time! Sections 28-30 Recap",
+    31: "Principles of Problem Solving"
     
     // Add more titles as sections are developed
   };
