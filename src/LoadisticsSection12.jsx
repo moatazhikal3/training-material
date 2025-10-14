@@ -254,9 +254,7 @@ const slides = [
       "Objection Handling: Prepare responses to common broker pushbacks",
       "Relationship Building: Focus on long-term broker partnerships and repeat business"
     ],
-    video: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-      ? "/section12/links/dispatcher-broker-mockup.mp4"
-      : "https://cdn.jsdelivr.net/gh/moatazhikal3/training-material@main/public/section12/links/dispatcher-broker-mockup.mp4",
+    video: "https://www.youtube.com/embed/dLKP-k5W4oE",
     trainerNotes: [
       "The goal is developing authentic communication style, not memorizing scripts.",
       "Practice these techniques with different load types and market conditions.",
@@ -478,23 +476,18 @@ export default function LoadisticsSection12({ onNavigateToSection, sectionDropdo
                 {slide.video && (
                   <div className="mt-6">
                     <div className="text-lg font-semibold mb-3">Video Demo: Dispatcher-Broker Call Example</div>
-                    <div className="border border-gray-200 rounded-xl overflow-hidden">
-                      <video 
-                        controls 
-                        className="w-full max-w-4xl mx-auto"
-                        style={{ maxHeight: '400px' }}
-                        preload="metadata"
-                        onError={(e) => console.error('Video error:', e.target.error)}
-                        onLoadStart={() => console.log('Video loading started:', slide.video)}
-                        onCanPlay={() => console.log('Video can play:', slide.video)}
-                      >
-                        <source src={slide.video} type="video/mp4" />
-                        <source src={slide.video} type="video/mpeg" />
-                        Your browser does not support the video tag.
-                      </video>
+                    <div className="relative w-full max-w-4xl mx-auto" style={{ paddingBottom: "56.25%", height: 0 }}>
+                      <iframe
+                        src={slide.video}
+                        className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                        style={{ border: "none" }}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Dispatcher-Broker Call Demonstration"
+                      />
                     </div>
                     <p className="text-sm text-gray-600 mt-2 text-center">
-                      Click play to watch a demonstration of professional dispatcher-broker negotiation
+                      Watch a demonstration of professional dispatcher-broker negotiation
                     </p>
                   </div>
                 )}
