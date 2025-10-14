@@ -115,6 +115,25 @@ const slides = [
     ]
   },
   {
+    title: "Step 1: Identifying the Real Issue - The Process",
+    layout: "bullets",
+    icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Step 1A**: Recognize that problems often have surface symptoms vs. root causes",
+      "**Step 1B**: Resist the temptation to fix only what's immediately visible",
+      "**Step 1C**: Use systematic questioning to dig deeper into underlying issues",
+      "**Step 1D**: Apply the Five Whys technique to reach the core problem",
+      "**Step 1E**: Document the real cause to prevent future recurrence"
+    ],
+    trainerNotes: [
+      "Explain the importance: 'This step, which is often overlooked, revolves around the idea that you have to correctly identify the causes of any problem.'",
+      "Highlight the complexity: 'Sometimes the cause of the problem can be much more complex than what's visible on the surface, and you need to get to the root of it.'",
+      "Emphasize the systematic approach: 'The key is to resist the natural tendency to fix surface symptoms and instead dig deeper to find the real underlying cause.'",
+      "Connect to practical application: 'This systematic approach prevents problems from recurring because you're addressing the actual source, not just the symptoms.'",
+      "Set up the Five Whys: 'There is a technique for this known as the Five Whys that we'll explore next.'"
+    ]
+  },
+  {
     title: "Step 1: The Five Whys Technique",
     layout: "bullets",
     icon: <Icon.CheckCircle className="w-12 h-12" style={{ color: brand.red }} />,
@@ -182,6 +201,11 @@ const slides = [
     title: "The 80/20 Principle (Pareto Principle)",
     layout: "bullets",
     icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/pareto-principle.png",
+      alt: "Pareto Principle visualization showing 80/20 distribution",
+      caption: "The Pareto Principle - 80% of effects come from 20% of causes"
+    },
     bullets: [
       "**Vilfredo Pareto** observed that 80% of land in Italy belonged to 20% of people",
       "**Logistics Application**: 80% of dispatch time is used to load 20% of trucks",
@@ -190,11 +214,32 @@ const slides = [
       "**Best Use**: Apply to complex, recurring problems rather than one-time issues"
     ],
     trainerNotes: [
+      "Show the Pareto Principle image: 'Here's what the 80/20 principle looks like visually.'",
       "Introduce Pareto: 'A big name in the world of problem solving experts is Vilfredo Pareto. I believe many of you have heard about the 80 over 20 principle, also known as the Pareto Principle.'",
       "Explain the origin: 'Which began with the observation that 80% of the land in Italy belonged to 20% of the people.'",
       "Apply to logistics: 'This 8020 rule also applies to the logistics industry. For example, according to statistics, 80% of time spent working dispatch is used to load 20% of their truck.'",
       "Connect to problem solving: 'And 80% of all your problems will usually come from 20% of underlying reasons. In other words, there are only a few underlying causes that create most of your problems.'",
       "Explain the strategy: 'If you focus on fixing just 20% of your problems, you will save 80% of the cost and 80% of your time and money.'"
+    ]
+  },
+  {
+    title: "Using Pareto Principle for Issue Identification",
+    layout: "bullets",
+    icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    bullets: [
+      "**Step 1**: List all problems you're experiencing in your dispatch operations",
+      "**Step 2**: Categorize problems by frequency (how often they occur)",
+      "**Step 3**: Identify the 20% of problems that cause 80% of your headaches",
+      "**Step 4**: Focus your Five Whys analysis on these high-impact problems first",
+      "**Step 5**: Apply solutions to the root causes of these critical issues"
+    ],
+    trainerNotes: [
+      "Explain the application: 'The Pareto Principle is especially useful when you have multiple problems and need to prioritize which ones to tackle first.'",
+      "Walk through the process: 'Start by making a comprehensive list of all the problems you're experiencing in your dispatch operations.'",
+      "Explain categorization: 'Then categorize these problems by how frequently they occur and how much time or money they cost you.'",
+      "Focus on the critical few: 'You'll likely find that about 20% of your problems are causing 80% of your stress and inefficiency.'",
+      "Prioritize analysis: 'Use the Five Whys technique on these high-impact problems first, as solving them will give you the biggest return on your time investment.'",
+      "Connect to practical results: 'This approach ensures you're not wasting time on minor issues while major problems continue to drain your resources.'"
     ]
   },
   {
@@ -358,6 +403,7 @@ const slides = [
     quiz: {
       questions: [
         "What are the two key thought processes involved in professional problem solving?",
+        "What are the five steps in identifying the real issue (Step 1A through 1E)?",
         "How many times should you ask 'why' to get to the root cause of a problem?",
         "According to the Pareto Principle, what percentage of problems come from what percentage of causes?",
         "What is the key rule to remember when conducting a brainstorming session?",
@@ -365,6 +411,7 @@ const slides = [
       ],
       answers: [
         "Creativity (generating options) and decisiveness (choosing the best solution)",
+        "1A: Recognize surface vs root causes, 1B: Resist fixing only visible issues, 1C: Use systematic questioning, 1D: Apply Five Whys technique, 1E: Document real cause",
         "Up to five times - the Five Whys technique helps identify root causes",
         "80% of problems come from 20% of underlying causes",
         "Write down ALL ideas first without evaluating them, then evaluate later",
