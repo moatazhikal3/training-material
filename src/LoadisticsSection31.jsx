@@ -317,16 +317,24 @@ const slides = [
     title: "Decision Trees - Sequential Analysis",
     layout: "bullets",
     icon: <Icon.ListChecks className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/decisiontree.png",
+      alt: "Decision Tree diagram showing root node, decision nodes, and leaf nodes with branching structure",
+      caption: "Decision Tree Structure - Visualizing sequential choices and outcomes"
+    },
     bullets: [
       "**Purpose**: Analyze sequences of possible events and outcomes",
-      "**Structure**: Contains time axis unlike mind maps",
+      "**Structure**: Contains time axis unlike mind maps - shows sequential decision flow",
+      "**Components**: Root Node (starting point) → Decision Nodes (choices) → Leaf Nodes (final outcomes)",
       "**Analogy**: Like unfolding a chess game - each move leads to new possibilities",
       "**Application**: Perfect when you have multiple solutions but can't decide which is best",
-      "**Real Use**: Some dispatchers use this for driver route planning"
+      "**Real Use**: Some dispatchers use this for driver route planning and load selection"
     ],
     trainerNotes: [
+      "Show the Decision Tree image: 'Here's what a decision tree looks like visually - you can see the hierarchical structure with nodes and branches.'",
       "Introduce decision trees: 'A step further from the mind map is a decision tree.'",
       "Explain the key difference: 'The essence of a decision tree is that it contains a time axis. Unlike mind maps, decision, trees represent a sequence of possible events like the unfolding of a chess game.'",
+      "Point out components: 'Looking at the diagram, you can see the Root Node at the top - this is your starting point. Then you have Decision Nodes in the middle where you make choices, and finally Leaf Nodes at the bottom which are your final outcomes.'",
       "Use chess analogy: 'If we do one action, move one piece, then three possible scenarios can happen in the first scenario happens. Then we can do either A or B, and if we choose option A, the two more options can occur and so on. It all grows into a big tree.'",
       "Explain when to use: 'This tool is especially effective when you have multiple possible solutions to a problem, but you can't decide which one will lead to the best result.'",
       "Share practical application: 'Some dispatchers in my company even use this method when they plan the route of their drivers. I highly recommend giving it a try.'",
