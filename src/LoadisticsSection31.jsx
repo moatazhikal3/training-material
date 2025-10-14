@@ -365,6 +365,11 @@ const slides = [
     title: "Step 3: Five Key Questions for Decision Making",
     layout: "table",
     icon: <Icon.Users className="w-12 h-12" style={{ color: brand.red }} />,
+    image: {
+      src: "/section31/images/5-key-question-method.png",
+      alt: "5 Key Question Method showing the four main questions for decision making",
+      caption: "The 5 Key Question Method - A systematic approach to evaluating solutions"
+    },
     table: {
       headers: ["Question", "Purpose", "Example Application"],
       rows: [
@@ -376,11 +381,13 @@ const slides = [
       ]
     },
     trainerNotes: [
+      "Show the 5 Key Question Method image: 'Here's the visual representation of the Five Key Question Method that we use for decision making.'",
       "Introduce the final step: 'Selecting the right solution is obviously a key step in solving any problem. For this stage, unfortunately, there are no magical tools.'",
       "Explain the process: 'The whole idea is that previous two stages, given that they performed well, will lead you to a well balanced solution to get the desired result.'",
-      "Introduce the five questions: 'The only thing I can suggest at this stage is to go over your final decision with the five key questions.'",
+      "Introduce the five questions: 'The only thing I can suggest at this stage is to go over your final decision with the five key questions. As you can see in the image, there are four main questions shown, plus a fifth one we'll discuss.'",
+      "Reference the image: 'Looking at the image, you can see the four key questions that form the foundation of this method. These questions act as a systematic filter to ensure your solution is optimal.'",
       "Set up the example: 'For example, let's imagine I decided to cancel a newly booked load because I unexpectedly received a call from a different broker who offered a better paying load.'",
-      "Explain the methodology: 'Before taking this decision, I'll check myself by asking these questions.'"
+      "Explain the methodology: 'Before taking this decision, I'll check myself by asking these questions, using the framework shown in the image.'"
     ]
   },
   {
@@ -395,13 +402,15 @@ const slides = [
       "**Question 5**: Does it align with professional ethics? → Acceptable within first 30 minutes, unprofessional if last-minute"
     ],
     trainerNotes: [
+      "Reference the previous slide: 'Now let's apply the Five Key Question Method we just saw in the image to our load cancellation example.'",
       "Walk through each question with the load cancellation example:",
       "Question 1: 'First one, will my decision satisfy all parties involved in the conflict? Well, in principle, yes. The broker with whom I canceled the shipment certainly will not be happy. But since I just booked it, there's still plenty of time before the load needs to be picked up.'",
       "Question 2: 'Number two, can it be implemented within an acceptable time frame? Well, yes, I can do it right now because I just booked the load.'",
       "Question 3: 'Number three, is it cost effective, reliable and realistic? Well, yes, because I will earn more money for my company and a higher commission for myself.'",
       "Question 4: 'Next one is the result comparable to the possible risks? I believe so. The only serious risk I identified was that the broker could possibly get mad at me.'",
       "Question 5: 'And finally, is the decision comparable to the principles of my professional ethics? Well, I do not support dispatchers and brokers who cancel loads at the last moment.'",
-      "Conclude: 'There you go. I've double checked my decision with the five key questions methodology. I discarded all possible doubts and I'm ready to confidently proceed to implementation.'"
+      "Conclude: 'There you go. I've double checked my decision with the five key questions methodology. I discarded all possible doubts and I'm ready to confidently proceed to implementation.'",
+      "Emphasize the systematic approach: 'This example shows how the visual framework from the previous slide guides you through a logical decision-making process.'"
     ]
   },
   {
